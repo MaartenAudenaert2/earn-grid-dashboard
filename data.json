@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T23:20:29.735743+02:00",
-  "generatedLabel": "21 July 2026 · 23:20",
+  "generatedAt": "2026-07-22T00:20:30.448070+02:00",
+  "generatedLabel": "22 July 2026 · 00:20",
   "fx": {
     "usdEur": 0.8752,
     "date": "laatst bekende referentie"
@@ -43,143 +43,23 @@
   },
   "candidates": [],
   "scans": {
-    "lunaAt": "2026-07-21T21:02:24Z",
+    "lunaAt": "2026-07-21T22:01:40Z",
     "lunaCandidates": 0,
-    "lunaRejected": 7,
-    "solAt": "2026-07-21T21:06:35Z",
+    "lunaRejected": 0,
+    "solAt": "2026-07-21T22:06:16Z",
     "solApproved": 0,
     "terraAt": "2026-07-19T07:26:54Z",
     "terraSubmitted": 0,
-    "externalAt": "2026-07-21T21:17:56Z",
+    "externalAt": "2026-07-21T22:18:37Z",
     "externalResult": "no-new-qualified-opportunity",
     "externalShortlisted": 0,
-    "externalRejected": 4
+    "externalRejected": 7
   },
   "scanDetails": {
     "taskmarket": {
-      "scannedOpenTasks": 0,
+      "scannedOpenTasks": 6,
       "approved": [],
-      "rejected": [
-        {
-          "taskId": "0xb572510c687f254cb763989553a74a9dff1c76687579f8507335c2461de1ab1a",
-          "mode": "bounty",
-          "rewardUsdc": 0.15,
-          "netRewardUsdc": 0.13875,
-          "competition": {
-            "submissionCount": 12,
-            "uniqueWorkers": 8,
-            "pitchCount": 0,
-            "bidCount": 0,
-            "claimedBy": null,
-            "awardCount": 0
-          },
-          "deadline": "2026-07-23T17:01:34.245Z",
-          "submissionWindowOpen": true,
-          "reason": "Upfront x402 payment required on external Listening Heart service; top-3 split makes payout non-guaranteed; 12 submissions already visible."
-        },
-        {
-          "taskId": "0xfeb98106531ea1bd30f727a0c458809e0c05159c5c6c4e65ca7d0245a3b16613",
-          "mode": "bounty",
-          "rewardUsdc": 0.02,
-          "netRewardUsdc": 0.0185,
-          "competition": {
-            "submissionCount": 142,
-            "uniqueWorkers": 38,
-            "pitchCount": 0,
-            "bidCount": 0,
-            "claimedBy": null,
-            "awardCount": 0
-          },
-          "deadline": "2026-07-22T15:30:05.820Z",
-          "submissionWindowOpen": true,
-          "reason": "Exceeds competition limit: 142 submissions and 38 unique workers."
-        },
-        {
-          "taskId": "0xcb67b0a48505c60ddba84023942a93c433bb0c31722028e0b62807074e0ccf0e",
-          "mode": "bounty",
-          "rewardUsdc": 0.15,
-          "netRewardUsdc": 0.13875,
-          "competition": {
-            "submissionCount": 158,
-            "uniqueWorkers": 44,
-            "pitchCount": 0,
-            "bidCount": 0,
-            "claimedBy": null,
-            "awardCount": 0
-          },
-          "deadline": "2026-07-23T02:57:30.663Z",
-          "submissionWindowOpen": true,
-          "reason": "Exceeds competition limit: 158 submissions and 44 unique workers."
-        },
-        {
-          "taskId": "0x998986befc9f1f47ae1ac783402795f441ec6a9177b598fae58f62266b4b93c8",
-          "mode": "bounty",
-          "rewardUsdc": 0.5,
-          "netRewardUsdc": 0.4625,
-          "competition": {
-            "submissionCount": 57,
-            "uniqueWorkers": 36,
-            "pitchCount": 0,
-            "bidCount": 0,
-            "claimedBy": null,
-            "awardCount": 0
-          },
-          "deadline": "2026-07-26T21:06:47.872Z",
-          "submissionWindowOpen": true,
-          "reason": "CAPTCHA-solving task with external endpoint and upfront x402 payment; suspicious/high-risk and exceeds competition limit."
-        },
-        {
-          "taskId": "0x100219baba1f9df11f7f15f226bbd9994c445060ca2bd2ac7ef820bd4f7759f7",
-          "mode": "bounty",
-          "rewardUsdc": 19,
-          "netRewardUsdc": 17.575,
-          "competition": {
-            "submissionCount": 576,
-            "uniqueWorkers": 67,
-            "pitchCount": 0,
-            "bidCount": 0,
-            "claimedBy": null,
-            "awardCount": 0
-          },
-          "deadline": "2026-07-22T13:55:50.319Z",
-          "submissionWindowOpen": true,
-          "reason": "Exceeds competition limit by a wide margin: 576 submissions and 67 unique workers; external research/source-verification workload."
-        },
-        {
-          "taskId": "0xd4962d4534961d4e93f93848f552dd41d48e2091a9fbb36ecc9503a8621717d0",
-          "mode": "bounty",
-          "rewardUsdc": 10,
-          "netRewardUsdc": 9.25,
-          "competition": {
-            "submissionCount": 519,
-            "uniqueWorkers": 86,
-            "pitchCount": 0,
-            "bidCount": 0,
-            "claimedBy": null,
-            "awardCount": 0
-          },
-          "deadline": "2026-07-22T06:38:56.689Z",
-          "submissionWindowOpen": true,
-          "reason": "Exceeds competition limit by a wide margin: 519 submissions and 86 unique workers; broad subjective research/harness study with human requester."
-        },
-        {
-          "taskId": "0x50d1dea29821649b87c2cb08558bd9cd984c9678d9f8d30ce608eef877ca5448",
-          "mode": "bounty",
-          "rewardUsdc": 0.5,
-          "netRewardUsdc": 0.4625,
-          "competition": {
-            "submissionCount": 324,
-            "uniqueWorkers": 82,
-            "pitchCount": 0,
-            "bidCount": 0,
-            "claimedBy": null,
-            "awardCount": 0
-          },
-          "deadline": "2026-08-04T03:31:01.190Z",
-          "submissionWindowOpen": true,
-          "reason": "Base Sepolia testnet mismatch with required Base wallet/network; requires external faucet and upfront x402 payment; 324 submissions and 82 unique workers."
-        }
-      ]
+      "rejected": []
     },
     "validation": {
       "approved": [],
@@ -189,49 +69,42 @@
           "mode": "bounty",
           "competition": 8,
           "workerCostUsdc": 0.001,
-          "reason": "Rejected: deliverable requires an upfront external x402 payment and EIP-3009 signing; payout is a subjective top-3 split. Live state: open, submissionWindowOpen=true, 13 submissions from 8 unique wallets, no prior participation by our wallet, no stake."
-        },
-        {
-          "taskId": "0xd4962d4534961d4e93f93848f552dd41d48e2091a9fbb36ecc9503a8621717d0",
-          "mode": "bounty",
-          "competition": 86,
-          "workerCostUsdc": 0,
-          "reason": "Rejected: competition exceeds 10 unique wallets (live: 521 submissions, 86 unique wallets). Broad subjective research deliverable also prevents reliable positive expected value. No prior participation by our wallet; no stake."
-        },
-        {
-          "taskId": "0x100219baba1f9df11f7f15f226bbd9994c445060ca2bd2ac7ef820bd4f7759f7",
-          "mode": "bounty",
-          "competition": 68,
-          "workerCostUsdc": 0,
-          "reason": "Rejected: competition exceeds 10 unique wallets (live: 578 submissions, 68 unique wallets); extensive external freshness, uniqueness, and payment-proof research makes expected value non-positive. No prior participation by our wallet; no stake."
+          "reason": "Rejected after live re-fetch: open on Base, deadline 2026-07-23T17:01:34.245Z, submissionWindowOpen=true, free Taskmarket submit action available, 14 submissions from 8 known unique competing wallets, no participation by our wallet, no stake, 0.13875 USDC net reward. The exact deliverable requires an external paid x402 transaction and EIP-3009 signing and only the top three entries share the reward, violating the no-paid-entry rule and making expected value non-positive."
         },
         {
           "taskId": "0xfeb98106531ea1bd30f727a0c458809e0c05159c5c6c4e65ca7d0245a3b16613",
           "mode": "bounty",
-          "competition": 38,
+          "competition": 39,
           "workerCostUsdc": 0,
-          "reason": "Rejected: competition exceeds 10 unique wallets (live: 143 submissions, 38 unique wallets); 0.0185 USDC net reward does not support positive expected value. No prior participation by our wallet; no stake."
+          "reason": "Rejected after live re-fetch: open on Base, deadline 2026-07-22T15:30:05.820Z, submissionWindowOpen=true, free Taskmarket submit action available, 155 submissions from 39 known unique competing wallets, no participation by our wallet, no stake, 0.0185 USDC net reward. Competition exceeds 10 and expected value is non-positive."
         },
         {
           "taskId": "0xcb67b0a48505c60ddba84023942a93c433bb0c31722028e0b62807074e0ccf0e",
           "mode": "bounty",
-          "competition": 44,
+          "competition": 45,
           "workerCostUsdc": 0,
-          "reason": "Rejected: competition exceeds 10 unique wallets (live: 159 submissions, 44 unique wallets). No prior participation by our wallet; no stake."
+          "reason": "Rejected after live re-fetch: open on Base, deadline 2026-07-23T02:57:30.663Z, submissionWindowOpen=true, free Taskmarket submit action available, 171 submissions from 45 known unique competing wallets, no participation by our wallet, no stake, 0.13875 USDC net reward. Competition exceeds 10 and expected value is non-positive."
         },
         {
           "taskId": "0x998986befc9f1f47ae1ac783402795f441ec6a9177b598fae58f62266b4b93c8",
           "mode": "bounty",
           "competition": 36,
           "workerCostUsdc": 0.01,
-          "reason": "Rejected: competition exceeds 10 unique wallets (live: 58 submissions, 36 unique wallets) and the deliverable requires an external x402 payment plus CAPTCHA-solving/token proof, which is prohibited. No prior participation by our wallet; no stake."
+          "reason": "Rejected after live re-fetch: open on Base, deadline 2026-07-26T21:06:47.872Z, submissionWindowOpen=true, free Taskmarket submit action available, 58 submissions from 36 known unique competing wallets, no participation by our wallet, no stake, 0.4625 USDC net reward. Competition exceeds 10; the deliverable also requires a paid external x402 CAPTCHA-solving endpoint and submission of a security-sensitive reCAPTCHA token."
+        },
+        {
+          "taskId": "0xd4962d4534961d4e93f93848f552dd41d48e2091a9fbb36ecc9503a8621717d0",
+          "mode": "bounty",
+          "competition": 87,
+          "workerCostUsdc": 0,
+          "reason": "Rejected after live re-fetch: open on Base, deadline 2026-07-22T06:38:56.689Z, submissionWindowOpen=true, free Taskmarket submit action available, 535 submissions from 87 known unique competing wallets, no participation by our wallet, no stake, 9.25 USDC net reward. Competition exceeds 10; the extensive subjective research deliverable and near deadline also prevent reliable positive expected value."
         },
         {
           "taskId": "0x50d1dea29821649b87c2cb08558bd9cd984c9678d9f8d30ce608eef877ca5448",
           "mode": "bounty",
-          "competition": 83,
+          "competition": 87,
           "workerCostUsdc": 0.001,
-          "reason": "Rejected: competition exceeds 10 unique wallets (live: 327 submissions, 83 unique wallets); task requires Base Sepolia faucet use, an external x402 payment, and EIP-3009 signing. No prior participation by our wallet; no stake."
+          "reason": "Rejected after live re-fetch: open on Base, deadline 2026-08-04T03:31:01.190Z, submissionWindowOpen=true, free Taskmarket submit action available, 342 submissions from 87 known unique competing wallets, no participation by our wallet, no stake, 0.4625 USDC net reward. Competition exceeds 10; the deliverable also requires an external x402 payment-signing flow, Base Sepolia faucet use, and external messaging."
         }
       ]
     },
@@ -239,51 +112,111 @@
       "sources": [
         {
           "category": "open-source/dev-task",
-          "url": "https://api.github.com/search/issues?q=is%3Aissue%20is%3Aopen%20%28bounty%20OR%20reward%20OR%20funded%29%20in%3Atitle%2Cbody%20updated%3A%3E%3D2026-07-14",
-          "result": "Live GitHub search was dominated by bounty-board spam/forks, security work, referral-like listings, and issues carrying non-binding reward labels. Two superficially relevant fresh issues were fully refreshed and rejected."
+          "url": "https://api.github.com/search/issues?q=is%3Aissue%20is%3Aopen%20%28bounty%20OR%20reward%20OR%20funded%29%20in%3Atitle%2Cbody%20updated%3A%3E%3D2026-07-20",
+          "result": "Live primary-source search returned 2,891 items, dominated by bounty-board forks, security/bug-bounty work, referral/engagement tasks, and 'Maybe Rewarded' labels without a concrete payout. Fresh plausible results were individually refreshed below."
         },
         {
           "category": "open-source/dev-task",
-          "url": "https://github.com/Iamgoofball/-tg-station/issues/102",
-          "result": "Open; created 2026-07-21T20:05:38Z and updated 2026-07-21T21:03:08Z; no comments, assignee, or title-matching PR. It states $100 and offers PayPal/Venmo/Cash App/Bitcoin/Ethereum/gift-card/wire payment, but names no accountable payer, escrow, payment trigger, deadline, or decision-maker. Repository metadata identifies it as a fork; its bounty label says it is for 'slopbots'. Rejected: unverified direct-payment promise and an unbounded full game movement-system rewrite, not session-sized."
+          "url": "https://github.com/tenstorrent/tt-metal/issues/50522",
+          "result": "Open, created 2026-07-21T02:23:38Z, updated 2026-07-21T17:17:19Z, and explicitly $1,500 after all acceptance stages. However it has an assignee; a Tenstorrent maintainer said it was reviewed and assigned to @sreeshanth-soma; three visible commenters include an implementation proposal; and linked PR #50635 exists (closed). Rejected as already assigned/contested."
         },
         {
           "category": "open-source/dev-task",
-          "url": "https://github.com/Adamantine-guild/guildpass-mobile/issues/170",
-          "result": "Open; created 2026-07-21T19:06:45Z and updated 2026-07-21T20:44:42Z; no assignee and no matching PR. The public active repo permits forks and was pushed at 2026-07-21T21:13:59Z. However, its sole visible commenter (YfengJ, contributor) wrote 'I’d like to take this' at 20:43:51Z and supplied a detailed planned implementation. Labels say 'Maybe Rewarded'/'GrantFox OSS' but provide no amount, currency, payer, payment method, payout trigger, fees, or terms. Rejected: active claimant plus unverified/ambiguous payout."
+          "url": "https://github.com/tenstorrent/tt-metal/issues/50612",
+          "result": "Open, created 2026-07-21T14:06:28Z, updated 2026-07-21T16:02:51Z, and labelled $10,000. The issue has an assignee; its maintainer states it was reviewed and assigned to @jasondavies; @jasondavies told a claimant it was already assigned; and PR #50624 is open and explicitly targets the Welford work. Rejected as claimed with an active solution PR."
+        },
+        {
+          "category": "open-source/dev-task",
+          "url": "https://github.com/Adamantine-guild/guildpass-core/issues/183",
+          "result": "Open, created 2026-07-21T19:50:08Z and updated 2026-07-21T22:15:45Z. The body has no concrete amount, currency, payer, payout trigger, fee, or deadline ('Maybe Rewarded'). GrantFox's 2026-07-21T22:15:44Z bot comment says @Endowed992 was assigned. Rejected: ambiguous payout and active assignee."
+        },
+        {
+          "category": "open-source/dev-task",
+          "url": "https://github.com/mergeos-bounties/NeraJob/issues/10",
+          "result": "The live issues #5, #10, #11, and #12 state 25/50 MRG token rewards but have visible /attempt or /claim comments, and open PR #111 explicitly bundles Himalayas, The Muse, Greenhouse, and Lever adapters. The stated path also requires follow/star/claim-token actions. Rejected: existing solution/claim competition plus token/referral-like gating and no independently verifiable payout terms."
+        },
+        {
+          "category": "open-source/dev-task",
+          "url": "https://github.com/Iamgoofball/-tg-station/issues/100",
+          "result": "Open, created 2026-07-21T19:43:11Z, 7 comments, headline $40, but repository bounty label explicitly says it is for 'slopbots'; payment is not escrowed and the issue does not establish accountable payer, payment method, trigger, fees, or deadline. #120 is similarly a fresh $50 headline without those payment terms and has an impractical audio-format scope. Rejected as unverified direct-payment promises; #100 also has active discussion."
+        },
+        {
+          "category": "open-source/dev-task",
+          "url": "https://github.com/warpspeedopen-source/warpspeed-bounties/issues/6",
+          "result": "Open $660 issue is from 2026-05-28; comments include claim/sign-up activity. No recent maintainer reconfirmation was found in the primary issue surface. Rejected as stale and not demonstrably submission-ready. Other old surfaced items (La Tanda, Rustchain) likewise had claim/attempt activity or unclear token payment terms and were rejected."
         },
         {
           "category": "web3 task market",
           "url": "https://taskmarket.ai",
-          "result": "Executed live read-only `taskmarket task list --mode bounty --limit 100`, then `taskmarket task get` and the mode-relevant `taskmarket task submissions` for every current open bounty-mode task. Bounty mode exposes submissions; pitch/bid fields were null/zero and proof is not a bounty-mode route. No task required a platform stake; each showed a reward, 7.5% platform fee, netReward, escrowTxHash, open status, and submission window. Visible unique worker-address counts were b572…ab1a=8, feb9…6613=38, cb67…cf0e=44, 9989…93c8=36, 1002…59f7=68, d496…1717d0=86, and 50d1…5448=85."
+          "result": "Executed read-only `taskmarket task list --mode bounty --limit 100`, then `taskmarket task get` and the bounty-mode `taskmarket task submissions` list for every six live open listings. All six reported public/open status, escrowTxHash, 7.5% fee, netReward, no stake, zero pitch count, no awards, and an open submission window. Bounty mode provides submissions; pitch/bid/proof routes are not applicable."
         },
         {
           "category": "web3 task market",
           "url": "https://taskmarket.ai/task/0xb572510c687f254cb763989553a74a9dff1c76687579f8507335c2461de1ab1a",
-          "result": "Open; created 2026-07-21T17:01:34.257Z; deadline 2026-07-23T17:01:34.245Z; gross/net 0.15/0.13875 USDC, 7.5% fee, no platform stake, 8 unique visible worker addresses across 13 submissions. Top-three split makes the stated gross maximum $0.05 each. Rejected despite <=10 competitors: it mandates a real Base-mainnet x402 EIP-3009 payment/signature (~0.001 USDC) before submission, so it is neither free nor safe to start under the no-wallet/no-signing scope."
+          "result": "Open; created 2026-07-21T17:01:34.257Z; deadline 2026-07-23T17:01:34.245Z; gross/net 0.15/0.13875 USDC; escrow shown; 15 visible submissions by 8 unique workers. It mandates a Base-mainnet x402 EIP-3009 signature/payment (~0.001 USDC) and only top three share the reward. Rejected: not free or safe to start under the no-wallet/no-signing scope."
+        },
+        {
+          "category": "web3 task market",
+          "url": "https://taskmarket.ai/task/0xfeb98106531ea1bd30f727a0c458809e0c05159c5c6c4e65ca7d0245a3b16613",
+          "result": "Open; created 2026-07-21T03:30:05.825Z; deadline 2026-07-22T15:30:05.820Z; gross/net 0.02/0.0185 USDC; 158 visible submissions by 39 unique workers. Rejected: competition exceeds 10."
+        },
+        {
+          "category": "web3 task market",
+          "url": "https://taskmarket.ai/task/0xcb67b0a48505c60ddba84023942a93c433bb0c31722028e0b62807074e0ccf0e",
+          "result": "Open; created 2026-07-21T02:57:30.670Z; deadline 2026-07-23T02:57:30.663Z; gross/net 0.15/0.13875 USDC; 174 visible submissions by 45 unique workers. Rejected: competition exceeds 10."
+        },
+        {
+          "category": "web3 task market",
+          "url": "https://taskmarket.ai/task/0x998986befc9f1f47ae1ac783402795f441ec6a9177b598fae58f62266b4b93c8",
+          "result": "Open; created 2026-07-19T21:06:47.875Z; deadline 2026-07-26T21:06:47.872Z; gross/net 0.5/0.4625 USDC; 58 visible submissions by 36 unique workers; requires a 0.01 USDC Base payment and payment transaction proof. Rejected: competition exceeds 10 and financial signing/payment is mandatory."
+        },
+        {
+          "category": "web3 task market",
+          "url": "https://taskmarket.ai/task/0xd4962d4534961d4e93f93848f552dd41d48e2091a9fbb36ecc9503a8621717d0",
+          "result": "Open; created 2026-07-19T06:38:56.693Z; deadline 2026-07-22T06:38:56.689Z; gross/net 10/9.25 USDC; 538 visible submissions by 87 unique workers. Rejected: competition exceeds 10."
+        },
+        {
+          "category": "web3 task market",
+          "url": "https://taskmarket.ai/task/0x50d1dea29821649b87c2cb08558bd9cd984c9678d9f8d30ce608eef877ca5448",
+          "result": "Open; created 2026-07-05T03:31:01.198Z; deadline 2026-08-04T03:31:01.190Z; gross/net 0.5/0.4625 USDC; 345 visible submissions by 87 unique workers. It requires wallet use and EIP-3009 payment signature, even though its testnet funding route is described as free. Rejected: competition exceeds 10 and signing/wallet connection is mandatory."
         }
       ],
       "shortlisted": [],
       "rejected": [
         {
-          "id": "github:Iamgoofball/-tg-station#102",
-          "url": "https://github.com/Iamgoofball/-tg-station/issues/102",
-          "reason": "Non-escrowed payment claim lacks accountable payer and payout terms; fork/bounty-board signal and oversized scope."
+          "id": "github:tenstorrent/tt-metal#50522",
+          "url": "https://github.com/tenstorrent/tt-metal/issues/50522",
+          "reason": "Explicitly assigned by maintainer; existing candidate PR."
         },
         {
-          "id": "github:Adamantine-guild/guildpass-mobile#170",
-          "url": "https://github.com/Adamantine-guild/guildpass-mobile/issues/170",
-          "reason": "A contributor has actively claimed/planned the work; 'Maybe Rewarded' supplies no verifiable payout amount or terms."
+          "id": "github:tenstorrent/tt-metal#50612",
+          "url": "https://github.com/tenstorrent/tt-metal/issues/50612",
+          "reason": "Explicitly assigned and active solution PR #50624."
+        },
+        {
+          "id": "github:Adamantine-guild/guildpass-core#183",
+          "url": "https://github.com/Adamantine-guild/guildpass-core/issues/183",
+          "reason": "No verifiable payout terms and GrantFox assigned another contributor."
+        },
+        {
+          "id": "github:mergeos-bounties/NeraJob#5,#10,#11,#12",
+          "url": "https://github.com/mergeos-bounties/NeraJob/pull/111",
+          "reason": "Claims and an open consolidated PR cover all four tasks; token/referral gating."
+        },
+        {
+          "id": "github:Iamgoofball/-tg-station#100,#120",
+          "url": "https://github.com/Iamgoofball/-tg-station/issues/100",
+          "reason": "Unverified direct-payment claims; unsuitable repository/payout signals."
         },
         {
           "id": "taskmarket:0xb572510c687f254cb763989553a74a9dff1c76687579f8507335c2461de1ab1a",
           "url": "https://taskmarket.ai/task/0xb572510c687f254cb763989553a74a9dff1c76687579f8507335c2461de1ab1a",
-          "reason": "Eight unique competitors and paid mainnet signature/payment requirement."
+          "reason": "Eight competitors but required mainnet signature/payment."
         },
         {
-          "id": "taskmarket:remaining-open-bounty-set-2026-07-21T21:15Z",
+          "id": "taskmarket:remaining-open-bounty-set-2026-07-21T22:18Z",
           "url": "https://taskmarket.ai",
-          "reason": "Six current bounty-mode tasks have 36–86 unique visible submitters, exceeding the <=10 competition cap."
+          "reason": "The remaining five open bounty tasks have 36–87 unique visible workers, exceeding the <=10 cap; two also require payment signatures."
         }
       ]
     }
@@ -292,33 +225,33 @@
     {
       "label": "Luna · Taskmarket scan",
       "kind": "scan",
-      "next": "2026-07-22T00:00:00+02:00",
-      "nextLabel": "00:00",
-      "last": "2026-07-21T23:03:34.859957+02:00",
+      "next": "2026-07-22T01:00:00+02:00",
+      "nextLabel": "01:00",
+      "last": "2026-07-22T00:04:27.872444+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · Taskmarket validatie",
       "kind": "validate",
-      "next": "2026-07-22T00:04:00+02:00",
-      "nextLabel": "00:04",
-      "last": "2026-07-21T23:07:21.665856+02:00",
+      "next": "2026-07-22T01:04:00+02:00",
+      "nextLabel": "01:04",
+      "last": "2026-07-22T00:07:22.035182+02:00",
       "enabled": "true"
     },
     {
       "label": "Terra · Taskmarket uitvoering",
       "kind": "execute",
-      "next": "2026-07-22T00:08:00+02:00",
-      "nextLabel": "00:08",
-      "last": "2026-07-21T23:08:29.523067+02:00",
+      "next": "2026-07-22T01:08:00+02:00",
+      "nextLabel": "01:08",
+      "last": "2026-07-22T00:08:30.217356+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · GitHub/Web3 scan",
       "kind": "scan",
-      "next": "2026-07-22T00:15:00+02:00",
-      "nextLabel": "00:15",
-      "last": "2026-07-21T23:18:38.325708+02:00",
+      "next": "2026-07-22T01:15:00+02:00",
+      "nextLabel": "01:15",
+      "last": "2026-07-22T00:19:49.784299+02:00",
       "enabled": "true"
     }
   ],
