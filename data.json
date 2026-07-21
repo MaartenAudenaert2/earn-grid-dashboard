@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T16:05:11.819684+02:00",
-  "generatedLabel": "21 July 2026 · 16:05",
+  "generatedAt": "2026-07-21T16:07:10.764660+02:00",
+  "generatedLabel": "21 July 2026 · 16:07",
   "fx": {
     "usdEur": 0.8752,
     "date": "laatst bekende referentie"
@@ -46,7 +46,7 @@
     "lunaAt": "2026-07-21T14:03:18Z",
     "lunaCandidates": 0,
     "lunaRejected": 0,
-    "solAt": "2026-07-21T13:05:08Z",
+    "solAt": "2026-07-21T14:05:19Z",
     "solApproved": 0,
     "terraAt": "2026-07-19T07:26:54Z",
     "terraSubmitted": 0,
@@ -85,7 +85,7 @@
       "kind": "validate",
       "next": "2026-07-21T17:04:00+02:00",
       "nextLabel": "17:04",
-      "last": "2026-07-21T15:05:29.686452+02:00",
+      "last": "2026-07-21T16:05:34.964568+02:00",
       "enabled": "true"
     }
   ],
