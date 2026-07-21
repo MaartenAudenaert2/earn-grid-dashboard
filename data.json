@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T20:15:50.235173+02:00",
-  "generatedLabel": "21 July 2026 · 20:15",
+  "generatedAt": "2026-07-21T20:20:26.489944+02:00",
+  "generatedLabel": "21 July 2026 · 20:20",
   "fx": {
     "usdEur": 0.8752,
     "date": "laatst bekende referentie"
@@ -50,10 +50,10 @@
     "solApproved": 0,
     "terraAt": "2026-07-19T07:26:54Z",
     "terraSubmitted": 0,
-    "externalAt": "2026-07-21T17:20:48Z",
+    "externalAt": "2026-07-21T18:17:52Z",
     "externalResult": "no-new-qualified-opportunity",
     "externalShortlisted": 0,
-    "externalRejected": 4
+    "externalRejected": 5
   },
   "scanDetails": {
     "taskmarket": {
@@ -70,55 +70,60 @@
         {
           "category": "open-source/dev-task",
           "url": "https://api.github.com/search/issues",
-          "result": "Authenticated primary-source searches covered open bounty/reward/paid issues created since 2026-07-14, plus a stars>=10 bounty filter. Results were dominated by generated bounty-board clusters; no new established, fixed-scope, verified-pay GitHub task passed the screen."
-        },
-        {
-          "category": "security/contest-style programme",
-          "url": "https://github.com/monk-io/monk-plugin/issues/125",
-          "result": "Open (created 2026-07-21T06:37:30Z; updated 2026-07-21T16:53:27Z), no comments and no matching open/closed PR found. Its programme is a ranked bug-hunt, not a per-issue guaranteed payout: Monk's primary rules state prizes only for the top three cumulative point totals ($350 cash + 3 months Pro; $100 + 2 months; $50 + 1 month), with final scoring by Monk. It requires a same-GitHub Monk signup and product use; deployment costs are borne by the hunter (quick runs are stated as single-digit dollars). Rejected: account/setup and possible paid cloud-cost requirement, plus no verifiable per-issue payment guarantee."
-        },
-        {
-          "category": "security/contest-style programme",
-          "url": "https://github.com/monk-io/monk-plugin/issues/124",
-          "result": "Open (created 2026-07-21T05:59:54Z; updated 2026-07-21T16:53:24Z), no comments and no matching open/closed PR found. Same Monk rules and payment/cost/identity restrictions as #125; rejected."
+          "result": "Live primary-source searches for recent open bounty/reward/funded/IssueHunt issues returned mostly generated bounty-board clusters, unverified GrantFox 'Maybe Rewarded' issues, and security/contest work. Candidate GitHub issues below were individually refreshed for issue state, dates, comments, linked PRs, payer terms, and current activity."
         },
         {
           "category": "open-source/dev-task",
-          "url": "https://github.com/relayhop/sn-monetization-runtime/issues/194",
-          "result": "Open radar mirror created 2026-07-21T16:37:41Z and updated at 17:15:45Z. Its sole comment is an extensive submitted solution by another participant, so it is not low competition. The issue body exposes only a scraped '1000' field with no currency, payer, escrow, payment route, payout trigger, or deadline. Rejected as already submitted and unverified payment."
+          "url": "https://github.com/tenstorrent/tt-metal/issues/50522",
+          "result": "Open; created 2026-07-21T02:23:38Z and updated 2026-07-21T17:17:19Z. The issue states a $1,500 bounty and payout only after all three substantial hardware/performance stages. A Tenstorrent contributor stated at 14:36Z that the reviewed bounty is assigned to @sreeshanth-soma and subject to programme terms/tax requirements. No linked PR search result, but the explicit assignment makes it unavailable; also not session-sized. Rejected."
+        },
+        {
+          "category": "open-source/dev-task",
+          "url": "https://github.com/Iamgoofball/-tg-station/issues/89",
+          "result": "Open; created 2026-07-21T18:06:40Z, updated 18:16:19Z; no comments or linked PR. Title explicitly says 'NO AGENTS'. The $20 is only an informal direct promise with no payer identity/payment method, deadline, acceptance trigger beyond the body, or escrow. Rejected."
+        },
+        {
+          "category": "open-source/dev-task",
+          "url": "https://github.com/Iamgoofball/-tg-station/issues/88",
+          "result": "Open; created 2026-07-21T17:48:49Z, updated 17:59:30Z; no linked PR, but one participant posted a claimed ready solution at 17:54Z and the owner requested a PR at 17:56Z. Rejected as already being pursued; the direct $10 promise remains unverified."
+        },
+        {
+          "category": "open-source/dev-task",
+          "url": "https://github.com/connect-boiz/soroban-security-scanner/issues/440",
+          "result": "Open; created 2026-07-20T14:41:38Z, updated 2026-07-21T17:47:41Z. The only reward marker is 'Maybe Rewarded'; no exact payer, amount, method, deadline, or payment trigger is specified. Four visible claim comments include a GrantFox bot assignment to @Emmanuel-Ugochukwu1 at 17:47Z; no task-specific implementation PR exists. Rejected for unverified payment and assignment/competition."
         },
         {
           "category": "web3 task market",
           "url": "https://taskmarket.ai",
-          "result": "All eight current open bounty-mode tasks were re-fetched with `taskmarket task get` and `taskmarket task submissions`. No bounties had pitches/proofs/bids relevant to their bounty mode. Exact submission/unique-worker counts were 4/4, 89/34, 99/38, 165/35, 30/13, 514/59, 459/81, and 264/66. The 4/4 task explicitly requires a mainnet Base x402 payment/signature; the old 264/66 task requires a Base Sepolia x402 signature. All others exceed the <=10 unique-competitor limit; several also require payment/signature flows."
-        },
-        {
-          "category": "previously-alerted open-source/dev-task",
-          "url": "https://github.com/tgstation/tgstation/issues/97081",
-          "result": "The issue remains open but the user's own PR #97103 remains open (created 2026-07-21T10:57:35Z, updated 2026-07-21T12:33:22Z). It is not a new alert."
+          "result": "All 8 live open bounty-mode tasks were refreshed with taskmarket task list, task get, task submissions, task pitches, and task proofs. Bid lists are not applicable to bounty mode and this CLI provides no bids-list command. Counts of unique worker addresses across submissions/pitches/proofs were: 6, 35, 40, 35, 13, 60, 83, and 66. The sole <=10 task is escrowed at gross 0.15 USDC/net 0.13875 USDC (7.5% fee), deadline 2026-07-23T17:01:34.245Z, but requires a mainnet Base x402 EIP-3009 payment/signature and has 6 competitors. Every other task exceeds the <=10 limit; several additionally require x402 payment/signature. No Taskmarket task qualified."
         }
       ],
       "shortlisted": [],
       "rejected": [
         {
-          "id": "github:monk-io/monk-plugin#125",
-          "url": "https://github.com/monk-io/monk-plugin/issues/125",
-          "reason": "Contest-style, ranked payment instead of guaranteed per-issue payout; requires Monk account/product use and potentially paid deployment."
+          "id": "github:tenstorrent/tt-metal#50522",
+          "url": "https://github.com/tenstorrent/tt-metal/issues/50522",
+          "reason": "Explicitly reviewed and assigned to another contributor; large multi-stage hardware work and payout conditional on all stages."
         },
         {
-          "id": "github:monk-io/monk-plugin#124",
-          "url": "https://github.com/monk-io/monk-plugin/issues/124",
-          "reason": "Contest-style, ranked payment instead of guaranteed per-issue payout; requires Monk account/product use and potentially paid deployment."
+          "id": "github:Iamgoofball/-tg-station#89",
+          "url": "https://github.com/Iamgoofball/-tg-station/issues/89",
+          "reason": "Explicitly excludes agents; direct $20 promise has no verifiable payout route or terms."
         },
         {
-          "id": "github:relayhop/sn-monetization-runtime#194",
-          "url": "https://github.com/relayhop/sn-monetization-runtime/issues/194",
-          "reason": "Already has a visible solution submission; payment metadata is incomplete and unverified."
+          "id": "github:Iamgoofball/-tg-station#88",
+          "url": "https://github.com/Iamgoofball/-tg-station/issues/88",
+          "reason": "Visible participant solution and maintainer request to submit it as a PR; direct payment unverified."
+        },
+        {
+          "id": "github:connect-boiz/soroban-security-scanner#440",
+          "url": "https://github.com/connect-boiz/soroban-security-scanner/issues/440",
+          "reason": "'Maybe Rewarded' is not a verified payout; already assigned with several visible claim comments."
         },
         {
           "id": "taskmarket:open-bounty-cluster",
           "url": "https://taskmarket.ai",
-          "reason": "Current open bounty-mode tasks have 4, 13, 34, 35, 38, 59, 66, or 81 unique workers. The only <=10 task requires a mainnet x402 EIP-3009 payment signature; no listed task is eligible under the free/no-wallet-action and competition gates."
+          "reason": "Current visible unique-worker counts are 6, 35, 40, 35, 13, 60, 83, and 66. The 6-worker task requires a mainnet Base payment/signature; every other task exceeds the competition cap."
         }
       ]
     }
@@ -153,7 +158,7 @@
       "kind": "scan",
       "next": "2026-07-21T21:15:00+02:00",
       "nextLabel": "21:15",
-      "last": "2026-07-21T19:21:45.928264+02:00",
+      "last": "2026-07-21T20:18:36.558795+02:00",
       "enabled": "true"
     }
   ],
