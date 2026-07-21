@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T16:20:23.059823+02:00",
-  "generatedLabel": "21 July 2026 · 16:20",
+  "generatedAt": "2026-07-21T17:20:24.089865+02:00",
+  "generatedLabel": "21 July 2026 · 17:20",
   "fx": {
     "usdEur": 0.8752,
     "date": "laatst bekende referentie"
@@ -43,101 +43,23 @@
   },
   "candidates": [],
   "scans": {
-    "lunaAt": "2026-07-21T14:03:18Z",
+    "lunaAt": "2026-07-21T15:04:48Z",
     "lunaCandidates": 0,
-    "lunaRejected": 7,
-    "solAt": "2026-07-21T14:05:19Z",
+    "lunaRejected": 0,
+    "solAt": "2026-07-21T15:05:43Z",
     "solApproved": 0,
     "terraAt": "2026-07-19T07:26:54Z",
     "terraSubmitted": 0,
-    "externalAt": "2026-07-21T14:18:54Z",
+    "externalAt": "2026-07-21T15:18:54Z",
     "externalResult": "no-new-qualified-opportunity",
     "externalShortlisted": 0,
-    "externalRejected": 4
+    "externalRejected": 5
   },
   "scanDetails": {
     "taskmarket": {
-      "scannedOpenTasks": 7,
+      "scannedOpenTasks": 0,
       "approved": [],
-      "rejected": [
-        {
-          "taskId": "0xfeb98106531ea1bd30f727a0c458809e0c05159c5c6c4e65ca7d0245a3b16613",
-          "mode": "bounty",
-          "rewardUsdc": 0.02,
-          "netRewardUsdc": 0.0185,
-          "deadline": "2026-07-22T15:30:05.820Z",
-          "submissionCount": 36,
-          "uniqueWorkers": 30,
-          "entryCostUsdc": 0,
-          "reason": "competition exceeds 10; fixed escrow and ‘solid entries get paid’ do not guarantee every participant payment"
-        },
-        {
-          "taskId": "0xcb67b0a48505c60ddba84023942a93c433bb0c31722028e0b62807074e0ccf0e",
-          "mode": "bounty",
-          "rewardUsdc": 0.15,
-          "netRewardUsdc": 0.13875,
-          "deadline": "2026-07-23T02:57:30.663Z",
-          "submissionCount": 42,
-          "uniqueWorkers": 35,
-          "entryCostUsdc": 0,
-          "reason": "competition exceeds 10; fixed escrow does not guarantee every participant payment"
-        },
-        {
-          "taskId": "0x5787971aa75da7f6cdf123dd4c7713b25b0c83945a362f461ad735615604d54a",
-          "mode": "bounty",
-          "rewardUsdc": 0.15,
-          "netRewardUsdc": 0.13875,
-          "deadline": "2026-07-27T11:41:26.508Z",
-          "submissionCount": 82,
-          "uniqueWorkers": 34,
-          "entryCostUsdc": 0.005,
-          "reason": "competition exceeds 10; first-valid-wins and external x402 payment create non-guaranteed payout and sunk-cost risk"
-        },
-        {
-          "taskId": "0x998986befc9f1f47ae1ac783402795f441ec6a9177b598fae58f62266b4b93c8",
-          "mode": "bounty",
-          "rewardUsdc": 0.5,
-          "netRewardUsdc": 0.4625,
-          "deadline": "2026-07-26T21:06:47.872Z",
-          "submissionCount": 15,
-          "uniqueWorkers": 12,
-          "entryCostUsdc": 0.01,
-          "reason": "competition exceeds 10; CAPTCHA-solving task is higher-risk and requires external paid endpoint plus token verification"
-        },
-        {
-          "taskId": "0x100219baba1f9df11f7f15f226bbd9994c445060ca2bd2ac7ef820bd4f7759f7",
-          "mode": "bounty",
-          "rewardUsdc": 19,
-          "netRewardUsdc": 17.575,
-          "deadline": "2026-07-22T13:55:50.319Z",
-          "submissionCount": 344,
-          "uniqueWorkers": 58,
-          "entryCostUsdc": 0,
-          "reason": "competition exceeds 10; external website/account/KYC-rule research is broad and not low-risk"
-        },
-        {
-          "taskId": "0xd4962d4534961d4e93f93848f552dd41d48e2091a9fbb36ecc9503a8621717d0",
-          "mode": "bounty",
-          "rewardUsdc": 10,
-          "netRewardUsdc": 9.25,
-          "deadline": "2026-07-22T06:38:56.689Z",
-          "submissionCount": 405,
-          "uniqueWorkers": 78,
-          "entryCostUsdc": 0,
-          "reason": "competition exceeds 10; open-ended subjective research with extensive existing competition"
-        },
-        {
-          "taskId": "0x50d1dea29821649b87c2cb08558bd9cd984c9678d9f8d30ce608eef877ca5448",
-          "mode": "bounty",
-          "rewardUsdc": 0.5,
-          "netRewardUsdc": 0.4625,
-          "deadline": "2026-08-04T03:31:01.190Z",
-          "submissionCount": 159,
-          "uniqueWorkers": 65,
-          "entryCostUsdc": 0.001,
-          "reason": "competition exceeds 10; task is Base Sepolia while acting wallet is on Base, and requires faucet plus external EIP-3009 payment"
-        }
-      ]
+      "rejected": []
     },
     "validation": {
       "approved": [],
@@ -148,50 +70,65 @@
         {
           "category": "open-source/dev-task",
           "url": "https://api.github.com/search/issues",
-          "result": "Live searches limited to 2026-07-21 returned 154 open bounty-term matches, 290 reward-term matches, and 126 IssueHunt/funded-term matches. The bulk was generated bounty-board material, GrantFox 'Maybe Rewarded' tasks (no exact payout), direct/unverified promises, security reports, smart-contract/DeFi work, or spam/referral content. The only newly plausible normal-code task was triaged individually."
+          "result": "Authenticated live search for open bounty-labelled issues created on 2026-07-21 returned only three non-generated candidates after excluding mirrored bounty boards and the known prank/referral/spam cluster: Tenstorrent #50612, Tenstorrent #50522, and NashKara96/fx #1. Each was individually re-fetched with issue, comments, related-PR search, and repository data."
         },
         {
           "category": "open-source/dev-task",
-          "url": "https://github.com/oaslananka/infra-lens-mcp/issues/112",
-          "result": "Live issue, comments, repository, and all-state PR search checked. Issue is open; created 2026-07-21T13:59:43Z and updated 2026-07-21T14:12:28Z. Its lone maintainer comment says implementation is ready, and open PR #113 was created 2026-07-21T14:13:09Z and updated 2026-07-21T14:16:17Z. The embedded Opire help text permits rewards but states no actual payer, amount, currency, payment route, deadline, or payout trigger."
+          "url": "https://github.com/tenstorrent/tt-metal/issues/50612",
+          "result": "Open, created 2026-07-21T14:06:28Z, updated 2026-07-21T14:38:10Z; labelled $10,000 but explicitly assigned to jasondavies by a Tenstorrent contributor. Related-PR search returned zero, but assignment is a disqualifying active claim."
+        },
+        {
+          "category": "open-source/dev-task",
+          "url": "https://github.com/tenstorrent/tt-metal/issues/50522",
+          "result": "Open, created 2026-07-21T02:23:38Z, updated 2026-07-21T14:36:43Z; $1,500, but explicitly assigned to sreeshanth-soma by a Tenstorrent contributor. Related-PR search returned zero; assignment is a disqualifying active claim."
+        },
+        {
+          "category": "open-source/dev-task",
+          "url": "https://github.com/NashKara96/fx/issues/1",
+          "result": "Open, created/updated 2026-07-21T14:54Z, zero related PRs and no assignee, but its only reward command was /reward 10 and the first-party Opire bot rejected it because the minimum is $20. The repository was created minutes before the issue and is empty; no actual funded reward exists."
         },
         {
           "category": "web3 task market",
-          "url": "taskmarket task list/get/submissions (local CLI, read-only)",
-          "result": "All seven currently open bounty-mode tasks were fetched with both task get and mode-relevant submissions. They are platform-escrowed and have net rewards after 7.5% fee, but none passes competition: submission/unique-worker counts were 37/30, 43/35, 83/34, 16/13, 346/58, 407/78, and 160/66. The 16-submission captcha task also requires x402 payment and signing; the 160-submission note task requires an EIP-3009 payment signature. No task has <=10 visible unique competitors."
+          "url": "taskmarket task list/get/submissions",
+          "result": "All seven current open bounty-mode tasks were re-fetched with task get and bounty-mode submissions. Exact visible submission/unique-worker counts: 56/32, 62/37, 98/35, 19/13, 383/59, 415/79, 201/66. All exceed the <=10 unique-competitor gate. The first three require x402 payment flow or paid endpoint interaction; the fourth requires a paid CAPTCHA endpoint; the last requires an EIP-3009 payment signature."
         },
         {
           "category": "web3 dev/design/content",
           "url": "https://superteam.fun/api/search/bounty",
-          "result": "First-party API returned the same five OPEN-labelled listings: Cap for Clacton (deadline in the metadata is 2026-07-21 but the listing requires political/social-media engagement and says work ended July 19), Goatfish (social-media/video deliverable and 32 comments but complete entrant count unavailable), Panta (prediction-market promotion, 34 comments), Usuals (deadline passed), and Paj (deadline passed and winner announced). No listing met the work-type, freshness, and known-competition gates."
+          "result": "First-party live API still exposes five OPEN-labelled listings. Cap for Clacton requires political/social-media engagement and says work ended July 19; Goatfish is a social-media/video contest with 32 comments and unknown full entrant count; Panta promotes a prediction market with 34 comments; Usuals and Paj have passed deadlines. None passes work-type, freshness, and known-competition gates."
         },
         {
           "category": "open-source/dev-task",
           "url": "https://algora.io/api/bounties",
-          "result": "First-party endpoint returned only a Not Acceptable error and did not expose live listings. Status, payout, and competition are therefore unknown; no candidate can qualify."
+          "result": "Live endpoint now serves an HTML homepage rather than a listing API. Current bounty status, payment terms, and competition cannot be verified; no candidate qualified."
         }
       ],
       "shortlisted": [],
       "rejected": [
         {
-          "id": "github:oaslananka/infra-lens-mcp#112",
-          "url": "https://github.com/oaslananka/infra-lens-mcp/issues/112",
-          "reason": "Rejected despite being fresh and in an active MIT repository: no exact funded reward or payment terms are present, and the maintainer already states the implementation is ready. Open PR https://github.com/oaslananka/infra-lens-mcp/pull/113 directly implements it, so visible competitor/solution count is at least one."
+          "id": "github:tenstorrent/tt-metal#50612",
+          "url": "https://github.com/tenstorrent/tt-metal/issues/50612",
+          "reason": "Explicitly assigned to another contributor; maintainer confirmation is current."
+        },
+        {
+          "id": "github:tenstorrent/tt-metal#50522",
+          "url": "https://github.com/tenstorrent/tt-metal/issues/50522",
+          "reason": "Explicitly assigned to another contributor; maintainer confirmation is current."
+        },
+        {
+          "id": "github:NashKara96/fx#1",
+          "url": "https://github.com/NashKara96/fx/issues/1",
+          "reason": "No valid reward: Opire bot rejected the stated $10 reward; repo is a just-created empty fork-style project."
         },
         {
           "id": "taskmarket:open-bounty-cluster",
           "url": "https://taskmarket.ai",
-          "reason": "All seven live bounty-mode tasks exceeded the <=10 competition gate (13-78 visible unique worker addresses and 16-407 submissions). Two additionally require payment/signing."
-        },
-        {
-          "id": "github:generated-or-unverified-delta",
-          "url": "https://api.github.com/search/issues",
-          "reason": "Remaining fresh matches were generated/mirrored bounty-board posts, GrantFox Maybe Rewarded tasks without an exact task-specific payout, unverified offers, security reports, smart-contract/DeFi work, or referral/spam content."
+          "reason": "Every live bounty-mode task has 13-79 visible unique workers, exceeding the maximum of 10. Several also require payment or a payment signature."
         },
         {
           "id": "superteam:open-search-cluster",
           "url": "https://superteam.fun/api/search/bounty",
-          "reason": "No eligible listing: excluded political/social-media-spam work, excluded prediction-market promotion, expired/awarded listings, and a live social-media contest with unknown full participant count."
+          "reason": "All current listings are expired, political/social/referral-style, prediction-market promotion, or have unknown entrant counts."
         }
       ]
     }
@@ -200,33 +137,33 @@
     {
       "label": "Luna · Taskmarket scan",
       "kind": "scan",
-      "next": "2026-07-21T17:00:00+02:00",
-      "nextLabel": "17:00",
-      "last": "2026-07-21T16:04:12.486333+02:00",
+      "next": "2026-07-21T18:00:00+02:00",
+      "nextLabel": "18:00",
+      "last": "2026-07-21T17:06:23.056256+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · Taskmarket validatie",
       "kind": "validate",
-      "next": "2026-07-21T17:04:00+02:00",
-      "nextLabel": "17:04",
-      "last": "2026-07-21T16:05:34.964568+02:00",
+      "next": "2026-07-21T18:04:00+02:00",
+      "nextLabel": "18:04",
+      "last": "2026-07-21T17:06:11.580884+02:00",
       "enabled": "true"
     },
     {
       "label": "Terra · Taskmarket uitvoering",
       "kind": "execute",
-      "next": "2026-07-21T17:08:00+02:00",
-      "nextLabel": "17:08",
-      "last": "2026-07-21T16:08:22.820068+02:00",
+      "next": "2026-07-21T18:08:00+02:00",
+      "nextLabel": "18:08",
+      "last": "2026-07-21T17:08:23.859043+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · GitHub/Web3 scan",
       "kind": "scan",
-      "next": "2026-07-21T17:15:00+02:00",
-      "nextLabel": "17:15",
-      "last": "2026-07-21T16:19:47.257819+02:00",
+      "next": "2026-07-21T18:15:00+02:00",
+      "nextLabel": "18:15",
+      "last": "2026-07-21T17:19:38.828667+02:00",
       "enabled": "true"
     }
   ],
