@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T19:20:25.684925+02:00",
-  "generatedLabel": "21 July 2026 · 19:20",
+  "generatedAt": "2026-07-21T20:15:50.235173+02:00",
+  "generatedLabel": "21 July 2026 · 20:15",
   "fx": {
     "usdEur": 0.8752,
     "date": "laatst bekende referentie"
@@ -43,21 +43,21 @@
   },
   "candidates": [],
   "scans": {
-    "lunaAt": "2026-07-21T17:02:13.285697381Z",
+    "lunaAt": "2026-07-21T18:02:12Z",
     "lunaCandidates": 0,
     "lunaRejected": 0,
-    "solAt": "2026-07-21T17:04:37Z",
+    "solAt": "2026-07-21T18:05:00Z",
     "solApproved": 0,
     "terraAt": "2026-07-19T07:26:54Z",
     "terraSubmitted": 0,
-    "externalAt": "2026-07-21T16:18:36Z",
+    "externalAt": "2026-07-21T17:20:48Z",
     "externalResult": "no-new-qualified-opportunity",
     "externalShortlisted": 0,
-    "externalRejected": 5
+    "externalRejected": 4
   },
   "scanDetails": {
     "taskmarket": {
-      "scannedOpenTasks": 0,
+      "scannedOpenTasks": 8,
       "approved": [],
       "rejected": []
     },
@@ -70,65 +70,55 @@
         {
           "category": "open-source/dev-task",
           "url": "https://api.github.com/search/issues",
-          "result": "Authenticated primary-source search of open, bounty-labelled issues created on 2026-07-21 (excluding known generated bounty-board clusters) returned NashKara96/resty#1 and the two active Tenstorrent bounties. Each issue, its comments, related PR search, and repository metadata were re-fetched."
+          "result": "Authenticated primary-source searches covered open bounty/reward/paid issues created since 2026-07-14, plus a stars>=10 bounty filter. Results were dominated by generated bounty-board clusters; no new established, fixed-scope, verified-pay GitHub task passed the screen."
+        },
+        {
+          "category": "security/contest-style programme",
+          "url": "https://github.com/monk-io/monk-plugin/issues/125",
+          "result": "Open (created 2026-07-21T06:37:30Z; updated 2026-07-21T16:53:27Z), no comments and no matching open/closed PR found. Its programme is a ranked bug-hunt, not a per-issue guaranteed payout: Monk's primary rules state prizes only for the top three cumulative point totals ($350 cash + 3 months Pro; $100 + 2 months; $50 + 1 month), with final scoring by Monk. It requires a same-GitHub Monk signup and product use; deployment costs are borne by the hunter (quick runs are stated as single-digit dollars). Rejected: account/setup and possible paid cloud-cost requirement, plus no verifiable per-issue payment guarantee."
+        },
+        {
+          "category": "security/contest-style programme",
+          "url": "https://github.com/monk-io/monk-plugin/issues/124",
+          "result": "Open (created 2026-07-21T05:59:54Z; updated 2026-07-21T16:53:24Z), no comments and no matching open/closed PR found. Same Monk rules and payment/cost/identity restrictions as #125; rejected."
         },
         {
           "category": "open-source/dev-task",
-          "url": "https://github.com/NashKara96/resty/issues/1",
-          "result": "Open, created 2026-07-21T15:18:34Z, but the just-created repository had no credible project history (created 17 seconds earlier, zero stars). Exact proposed reward was $10; the primary Opire bot immediately rejected /reward 10 because the platform minimum is $20. No valid funded payout exists."
-        },
-        {
-          "category": "open-source/dev-task",
-          "url": "https://github.com/tenstorrent/tt-metal/issues/50612",
-          "result": "Open $10,000 bounty, but officially assigned to jasondavies. The assigned contributor's open PR #50624 targets the work. Not available."
-        },
-        {
-          "category": "open-source/dev-task",
-          "url": "https://github.com/tenstorrent/tt-metal/issues/50522",
-          "result": "Open $1,500 bounty, but officially assigned to sreeshanth-soma; payout requires all three stated model bring-up stages. Not available."
-        },
-        {
-          "category": "open-source/dev-task",
-          "url": "https://github.com/StellarConduit/stellarconduit-sync-engine/issues/26",
-          "result": "Fresh, no-comment GrantFox-labelled issue was inspected as a low-competition control. Its label is only 'Maybe Rewarded' and the primary issue text gives no amount, payer, escrow, payout method, or payout trigger. Repository is new (created 2026-02-22), has zero stars, and no verified payment evidence; rejected as unverified payment."
+          "url": "https://github.com/relayhop/sn-monetization-runtime/issues/194",
+          "result": "Open radar mirror created 2026-07-21T16:37:41Z and updated at 17:15:45Z. Its sole comment is an extensive submitted solution by another participant, so it is not low competition. The issue body exposes only a scraped '1000' field with no currency, payer, escrow, payment route, payout trigger, or deadline. Rejected as already submitted and unverified payment."
         },
         {
           "category": "web3 task market",
           "url": "https://taskmarket.ai",
-          "result": "All seven current open bounty-mode tasks were live-re-fetched with task get and the bounty-mode submissions list. Exact fetched submission/unique-worker counts: 62/32, 70/37, 111/35, 30/13, 394/59, 424/81, 202/66. Every task exceeds the maximum 10 unique-competitor gate. The first four also require or solicit x402 payment interactions; the seventh requires an EIP-3009 payment signature. No claims, pitches, bids, submissions, wallet reads, or other writes were performed."
+          "result": "All eight current open bounty-mode tasks were re-fetched with `taskmarket task get` and `taskmarket task submissions`. No bounties had pitches/proofs/bids relevant to their bounty mode. Exact submission/unique-worker counts were 4/4, 89/34, 99/38, 165/35, 30/13, 514/59, 459/81, and 264/66. The 4/4 task explicitly requires a mainnet Base x402 payment/signature; the old 264/66 task requires a Base Sepolia x402 signature. All others exceed the <=10 unique-competitor limit; several also require payment/signature flows."
         },
         {
-          "category": "previously alerted open-source/dev-task",
+          "category": "previously-alerted open-source/dev-task",
           "url": "https://github.com/tgstation/tgstation/issues/97081",
-          "result": "The issue remains open but is explicitly fixed by the user's own open PR #97103, created 2026-07-21T10:57:35Z and updated 2026-07-21T12:33:22Z. It is not a new alert and no duplicate action was taken."
+          "result": "The issue remains open but the user's own PR #97103 remains open (created 2026-07-21T10:57:35Z, updated 2026-07-21T12:33:22Z). It is not a new alert."
         }
       ],
       "shortlisted": [],
       "rejected": [
         {
-          "id": "github:NashKara96/resty#1",
-          "url": "https://github.com/NashKara96/resty/issues/1",
-          "reason": "No actual reward: Opire rejected the $10 /reward command; the stated minimum is $20. Newly created, zero-star repository gives no independently credible payment path."
+          "id": "github:monk-io/monk-plugin#125",
+          "url": "https://github.com/monk-io/monk-plugin/issues/125",
+          "reason": "Contest-style, ranked payment instead of guaranteed per-issue payout; requires Monk account/product use and potentially paid deployment."
         },
         {
-          "id": "github:tenstorrent/tt-metal#50612",
-          "url": "https://github.com/tenstorrent/tt-metal/issues/50612",
-          "reason": "Explicit official assignment to another contributor plus their open related PR #50624."
+          "id": "github:monk-io/monk-plugin#124",
+          "url": "https://github.com/monk-io/monk-plugin/issues/124",
+          "reason": "Contest-style, ranked payment instead of guaranteed per-issue payout; requires Monk account/product use and potentially paid deployment."
         },
         {
-          "id": "github:tenstorrent/tt-metal#50522",
-          "url": "https://github.com/tenstorrent/tt-metal/issues/50522",
-          "reason": "Explicit official assignment to another contributor."
-        },
-        {
-          "id": "github:StellarConduit/stellarconduit-sync-engine#26",
-          "url": "https://github.com/StellarConduit/stellarconduit-sync-engine/issues/26",
-          "reason": "Competition count is zero but payout is merely labelled 'Maybe Rewarded': exact amount, payer, payment method, trigger, and escrow are all absent."
+          "id": "github:relayhop/sn-monetization-runtime#194",
+          "url": "https://github.com/relayhop/sn-monetization-runtime/issues/194",
+          "reason": "Already has a visible solution submission; payment metadata is incomplete and unverified."
         },
         {
           "id": "taskmarket:open-bounty-cluster",
           "url": "https://taskmarket.ai",
-          "reason": "All seven live open bounty-mode tasks had 13-81 unique visible workers, above the <=10 gate. Several also require payment/signature flows, which are excluded."
+          "reason": "Current open bounty-mode tasks have 4, 13, 34, 35, 38, 59, 66, or 81 unique workers. The only <=10 task requires a mainnet x402 EIP-3009 payment signature; no listed task is eligible under the free/no-wallet-action and competition gates."
         }
       ]
     }
@@ -137,33 +127,33 @@
     {
       "label": "Luna · Taskmarket scan",
       "kind": "scan",
-      "next": "2026-07-21T20:00:00+02:00",
-      "nextLabel": "20:00",
-      "last": "2026-07-21T19:04:53.253933+02:00",
+      "next": "2026-07-21T21:00:00+02:00",
+      "nextLabel": "21:00",
+      "last": "2026-07-21T20:04:13.976132+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · Taskmarket validatie",
       "kind": "validate",
-      "next": "2026-07-21T20:04:00+02:00",
-      "nextLabel": "20:04",
-      "last": "2026-07-21T19:05:05.536790+02:00",
+      "next": "2026-07-21T21:04:00+02:00",
+      "nextLabel": "21:04",
+      "last": "2026-07-21T20:05:14.328535+02:00",
       "enabled": "true"
     },
     {
       "label": "Terra · Taskmarket uitvoering",
       "kind": "execute",
-      "next": "2026-07-21T20:08:00+02:00",
-      "nextLabel": "20:08",
-      "last": "2026-07-21T19:08:25.459119+02:00",
+      "next": "2026-07-21T21:08:00+02:00",
+      "nextLabel": "21:08",
+      "last": "2026-07-21T20:08:26.250696+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · GitHub/Web3 scan",
       "kind": "scan",
-      "next": "2026-07-21T20:15:00+02:00",
-      "nextLabel": "20:15",
-      "last": "2026-07-21T18:19:26.638000+02:00",
+      "next": "2026-07-21T21:15:00+02:00",
+      "nextLabel": "21:15",
+      "last": "2026-07-21T19:21:45.928264+02:00",
       "enabled": "true"
     }
   ],
