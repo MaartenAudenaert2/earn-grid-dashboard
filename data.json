@@ -1,0 +1,116 @@
+{
+  "generatedAt": "2026-07-21T16:02:10.529287+02:00",
+  "generatedLabel": "21 July 2026 · 16:02",
+  "fx": {
+    "usdEur": 0.8752,
+    "date": "laatst bekende referentie"
+  },
+  "money": {
+    "goalEur": 23.0,
+    "earnedEur": 0.0,
+    "remainingEur": 23.0,
+    "progress": 0.0,
+    "pending": [
+      {
+        "source": "tgstation/tgstation#97103",
+        "amount": 3,
+        "currency": "GBP",
+        "status": "pending-unverified",
+        "note": "Directe £3-toezegging voor issue #97081; PR is open en mergeable, maar nog niet gemerged of betaald.",
+        "url": "https://github.com/tgstation/tgstation/pull/97103"
+      },
+      {
+        "source": "Taskmarket submission",
+        "amount": null,
+        "currency": "USDC",
+        "status": "awaiting-review",
+        "note": "Een ingediende security-review-bijdrage wacht op beoordeling. De 9,25-USDC-nettopool is gedeeld tussen 311 inzendingen; er is geen individuele opbrengst bevestigd.",
+        "url": ""
+      }
+    ],
+    "payments": []
+  },
+  "wallet": {
+    "balanceUsdc": 9.973749
+  },
+  "walletEur": 8.73,
+  "pr": {
+    "url": "https://github.com/tgstation/tgstation/pull/97103",
+    "state": "OPEN",
+    "mergeable": "UNKNOWN",
+    "reviewDecision": "",
+    "updatedAt": "2026-07-21T12:33:22Z"
+  },
+  "candidates": [],
+  "scans": {
+    "lunaAt": "2026-07-21T15:04:32+02:00",
+    "lunaCandidates": 0,
+    "lunaRejected": 7,
+    "solAt": "2026-07-21T13:05:08Z",
+    "solApproved": 0,
+    "terraAt": "2026-07-19T07:26:54Z",
+    "terraSubmitted": 0,
+    "externalAt": "2026-07-21T13:19:37Z",
+    "externalResult": "no-new-qualified-opportunity",
+    "externalShortlisted": 0,
+    "externalRejected": 8
+  },
+  "schedule": [
+    {
+      "label": "Sol · Taskmarket validatie",
+      "kind": "validate",
+      "next": "2026-07-21T16:04:00+02:00",
+      "nextLabel": "16:04",
+      "last": "2026-07-21T15:05:29.686452+02:00",
+      "enabled": "true"
+    },
+    {
+      "label": "Terra · Taskmarket uitvoering",
+      "kind": "execute",
+      "next": "2026-07-21T16:08:00+02:00",
+      "nextLabel": "16:08",
+      "last": "2026-07-21T15:08:22.034652+02:00",
+      "enabled": "true"
+    },
+    {
+      "label": "Sol · GitHub/Web3 scan",
+      "kind": "scan",
+      "next": "2026-07-21T16:15:00+02:00",
+      "nextLabel": "16:15",
+      "last": "2026-07-21T15:20:31.587587+02:00",
+      "enabled": "true"
+    },
+    {
+      "label": "Luna · Taskmarket scan",
+      "kind": "scan",
+      "next": "2026-07-21T17:00:00+02:00",
+      "nextLabel": "17:00",
+      "last": "2026-07-21T15:05:35.850161+02:00",
+      "enabled": "true"
+    }
+  ],
+  "activeWork": {
+    "taskmarketSubmissions": [
+      {
+        "status": "open",
+        "mode": "bounty",
+        "rewardBaseUnits": "10000000",
+        "submittedAt": "2026-07-18T15:46:00.298Z",
+        "rejectedAt": null
+      }
+    ],
+    "githubPr": {
+      "url": "https://github.com/tgstation/tgstation/pull/97103",
+      "state": "OPEN",
+      "mergeable": "UNKNOWN",
+      "reviewDecision": "",
+      "updatedAt": "2026-07-21T12:33:22Z"
+    }
+  },
+  "notes": [
+    "Publieke snapshot. Geen walletadres, geheimen of financiële schrijfacties zijn gepubliceerd.",
+    "Alle bedragen onder ‘verdiend’ zijn alleen bevestigde betalingen; walletsaldo is geen inkomen.",
+    "De £3 GitHub-beloning is een directe, nog niet geverifieerde toezegging en telt niet mee voor het maanddoel.",
+    "Taskmarket-bountybeloningen zijn gedeelde pools; een ingediende bijdrage telt pas als verdiend na acceptatie en bevestigde betaling."
+  ]
+}

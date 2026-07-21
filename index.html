@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Earn Grid · kansen & voortgang</title>
+  <style>
+    :root {
+      --canvas: #0d1110;
+      --panel: #141a18;
+      --panel-2: #1a2220;
+      --line: #2a3531;
+      --ink: #edf3ef;
+      --soft: #aab8b1;
+      --muted: #718179;
+      --mint: #83efb2;
+      --mint-deep: #123d29;
+      --amber: #f6c667;
+      --coral: #ef8e7c;
+      --mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+      --sans: "Avenir Next", Avenir, "Segoe UI", system-ui, sans-serif;
+      --serif: Iowan Old Style, Palatino, "Book Antiqua", Georgia, serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--ink); background: var(--canvas); font-family: var(--sans); }
+    button { font: inherit; }
+    .shell { max-width: 1500px; margin: 0 auto; padding: 26px 28px 50px; }
+    .topbar { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; padding-bottom: 24px; border-bottom: 1px solid var(--line); }
+    .eyebrow { color: var(--mint); font: 700 11px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; }
+    h1 { margin: 9px 0 5px; font: 500 clamp(29px, 4vw, 46px)/1 var(--serif); letter-spacing: -.045em; }
+    .subtitle { margin: 0; color: var(--soft); font-size: 14px; }
+    .live { display: flex; align-items: center; gap: 9px; color: var(--soft); font: 12px var(--mono); white-space: nowrap; padding-top: 8px; }
+    .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--mint); box-shadow: 0 0 0 5px rgba(131,239,178,.09); }
+    .refresh { background: transparent; border: 1px solid var(--line); color: var(--ink); border-radius: 8px; padding: 9px 12px; cursor: pointer; margin-left: 5px; }
+    .refresh:hover, .refresh:focus-visible { border-color: var(--mint); outline: none; }
+    .metrics { display: grid; grid-template-columns: 1.35fr repeat(3, 1fr); gap: 12px; margin: 24px 0; }
+    .metric { min-height: 151px; padding: 18px; border: 1px solid var(--line); background: var(--panel); border-radius: 12px; position: relative; overflow: hidden; }
+    .metric.primary { background: linear-gradient(120deg, #163426, #13211b); border-color: #315a42; }
+    .label { color: var(--soft); font: 11px var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+    .value { margin: 18px 0 5px; font: 500 clamp(28px, 3vw, 41px)/.9 var(--serif); letter-spacing: -.055em; }
+    .value.small { font-size: 30px; }
+    .subvalue { color: var(--soft); font-size: 13px; }
+    .goalbar { height: 8px; margin-top: 22px; overflow: hidden; border-radius: 99px; background: rgba(255,255,255,.11); }
+    .goalbar span { display:block; height:100%; width: 0; transition: width .55s ease; background: var(--mint); border-radius: inherit; }
+    .grid { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(310px, .85fr); gap: 14px; }
+    .panel { border: 1px solid var(--line); background: var(--panel); border-radius: 12px; overflow: hidden; }
+    .head { display:flex; justify-content:space-between; align-items: baseline; gap:12px; padding: 18px 18px 14px; border-bottom:1px solid var(--line); }
+    h2 { margin:0; font: 500 21px/1 var(--serif); letter-spacing:-.025em; }
+    .meta { color:var(--muted); font: 11px var(--mono); }
+    .empty { padding: 44px 24px; text-align:center; color:var(--soft); }
+    .empty strong { color:var(--ink); display:block; font:500 20px var(--serif); margin-bottom:8px; }
+    .tasklist { width:100%; border-collapse:collapse; }
+    .tasklist th { padding: 11px 18px; color:var(--muted); background:rgba(255,255,255,.018); font:10px var(--mono); text-align:left; letter-spacing:.08em; text-transform:uppercase; }
+    .tasklist td { padding: 16px 18px; border-top:1px solid var(--line); font-size:13px; vertical-align:middle; }
+    .tasklist a { color:var(--mint); text-decoration:none; }
+    .badge { display:inline-flex; align-items:center; min-height:22px; border:1px solid var(--line); border-radius:999px; padding:2px 8px; color:var(--soft); font:10px var(--mono); }
+    .badge.good { color:var(--mint); border-color:rgba(131,239,178,.35); background:rgba(131,239,178,.08); }
+    .badge.wait { color:var(--amber); border-color:rgba(246,198,103,.35); background:rgba(246,198,103,.08); }
+    .side-list { list-style:none; margin:0; padding:0; }
+    .side-list li { padding:14px 18px; border-top:1px solid var(--line); display:grid; gap:5px; }
+    .side-list li:first-child { border-top:0; }
+    .side-label { color:var(--soft); font-size:13px; }
+    .side-value { color:var(--ink); font:12px var(--mono); }
+    .schedule { margin-top:14px; }
+    .schedule-row { display:grid; grid-template-columns: 11px 1fr auto; gap:10px; align-items:center; padding:13px 18px; border-top:1px solid var(--line); }
+    .schedule-row:first-child { border-top:0; }
+    .schedule-name { font-size:13px; }
+    .schedule-next { color:var(--mint); font:12px var(--mono); }
+    .kind { width:8px; height:8px; border-radius:50%; background:var(--muted); }
+    .kind.scan { background:var(--mint); } .kind.validate { background:var(--amber); } .kind.execute { background:var(--coral); }
+    .lower { display:grid; grid-template-columns: 1fr 1fr; gap:14px; margin-top:14px; }
+    .work { padding: 0 18px; }
+    .work-item { padding:16px 0; border-top:1px solid var(--line); }
+    .work-item:first-child { border-top:0; }
+    .work-title { display:flex; justify-content:space-between; gap:12px; font-size:14px; }
+    .work-detail { margin-top:7px; color:var(--soft); font-size:12px; line-height:1.5; }
+    .work-detail a { color:var(--mint); }
+    .notes { margin-top:14px; border-top:1px solid var(--line); padding-top:16px; color:var(--muted); font-size:11px; line-height:1.55; }
+    .notes p { margin:4px 0; }
+    .error { color:var(--coral); font:11px var(--mono); padding: 0 18px 12px; }
+    .loading { opacity:.6; }
+    @media (max-width: 960px) { .metrics{grid-template-columns:repeat(2,1fr)} .metric.primary{grid-column:span 2} .grid,.lower{grid-template-columns:1fr} }
+    @media (max-width: 620px) { .shell{padding:20px 14px 34px}.topbar{display:block}.live{margin-top:14px;padding:0}.metrics{grid-template-columns:1fr}.metric.primary{grid-column:auto}.tasklist th:nth-child(4),.tasklist td:nth-child(4),.tasklist th:nth-child(5),.tasklist td:nth-child(5){display:none}.head{padding:16px}.tasklist th,.tasklist td{padding-left:14px;padding-right:14px} }
+    @media (prefers-reduced-motion: reduce) { * { transition:none !important; } }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">persoonlijke opportunity monitor</div>
+        <h1>Earn Grid</h1>
+        <p class="subtitle">Kansen, gecontroleerde opbrengst en de volgende beslismomenten.</p>
+      </div>
+      <div class="live"><span class="dot"></span><span id="updated">laden…</span><button class="refresh" id="refresh" aria-label="Dashboard verversen">Ververs</button></div>
+    </header>
+
+    <section class="metrics" aria-label="Financieel overzicht">
+      <article class="metric primary">
+        <div class="label">Deze maand bevestigd verdiend</div>
+        <div class="value" id="earned">€0,00</div>
+        <div class="subvalue" id="earned-sub">Alleen geverifieerde betalingen</div>
+        <div class="goalbar" aria-label="Voortgang maanddoel"><span id="progress"></span></div>
+      </article>
+      <article class="metric">
+        <div class="label">Doel resterend</div>
+        <div class="value" id="remaining">€23,00</div>
+        <div class="subvalue" id="goal-sub">van €23,00 per maand</div>
+      </article>
+      <article class="metric">
+        <div class="label">Taskmarket USDC</div>
+        <div class="value small" id="wallet">—</div>
+        <div class="subvalue" id="wallet-sub">read-only saldo</div>
+      </article>
+      <article class="metric">
+        <div class="label">Wacht op uitkomst</div>
+        <div class="value small" id="pending">0</div>
+        <div class="subvalue">Niet meegerekend als inkomen</div>
+      </article>
+    </section>
+
+    <section class="grid">
+      <section class="panel" aria-labelledby="tasks-heading">
+        <div class="head"><h2 id="tasks-heading">Nu mogelijke taken</h2><span class="meta" id="candidate-meta">—</span></div>
+        <div id="tasks"></div>
+      </section>
+      <aside class="panel" aria-labelledby="scan-heading">
+        <div class="head"><h2 id="scan-heading">Volgende scans</h2><span class="meta">automatisch</span></div>
+        <div class="schedule" id="schedule"></div>
+      </aside>
+    </section>
+
+    <section class="lower">
+      <section class="panel" aria-labelledby="result-heading">
+        <div class="head"><h2 id="result-heading">Laatste scanresultaat</h2><span class="meta" id="result-time">—</span></div>
+        <ul class="side-list" id="results"></ul>
+      </section>
+      <section class="panel" aria-labelledby="work-heading">
+        <div class="head"><h2 id="work-heading">Lopend werk</h2><span class="meta">geen inkomen tot bevestiging</span></div>
+        <div class="work" id="work"></div>
+      </section>
+    </section>
+
+    <footer class="notes" id="notes"></footer>
+  </main>
+  <script>
+    const euro = value => new Intl.NumberFormat('nl-BE', {style:'currency', currency:'EUR'}).format(value || 0);
+    const numeric = value => new Intl.NumberFormat('nl-BE', {maximumFractionDigits: 4}).format(value || 0);
+    const dateLabel = iso => { if (!iso) return '—'; const d = new Date(iso); return Number.isNaN(d) ? iso : d.toLocaleString('nl-BE',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'}); };
+    const escapeHtml = value => String(value ?? '').replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+
+    function tasks(data) {
+      const el = document.querySelector('#tasks');
+      document.querySelector('#candidate-meta').textContent = `${data.candidates.length} vrijgegeven`;
+      if (!data.candidates.length) {
+        el.innerHTML = `<div class="empty"><strong>Geen veilige taak vrijgegeven</strong>De laatste controles vonden geen nieuwe kans met bekende lage concurrentie en een verifieerbare uitbetaling.</div>`;
+        return;
+      }
+      el.innerHTML = `<table class="tasklist"><thead><tr><th>Taak</th><th>Bron</th><th>Beloning</th><th>Concurrentie</th><th>Deadline</th></tr></thead><tbody>${data.candidates.map(t => `<tr><td>${t.url ? `<a href="${escapeHtml(t.url)}" target="_blank" rel="noreferrer">${escapeHtml(t.title)}</a>` : escapeHtml(t.title)}</td><td><span class="badge good">${escapeHtml(t.source)}</span></td><td>${escapeHtml(t.reward)}</td><td>${escapeHtml(t.competition)}</td><td>${escapeHtml(t.deadline)}</td></tr>`).join('')}</tbody></table>`;
+    }
+
+    function schedule(items) {
+      document.querySelector('#schedule').innerHTML = items.length ? items.map(item => `<div class="schedule-row"><span class="kind ${escapeHtml(item.kind)}"></span><span class="schedule-name">${escapeHtml(item.label)}</span><span class="schedule-next">${escapeHtml(item.nextLabel)}</span></div>`).join('') : `<div class="empty">Geen schema gevonden.</div>`;
+    }
+
+    function results(data) {
+      const s = data.scans;
+      document.querySelector('#result-time').textContent = dateLabel(s.externalAt || s.lunaAt);
+      const entries = [
+        ['Taskmarket · Luna', `${s.lunaCandidates} kandidaat / ${s.lunaRejected} gefilterd`, s.lunaAt],
+        ['Taskmarket · Sol', `${s.solApproved} goedgekeurd voor uitvoering`, s.solAt],
+        ['GitHub & Web3 · Sol', s.externalResult === 'no-new-qualified-opportunity' ? 'Geen nieuwe gekwalificeerde kans' : s.externalResult, s.externalAt],
+        ['Taskmarket · Terra', `${s.terraSubmitted} nieuwe inzending(en) in laatste run`, s.terraAt]
+      ];
+      document.querySelector('#results').innerHTML = entries.map(([label,value,time]) => `<li><span class="side-label">${escapeHtml(label)}</span><span class="side-value">${escapeHtml(value)} · ${escapeHtml(dateLabel(time))}</span></li>`).join('');
+    }
+
+    function work(data) {
+      const items = [];
+      const pr = data.activeWork.githubPr || {};
+      if (pr.url) items.push(`<div class="work-item"><div class="work-title"><a href="${escapeHtml(pr.url)}" target="_blank" rel="noreferrer">tgstation #97103</a><span class="badge wait">${escapeHtml(pr.state || 'OPEN')}</span></div><div class="work-detail">£3 directe belofte, maar niet gegarandeerd en pas relevant na merge/afstemming. Status: ${escapeHtml(pr.mergeable || 'onbekend')}.</div></div>`);
+      for (const item of data.activeWork.taskmarketSubmissions || []) {
+        const reward = Number(item.rewardBaseUnits || 0) / 1_000_000;
+        items.push(`<div class="work-item"><div class="work-title"><span>Taskmarket-inzending</span><span class="badge wait">${escapeHtml(item.status || 'open')}</span></div><div class="work-detail">Ingezonden ${escapeHtml(dateLabel(item.submittedAt))}. Bounty-pool: ${numeric(reward)} USDC; gedeeld en nog niet bevestigd als opbrengst.</div></div>`);
+      }
+      document.querySelector('#work').innerHTML = items.join('') || `<div class="empty">Geen lopende inzendingen.</div>`;
+    }
+
+    function render(data) {
+      document.querySelector('#updated').textContent = `publieke snapshot · ${data.generatedLabel}`;
+      document.querySelector('#earned').textContent = euro(data.money.earnedEur);
+      document.querySelector('#earned-sub').textContent = `${data.money.progress}% van maanddoel · alleen betaald`;
+      document.querySelector('#remaining').textContent = euro(data.money.remainingEur);
+      document.querySelector('#goal-sub').textContent = `van ${euro(data.money.goalEur)} per maand`;
+      document.querySelector('#progress').style.width = `${data.money.progress}%`;
+      document.querySelector('#wallet').textContent = `${numeric(data.wallet.balanceUsdc)} USDC`;
+      document.querySelector('#wallet-sub').textContent = `≈ ${euro(data.walletEur)} · FX ${data.fx.date}`;
+      document.querySelector('#pending').textContent = `${data.money.pending.length} wachten`;
+      tasks(data); schedule(data.schedule); results(data); work(data);
+      document.querySelector('#notes').innerHTML = data.notes.map(n => `<p>${escapeHtml(n)}</p>`).join('');
+    }
+
+    async function load() {
+      document.body.classList.add('loading');
+      try {
+        const response = await fetch('data.json?ts=' + Date.now(), {cache:'no-store'});
+        if (!response.ok) throw new Error('Dashboarddata niet beschikbaar');
+        render(await response.json());
+      } catch (error) {
+        document.querySelector('#updated').textContent = `fout · ${error.message}`;
+      } finally { document.body.classList.remove('loading'); }
+    }
+    document.querySelector('#refresh').addEventListener('click', load);
+    load(); setInterval(load, 60000);
+  </script>
+</body>
+</html>
