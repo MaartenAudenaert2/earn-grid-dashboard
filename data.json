@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T17:20:24.089865+02:00",
-  "generatedLabel": "21 July 2026 · 17:20",
+  "generatedAt": "2026-07-21T18:20:24.911284+02:00",
+  "generatedLabel": "21 July 2026 · 18:20",
   "fx": {
     "usdEur": 0.8752,
     "date": "laatst bekende referentie"
@@ -43,14 +43,14 @@
   },
   "candidates": [],
   "scans": {
-    "lunaAt": "2026-07-21T15:04:48Z",
+    "lunaAt": "2026-07-21T16:05:41Z",
     "lunaCandidates": 0,
     "lunaRejected": 0,
-    "solAt": "2026-07-21T15:05:43Z",
+    "solAt": "2026-07-21T16:05:23Z",
     "solApproved": 0,
     "terraAt": "2026-07-19T07:26:54Z",
     "terraSubmitted": 0,
-    "externalAt": "2026-07-21T15:18:54Z",
+    "externalAt": "2026-07-21T16:18:36Z",
     "externalResult": "no-new-qualified-opportunity",
     "externalShortlisted": 0,
     "externalRejected": 5
@@ -70,65 +70,65 @@
         {
           "category": "open-source/dev-task",
           "url": "https://api.github.com/search/issues",
-          "result": "Authenticated live search for open bounty-labelled issues created on 2026-07-21 returned only three non-generated candidates after excluding mirrored bounty boards and the known prank/referral/spam cluster: Tenstorrent #50612, Tenstorrent #50522, and NashKara96/fx #1. Each was individually re-fetched with issue, comments, related-PR search, and repository data."
+          "result": "Authenticated primary-source search of open, bounty-labelled issues created on 2026-07-21 (excluding known generated bounty-board clusters) returned NashKara96/resty#1 and the two active Tenstorrent bounties. Each issue, its comments, related PR search, and repository metadata were re-fetched."
+        },
+        {
+          "category": "open-source/dev-task",
+          "url": "https://github.com/NashKara96/resty/issues/1",
+          "result": "Open, created 2026-07-21T15:18:34Z, but the just-created repository had no credible project history (created 17 seconds earlier, zero stars). Exact proposed reward was $10; the primary Opire bot immediately rejected /reward 10 because the platform minimum is $20. No valid funded payout exists."
         },
         {
           "category": "open-source/dev-task",
           "url": "https://github.com/tenstorrent/tt-metal/issues/50612",
-          "result": "Open, created 2026-07-21T14:06:28Z, updated 2026-07-21T14:38:10Z; labelled $10,000 but explicitly assigned to jasondavies by a Tenstorrent contributor. Related-PR search returned zero, but assignment is a disqualifying active claim."
+          "result": "Open $10,000 bounty, but officially assigned to jasondavies. The assigned contributor's open PR #50624 targets the work. Not available."
         },
         {
           "category": "open-source/dev-task",
           "url": "https://github.com/tenstorrent/tt-metal/issues/50522",
-          "result": "Open, created 2026-07-21T02:23:38Z, updated 2026-07-21T14:36:43Z; $1,500, but explicitly assigned to sreeshanth-soma by a Tenstorrent contributor. Related-PR search returned zero; assignment is a disqualifying active claim."
+          "result": "Open $1,500 bounty, but officially assigned to sreeshanth-soma; payout requires all three stated model bring-up stages. Not available."
         },
         {
           "category": "open-source/dev-task",
-          "url": "https://github.com/NashKara96/fx/issues/1",
-          "result": "Open, created/updated 2026-07-21T14:54Z, zero related PRs and no assignee, but its only reward command was /reward 10 and the first-party Opire bot rejected it because the minimum is $20. The repository was created minutes before the issue and is empty; no actual funded reward exists."
+          "url": "https://github.com/StellarConduit/stellarconduit-sync-engine/issues/26",
+          "result": "Fresh, no-comment GrantFox-labelled issue was inspected as a low-competition control. Its label is only 'Maybe Rewarded' and the primary issue text gives no amount, payer, escrow, payout method, or payout trigger. Repository is new (created 2026-02-22), has zero stars, and no verified payment evidence; rejected as unverified payment."
         },
         {
           "category": "web3 task market",
-          "url": "taskmarket task list/get/submissions",
-          "result": "All seven current open bounty-mode tasks were re-fetched with task get and bounty-mode submissions. Exact visible submission/unique-worker counts: 56/32, 62/37, 98/35, 19/13, 383/59, 415/79, 201/66. All exceed the <=10 unique-competitor gate. The first three require x402 payment flow or paid endpoint interaction; the fourth requires a paid CAPTCHA endpoint; the last requires an EIP-3009 payment signature."
+          "url": "https://taskmarket.ai",
+          "result": "All seven current open bounty-mode tasks were live-re-fetched with task get and the bounty-mode submissions list. Exact fetched submission/unique-worker counts: 62/32, 70/37, 111/35, 30/13, 394/59, 424/81, 202/66. Every task exceeds the maximum 10 unique-competitor gate. The first four also require or solicit x402 payment interactions; the seventh requires an EIP-3009 payment signature. No claims, pitches, bids, submissions, wallet reads, or other writes were performed."
         },
         {
-          "category": "web3 dev/design/content",
-          "url": "https://superteam.fun/api/search/bounty",
-          "result": "First-party live API still exposes five OPEN-labelled listings. Cap for Clacton requires political/social-media engagement and says work ended July 19; Goatfish is a social-media/video contest with 32 comments and unknown full entrant count; Panta promotes a prediction market with 34 comments; Usuals and Paj have passed deadlines. None passes work-type, freshness, and known-competition gates."
-        },
-        {
-          "category": "open-source/dev-task",
-          "url": "https://algora.io/api/bounties",
-          "result": "Live endpoint now serves an HTML homepage rather than a listing API. Current bounty status, payment terms, and competition cannot be verified; no candidate qualified."
+          "category": "previously alerted open-source/dev-task",
+          "url": "https://github.com/tgstation/tgstation/issues/97081",
+          "result": "The issue remains open but is explicitly fixed by the user's own open PR #97103, created 2026-07-21T10:57:35Z and updated 2026-07-21T12:33:22Z. It is not a new alert and no duplicate action was taken."
         }
       ],
       "shortlisted": [],
       "rejected": [
         {
+          "id": "github:NashKara96/resty#1",
+          "url": "https://github.com/NashKara96/resty/issues/1",
+          "reason": "No actual reward: Opire rejected the $10 /reward command; the stated minimum is $20. Newly created, zero-star repository gives no independently credible payment path."
+        },
+        {
           "id": "github:tenstorrent/tt-metal#50612",
           "url": "https://github.com/tenstorrent/tt-metal/issues/50612",
-          "reason": "Explicitly assigned to another contributor; maintainer confirmation is current."
+          "reason": "Explicit official assignment to another contributor plus their open related PR #50624."
         },
         {
           "id": "github:tenstorrent/tt-metal#50522",
           "url": "https://github.com/tenstorrent/tt-metal/issues/50522",
-          "reason": "Explicitly assigned to another contributor; maintainer confirmation is current."
+          "reason": "Explicit official assignment to another contributor."
         },
         {
-          "id": "github:NashKara96/fx#1",
-          "url": "https://github.com/NashKara96/fx/issues/1",
-          "reason": "No valid reward: Opire bot rejected the stated $10 reward; repo is a just-created empty fork-style project."
+          "id": "github:StellarConduit/stellarconduit-sync-engine#26",
+          "url": "https://github.com/StellarConduit/stellarconduit-sync-engine/issues/26",
+          "reason": "Competition count is zero but payout is merely labelled 'Maybe Rewarded': exact amount, payer, payment method, trigger, and escrow are all absent."
         },
         {
           "id": "taskmarket:open-bounty-cluster",
           "url": "https://taskmarket.ai",
-          "reason": "Every live bounty-mode task has 13-79 visible unique workers, exceeding the maximum of 10. Several also require payment or a payment signature."
-        },
-        {
-          "id": "superteam:open-search-cluster",
-          "url": "https://superteam.fun/api/search/bounty",
-          "reason": "All current listings are expired, political/social/referral-style, prediction-market promotion, or have unknown entrant counts."
+          "reason": "All seven live open bounty-mode tasks had 13-81 unique visible workers, above the <=10 gate. Several also require payment/signature flows, which are excluded."
         }
       ]
     }
@@ -137,33 +137,33 @@
     {
       "label": "Luna · Taskmarket scan",
       "kind": "scan",
-      "next": "2026-07-21T18:00:00+02:00",
-      "nextLabel": "18:00",
-      "last": "2026-07-21T17:06:23.056256+02:00",
+      "next": "2026-07-21T19:00:00+02:00",
+      "nextLabel": "19:00",
+      "last": "2026-07-21T18:07:10.455429+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · Taskmarket validatie",
       "kind": "validate",
-      "next": "2026-07-21T18:04:00+02:00",
-      "nextLabel": "18:04",
-      "last": "2026-07-21T17:06:11.580884+02:00",
+      "next": "2026-07-21T19:04:00+02:00",
+      "nextLabel": "19:04",
+      "last": "2026-07-21T18:05:35.662474+02:00",
       "enabled": "true"
     },
     {
       "label": "Terra · Taskmarket uitvoering",
       "kind": "execute",
-      "next": "2026-07-21T18:08:00+02:00",
-      "nextLabel": "18:08",
-      "last": "2026-07-21T17:08:23.859043+02:00",
+      "next": "2026-07-21T19:08:00+02:00",
+      "nextLabel": "19:08",
+      "last": "2026-07-21T18:08:24.677940+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · GitHub/Web3 scan",
       "kind": "scan",
-      "next": "2026-07-21T18:15:00+02:00",
-      "nextLabel": "18:15",
-      "last": "2026-07-21T17:19:38.828667+02:00",
+      "next": "2026-07-21T19:15:00+02:00",
+      "nextLabel": "19:15",
+      "last": "2026-07-21T18:19:26.638000+02:00",
       "enabled": "true"
     }
   ],
