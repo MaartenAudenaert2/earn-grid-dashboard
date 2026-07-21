@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T16:12:22.620153+02:00",
-  "generatedLabel": "21 July 2026 · 16:12",
+  "generatedAt": "2026-07-21T16:18:01.397808+02:00",
+  "generatedLabel": "21 July 2026 · 16:18",
   "fx": {
     "usdEur": 0.8752,
     "date": "laatst bekende referentie"
@@ -45,7 +45,7 @@
   "scans": {
     "lunaAt": "2026-07-21T14:03:18Z",
     "lunaCandidates": 0,
-    "lunaRejected": 0,
+    "lunaRejected": 7,
     "solAt": "2026-07-21T14:05:19Z",
     "solApproved": 0,
     "terraAt": "2026-07-19T07:26:54Z",
@@ -55,15 +55,173 @@
     "externalShortlisted": 0,
     "externalRejected": 5
   },
-  "schedule": [
-    {
-      "label": "Sol · GitHub/Web3 scan",
-      "kind": "scan",
-      "next": "2026-07-21T16:15:00+02:00",
-      "nextLabel": "16:15",
-      "last": "2026-07-21T16:12:17.042190+02:00",
-      "enabled": "true"
+  "scanDetails": {
+    "taskmarket": {
+      "scannedOpenTasks": 7,
+      "approved": [],
+      "rejected": [
+        {
+          "taskId": "0xfeb98106531ea1bd30f727a0c458809e0c05159c5c6c4e65ca7d0245a3b16613",
+          "mode": "bounty",
+          "rewardUsdc": 0.02,
+          "netRewardUsdc": 0.0185,
+          "deadline": "2026-07-22T15:30:05.820Z",
+          "submissionCount": 36,
+          "uniqueWorkers": 30,
+          "entryCostUsdc": 0,
+          "reason": "competition exceeds 10; fixed escrow and ‘solid entries get paid’ do not guarantee every participant payment"
+        },
+        {
+          "taskId": "0xcb67b0a48505c60ddba84023942a93c433bb0c31722028e0b62807074e0ccf0e",
+          "mode": "bounty",
+          "rewardUsdc": 0.15,
+          "netRewardUsdc": 0.13875,
+          "deadline": "2026-07-23T02:57:30.663Z",
+          "submissionCount": 42,
+          "uniqueWorkers": 35,
+          "entryCostUsdc": 0,
+          "reason": "competition exceeds 10; fixed escrow does not guarantee every participant payment"
+        },
+        {
+          "taskId": "0x5787971aa75da7f6cdf123dd4c7713b25b0c83945a362f461ad735615604d54a",
+          "mode": "bounty",
+          "rewardUsdc": 0.15,
+          "netRewardUsdc": 0.13875,
+          "deadline": "2026-07-27T11:41:26.508Z",
+          "submissionCount": 82,
+          "uniqueWorkers": 34,
+          "entryCostUsdc": 0.005,
+          "reason": "competition exceeds 10; first-valid-wins and external x402 payment create non-guaranteed payout and sunk-cost risk"
+        },
+        {
+          "taskId": "0x998986befc9f1f47ae1ac783402795f441ec6a9177b598fae58f62266b4b93c8",
+          "mode": "bounty",
+          "rewardUsdc": 0.5,
+          "netRewardUsdc": 0.4625,
+          "deadline": "2026-07-26T21:06:47.872Z",
+          "submissionCount": 15,
+          "uniqueWorkers": 12,
+          "entryCostUsdc": 0.01,
+          "reason": "competition exceeds 10; CAPTCHA-solving task is higher-risk and requires external paid endpoint plus token verification"
+        },
+        {
+          "taskId": "0x100219baba1f9df11f7f15f226bbd9994c445060ca2bd2ac7ef820bd4f7759f7",
+          "mode": "bounty",
+          "rewardUsdc": 19,
+          "netRewardUsdc": 17.575,
+          "deadline": "2026-07-22T13:55:50.319Z",
+          "submissionCount": 344,
+          "uniqueWorkers": 58,
+          "entryCostUsdc": 0,
+          "reason": "competition exceeds 10; external website/account/KYC-rule research is broad and not low-risk"
+        },
+        {
+          "taskId": "0xd4962d4534961d4e93f93848f552dd41d48e2091a9fbb36ecc9503a8621717d0",
+          "mode": "bounty",
+          "rewardUsdc": 10,
+          "netRewardUsdc": 9.25,
+          "deadline": "2026-07-22T06:38:56.689Z",
+          "submissionCount": 405,
+          "uniqueWorkers": 78,
+          "entryCostUsdc": 0,
+          "reason": "competition exceeds 10; open-ended subjective research with extensive existing competition"
+        },
+        {
+          "taskId": "0x50d1dea29821649b87c2cb08558bd9cd984c9678d9f8d30ce608eef877ca5448",
+          "mode": "bounty",
+          "rewardUsdc": 0.5,
+          "netRewardUsdc": 0.4625,
+          "deadline": "2026-08-04T03:31:01.190Z",
+          "submissionCount": 159,
+          "uniqueWorkers": 65,
+          "entryCostUsdc": 0.001,
+          "reason": "competition exceeds 10; task is Base Sepolia while acting wallet is on Base, and requires faucet plus external EIP-3009 payment"
+        }
+      ]
     },
+    "validation": {
+      "approved": [],
+      "rejected": []
+    },
+    "external": {
+      "sources": [
+        {
+          "category": "open-source/dev-task",
+          "url": "https://api.github.com/search/issues",
+          "result": "Live searches for open issues created today found 29 bounty-label matches, 156 bounty-body matches, and 311 reward-body matches. Most were mirrored/generated bounty-board content, vague Maybe Rewarded campaigns, smart-contract/DeFi/tokenomics work, referral/spam, security reports, or non-cash/in-game promises. The only newly credible repository candidate was checked individually."
+        },
+        {
+          "category": "open-source/dev-task",
+          "url": "https://github.com/tenstorrent/tt-metal/issues/50612",
+          "result": "Live issue, comments, timeline, repository, community-profile, and PR searches checked. It is open (created/updated 2026-07-21T14:06Z), with zero comments, no assignee, no issue-number-linked PR, and an established active Apache-2.0 repository with CONTRIBUTING.md. However the $10,000 title contains no payer, currency/payment rail, escrow/platform, deadline, eligibility, claim requirement, fees, payout trigger, or decision-maker. It also overlaps active/closed internal Welford/GroupNorm work. Payout is unverified and scope is not session-sized; rejected."
+        },
+        {
+          "category": "web3 task market",
+          "url": "taskmarket task list/get/submissions (local CLI, read-only)",
+          "result": "All 7 currently open bounty-mode tasks were fetched with task get and their mode-relevant submissions list; claim, pitch, benchmark and auction lists were empty. Every bounty exceeded the <=10 competitor gate: reported/returned submissions 36, 42, 82, 15, 344, 405 and 159; visible distinct actor-field counts were respectively 30, 35, 34, 12, 58, 78 and 65. Several also explicitly require x402 payment/signing or wallet proof. All rejected; no Taskmarket action was taken."
+        },
+        {
+          "category": "web3 dev/design/content",
+          "url": "https://superteam.fun/api/search/bounty",
+          "result": "First-party API returned the same five OPEN-labelled listings: Cap for Clacton (political/spam engagement exclusion), Goatfish and Panta (not new; full participant count unavailable from the primary feed, so rejected under unknown-count gate; Panta is prediction-market content), and Usuals/Paj (deadlines passed; Paj winner announced)."
+        },
+        {
+          "category": "web3 grants",
+          "url": "https://superteam.fun/api/grants/live",
+          "result": "First-party API returned 43 broad application/grant programs rather than a fixed-scope task with exact per-deliverable payout, deadline, and public full competition count; rejected."
+        },
+        {
+          "category": "open-source/dev-task",
+          "url": "https://algora.io/api/bounties",
+          "result": "First-party page returned successfully and did not expose any open bounty listing."
+        },
+        {
+          "category": "security contest",
+          "url": "https://code4rena.com/audits",
+          "result": "First-party embedded data reports Active [] and Upcoming []; no current contest."
+        },
+        {
+          "category": "security contest",
+          "url": "https://audits.sherlock.xyz/contests",
+          "result": "First-party page reports running Metric (public bug bounty), Tare (public best-efforts), and private Raindrops Solana. They are finding-dependent/shared-pool security work with no complete public duplicate/participant count, and are not ordinary fixed-scope tasks; rejected."
+        },
+        {
+          "category": "security competition",
+          "url": "https://cantina.xyz/opportunities/competitions",
+          "result": "First-party page returned HTTP 403 to this read-only scanner, leaving status, payout, and competition unverifiable; no candidate qualified."
+        }
+      ],
+      "shortlisted": [],
+      "rejected": [
+        {
+          "id": "github:tenstorrent/tt-metal#50612",
+          "url": "https://github.com/tenstorrent/tt-metal/issues/50612",
+          "reason": "Fresh open $10,000-labelled issue, zero visible comments/assignees/linked issue-number PRs, and a credible active repo. Rejected: issue body provides no verifiable payer, currency/payment method, escrow, deadline, eligibility, claim requirement, fees, payout trigger, or decision-maker; its direct promise is unverified. It also overlaps internal active/closed Welford/GroupNorm work and is not session-sized."
+        },
+        {
+          "id": "taskmarket:open-bounty-cluster",
+          "url": "https://taskmarket.ai",
+          "reason": "All seven currently open bounties had 15-405 submissions and 12-78 distinct visible actor fields after direct get+submissions checks. Some require payment/signing/wallet proof. None meets the <=10 competitors and free/safe-start gates."
+        },
+        {
+          "id": "github:generated-or-unverified-delta",
+          "url": "https://api.github.com/search/issues",
+          "reason": "Today's remaining search delta consisted of generated/mirrored bounty-board posts, GrantFox Maybe Rewarded tasks without exact task-specific payout, unverified offers, non-cash/in-game rewards, security reports, or excluded smart-contract/DeFi/tokenomics/referral work."
+        },
+        {
+          "id": "superteam:open-search-cluster",
+          "url": "https://superteam.fun/api/search/bounty",
+          "reason": "No new eligible listing: one excluded political/spam task, one excluded prediction-market task, two expired tasks, and two live task pages whose full visible competitor count is unavailable or already known crowded."
+        },
+        {
+          "id": "security:running-cluster",
+          "url": "https://audits.sherlock.xyz/contests",
+          "reason": "Finding-dependent shared-pool/private security contests have unknown full competitor and duplicate-submission counts; excluded from normal fixed-scope paid work."
+        }
+      ]
+    }
+  },
+  "schedule": [
     {
       "label": "Luna · Taskmarket scan",
       "kind": "scan",
@@ -86,6 +244,14 @@
       "next": "2026-07-21T17:08:00+02:00",
       "nextLabel": "17:08",
       "last": "2026-07-21T16:08:22.820068+02:00",
+      "enabled": "true"
+    },
+    {
+      "label": "Sol · GitHub/Web3 scan",
+      "kind": "scan",
+      "next": "2026-07-21T17:15:00+02:00",
+      "nextLabel": "17:15",
+      "last": "2026-07-21T16:12:17.042190+02:00",
       "enabled": "true"
     }
   ],

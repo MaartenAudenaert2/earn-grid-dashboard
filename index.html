@@ -62,6 +62,22 @@
     .side-list li:first-child { border-top:0; }
     .side-label { color:var(--soft); font-size:13px; }
     .side-value { color:var(--ink); font:12px var(--mono); }
+    .scan-report { list-style:none; margin:0; padding:0; }
+    .scan-row { padding:14px 18px; border-top:1px solid var(--line); display:grid; gap:5px; }
+    .scan-row:first-child { border-top:0; }
+    .scan-details { border-top:1px solid var(--line); }
+    .scan-details summary { cursor:pointer; list-style:none; padding:14px 18px; color:var(--ink); font-size:13px; display:flex; align-items:center; justify-content:space-between; gap:10px; }
+    .scan-details summary::-webkit-details-marker { display:none; }
+    .scan-details summary::after { content:'+'; color:var(--mint); font:18px var(--mono); }
+    .scan-details[open] summary::after { content:'−'; }
+    .scan-details summary:hover { background:rgba(131,239,178,.045); }
+    .detail-stack { padding:0 18px 14px; display:grid; gap:8px; }
+    .detail-card { border:1px solid var(--line); border-radius:8px; padding:11px; background:var(--panel-2); }
+    .detail-title { display:flex; align-items:flex-start; justify-content:space-between; gap:10px; color:var(--ink); font-size:12px; }
+    .detail-card p { margin:7px 0 0; color:var(--soft); font-size:11px; line-height:1.48; }
+    .detail-card a { color:var(--mint); text-decoration:none; }
+    .detail-card code { color:var(--soft); font:10px var(--mono); word-break:break-all; }
+    .empty-detail { color:var(--muted); font-size:12px; padding:3px 0; }
     .schedule { margin-top:14px; }
     .schedule-row { display:grid; grid-template-columns: 11px 1fr auto; gap:10px; align-items:center; padding:13px 18px; border-top:1px solid var(--line); }
     .schedule-row:first-child { border-top:0; }
@@ -134,7 +150,7 @@
     <section class="lower">
       <section class="panel" aria-labelledby="result-heading">
         <div class="head"><h2 id="result-heading">Laatste scanresultaat</h2><span class="meta" id="result-time">—</span></div>
-        <ul class="side-list" id="results"></ul>
+        <div class="scan-report" id="results"></div>
       </section>
       <section class="panel" aria-labelledby="work-heading">
         <div class="head"><h2 id="work-heading">Lopend werk</h2><span class="meta">geen inkomen tot bevestiging</span></div>
@@ -166,14 +182,34 @@
 
     function results(data) {
       const s = data.scans;
+      const details = data.scanDetails || {};
+      const tm = details.taskmarket || {};
+      const validation = details.validation || {};
+      const external = details.external || {};
+      const safeLink = (url, label = 'Bron') => /^https?:\/\//i.test(String(url || '')) ? ` <a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">${label}</a>` : '';
+      const card = (title, text, url = '', meta = '') => `<article class="detail-card"><div class="detail-title"><span>${title}${safeLink(url)}</span>${meta ? `<span class="badge">${meta}</span>` : ''}</div><p>${text}</p></article>`;
+      const block = (title, count, cards, empty) => `<details class="scan-details"><summary><span>${title}</span><span class="badge ${count ? 'wait' : 'good'}">${count}</span></summary><div class="detail-stack">${cards.length ? cards.join('') : `<div class="empty-detail">${empty}</div>`}</div></details>`;
       document.querySelector('#result-time').textContent = dateLabel(s.externalAt || s.lunaAt);
-      const entries = [
-        ['Taskmarket · Luna', `${s.lunaCandidates} kandidaat / ${s.lunaRejected} gefilterd`, s.lunaAt],
+      const rows = [
+        ['Taskmarket · Luna', `${s.lunaCandidates} kandidaat / ${s.lunaRejected} afgekeurd`, s.lunaAt],
         ['Taskmarket · Sol', `${s.solApproved} goedgekeurd voor uitvoering`, s.solAt],
-        ['GitHub & Web3 · Sol', s.externalResult === 'no-new-qualified-opportunity' ? 'Geen nieuwe gekwalificeerde kans' : s.externalResult, s.externalAt],
+        ['GitHub & Web3 · Terra', s.externalResult === 'no-new-qualified-opportunity' ? 'Geen nieuwe gekwalificeerde kans' : s.externalResult, s.externalAt],
         ['Taskmarket · Terra', `${s.terraSubmitted} nieuwe inzending(en) in laatste run`, s.terraAt]
       ];
-      document.querySelector('#results').innerHTML = entries.map(([label,value,time]) => `<li><span class="side-label">${escapeHtml(label)}</span><span class="side-value">${escapeHtml(value)} · ${escapeHtml(dateLabel(time))}</span></li>`).join('');
+      const tmRejected = (tm.rejected || []).map(item => {
+        const workers = item.uniqueWorkers ?? '?';
+        const submissions = item.submissionCount ?? '?';
+        const reward = item.netRewardUsdc ?? item.rewardUsdc ?? '?';
+        const title = `Taskmarket · ${escapeHtml(String(item.taskId || 'taak').slice(0, 14))}…`;
+        const meta = `${workers} workers`;
+        const text = `Netto ${escapeHtml(reward)} USDC · ${escapeHtml(submissions)} inzendingen · deadline ${escapeHtml(dateLabel(item.deadline))}. ${escapeHtml(item.reason || 'Afgekeurd.')}`;
+        return card(title, text, '', meta);
+      });
+      const externalSources = (external.sources || []).map(item => card(escapeHtml(item.category || 'Gecontroleerde bron'), escapeHtml(item.result || 'Geen detail opgeslagen.'), item.url || ''));
+      const externalRejected = (external.rejected || []).map(item => card(escapeHtml(item.id || 'Afgekeurde kans'), escapeHtml(item.reason || 'Afgekeurd.'), item.url || '', 'afgekeurd'));
+      const approved = [...(tm.approved || []), ...(validation.approved || []), ...(external.shortlisted || [])].map(item => card(escapeHtml(item.title || item.deliverable || item.taskId || item.id || 'Gekwalificeerde kans'), escapeHtml(item.approvalReason || item.reason || 'Goedgekeurd voor verdere uitvoering.'), item.url || '', 'goedgekeurd'));
+      const validationRejected = (validation.rejected || []).map(item => card(escapeHtml(item.taskId || item.id || 'Validatie-afwijzing'), escapeHtml(item.reason || 'Afgekeurd door live-validatie.'), item.url || '', 'afgekeurd'));
+      document.querySelector('#results').innerHTML = `${rows.map(([label,value,time]) => `<div class="scan-row"><span class="side-label">${escapeHtml(label)}</span><span class="side-value">${escapeHtml(value)} · ${escapeHtml(dateLabel(time))}</span></div>`).join('')}${block('Alles wat is goedgekeurd', approved.length, approved, 'Geen kans werd vrijgegeven.')}${block(`Taskmarket · ${tm.scannedOpenTasks || 0} bekeken`, tmRejected.length, tmRejected, 'Geen Taskmarket-afwijzingen opgeslagen.')}${block('GitHub/Web3 · alle gecontroleerde bronnen', externalSources.length, externalSources, 'Geen bronresultaten opgeslagen.')}${block('GitHub/Web3 · afgekeurde kansen', externalRejected.length, externalRejected, 'Geen externe kansen afgekeurd.')}${block('Sol-validatie · afgekeurd', validationRejected.length, validationRejected, 'Geen extra Sol-afwijzingen.')}`;
     }
 
     function work(data) {
