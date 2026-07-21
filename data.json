@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T16:07:10.764660+02:00",
-  "generatedLabel": "21 July 2026 · 16:07",
+  "generatedAt": "2026-07-21T16:12:22.620153+02:00",
+  "generatedLabel": "21 July 2026 · 16:12",
   "fx": {
     "usdEur": 0.8752,
     "date": "laatst bekende referentie"
@@ -50,26 +50,18 @@
     "solApproved": 0,
     "terraAt": "2026-07-19T07:26:54Z",
     "terraSubmitted": 0,
-    "externalAt": "2026-07-21T13:19:37Z",
+    "externalAt": "2026-07-21T14:11:31Z",
     "externalResult": "no-new-qualified-opportunity",
     "externalShortlisted": 0,
-    "externalRejected": 8
+    "externalRejected": 5
   },
   "schedule": [
-    {
-      "label": "Terra · Taskmarket uitvoering",
-      "kind": "execute",
-      "next": "2026-07-21T16:08:00+02:00",
-      "nextLabel": "16:08",
-      "last": "2026-07-21T15:08:22.034652+02:00",
-      "enabled": "true"
-    },
     {
       "label": "Sol · GitHub/Web3 scan",
       "kind": "scan",
       "next": "2026-07-21T16:15:00+02:00",
       "nextLabel": "16:15",
-      "last": "2026-07-21T15:20:31.587587+02:00",
+      "last": "2026-07-21T16:12:17.042190+02:00",
       "enabled": "true"
     },
     {
@@ -86,6 +78,14 @@
       "next": "2026-07-21T17:04:00+02:00",
       "nextLabel": "17:04",
       "last": "2026-07-21T16:05:34.964568+02:00",
+      "enabled": "true"
+    },
+    {
+      "label": "Terra · Taskmarket uitvoering",
+      "kind": "execute",
+      "next": "2026-07-21T17:08:00+02:00",
+      "nextLabel": "17:08",
+      "last": "2026-07-21T16:08:22.820068+02:00",
       "enabled": "true"
     }
   ],
