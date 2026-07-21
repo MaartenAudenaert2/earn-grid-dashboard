@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T20:20:26.489944+02:00",
-  "generatedLabel": "21 July 2026 · 20:20",
+  "generatedAt": "2026-07-21T21:20:27.258343+02:00",
+  "generatedLabel": "21 July 2026 · 21:20",
   "fx": {
     "usdEur": 0.8752,
     "date": "laatst bekende referentie"
@@ -43,17 +43,17 @@
   },
   "candidates": [],
   "scans": {
-    "lunaAt": "2026-07-21T18:02:12Z",
+    "lunaAt": "2026-07-21T19:01:30Z",
     "lunaCandidates": 0,
     "lunaRejected": 0,
-    "solAt": "2026-07-21T18:05:00Z",
+    "solAt": "2026-07-21T19:04:59Z",
     "solApproved": 0,
     "terraAt": "2026-07-19T07:26:54Z",
     "terraSubmitted": 0,
-    "externalAt": "2026-07-21T18:17:52Z",
+    "externalAt": "2026-07-21T19:17:48Z",
     "externalResult": "no-new-qualified-opportunity",
     "externalShortlisted": 0,
-    "externalRejected": 5
+    "externalRejected": 3
   },
   "scanDetails": {
     "taskmarket": {
@@ -70,60 +70,40 @@
         {
           "category": "open-source/dev-task",
           "url": "https://api.github.com/search/issues",
-          "result": "Live primary-source searches for recent open bounty/reward/funded/IssueHunt issues returned mostly generated bounty-board clusters, unverified GrantFox 'Maybe Rewarded' issues, and security/contest work. Candidate GitHub issues below were individually refreshed for issue state, dates, comments, linked PRs, payer terms, and current activity."
+          "result": "Live GitHub primary-source searches for recent open bounty/reward/funded issues returned new Iamgoofball/-tg-station issues, generated bounty-board clusters, GrantFox 'Maybe Rewarded' issues, and security/contest work. The unauthenticated GitHub API rate limit was exhausted after individual refreshes of #94 and #92, so later search-only hits were not treated as verified candidates and none was alerted."
         },
         {
           "category": "open-source/dev-task",
-          "url": "https://github.com/tenstorrent/tt-metal/issues/50522",
-          "result": "Open; created 2026-07-21T02:23:38Z and updated 2026-07-21T17:17:19Z. The issue states a $1,500 bounty and payout only after all three substantial hardware/performance stages. A Tenstorrent contributor stated at 14:36Z that the reviewed bounty is assigned to @sreeshanth-soma and subject to programme terms/tax requirements. No linked PR search result, but the explicit assignment makes it unavailable; also not session-sized. Rejected."
+          "url": "https://github.com/Iamgoofball/-tg-station/issues/94",
+          "result": "Open; created 2026-07-21T18:37:03Z, updated 18:42:54Z; zero comments and no title/body-matching PR result at live refresh. The title advertises $100, but the entire body is only an image plus a one-line request: no payer identity, payout method, escrow, payment trigger, deadline, or professional acceptance criteria. Repo is a fork. Rejected: payment promise is unverified and scope/terms are not professionally actionable."
         },
         {
           "category": "open-source/dev-task",
-          "url": "https://github.com/Iamgoofball/-tg-station/issues/89",
-          "result": "Open; created 2026-07-21T18:06:40Z, updated 18:16:19Z; no comments or linked PR. Title explicitly says 'NO AGENTS'. The $20 is only an informal direct promise with no payer identity/payment method, deadline, acceptance trigger beyond the body, or escrow. Rejected."
-        },
-        {
-          "category": "open-source/dev-task",
-          "url": "https://github.com/Iamgoofball/-tg-station/issues/88",
-          "result": "Open; created 2026-07-21T17:48:49Z, updated 17:59:30Z; no linked PR, but one participant posted a claimed ready solution at 17:54Z and the owner requested a PR at 17:56Z. Rejected as already being pursued; the direct $10 promise remains unverified."
-        },
-        {
-          "category": "open-source/dev-task",
-          "url": "https://github.com/connect-boiz/soroban-security-scanner/issues/440",
-          "result": "Open; created 2026-07-20T14:41:38Z, updated 2026-07-21T17:47:41Z. The only reward marker is 'Maybe Rewarded'; no exact payer, amount, method, deadline, or payment trigger is specified. Four visible claim comments include a GrantFox bot assignment to @Emmanuel-Ugochukwu1 at 17:47Z; no task-specific implementation PR exists. Rejected for unverified payment and assignment/competition."
+          "url": "https://github.com/Iamgoofball/-tg-station/issues/92",
+          "result": "Open; created 2026-07-21T18:31:28Z, updated 18:42:48Z; zero comments and no title/body-matching PR result at live refresh. States $200 only as a direct maintainer promise after a PR; PayPal/Opire/other method is unspecified, with no escrow, deadline, payer verification, or payout decision process. It requires design documents, working code, unit tests, sprites, and integration into all maps, so it is not session-sized. Rejected."
         },
         {
           "category": "web3 task market",
           "url": "https://taskmarket.ai",
-          "result": "All 8 live open bounty-mode tasks were refreshed with taskmarket task list, task get, task submissions, task pitches, and task proofs. Bid lists are not applicable to bounty mode and this CLI provides no bids-list command. Counts of unique worker addresses across submissions/pitches/proofs were: 6, 35, 40, 35, 13, 60, 83, and 66. The sole <=10 task is escrowed at gross 0.15 USDC/net 0.13875 USDC (7.5% fee), deadline 2026-07-23T17:01:34.245Z, but requires a mainnet Base x402 EIP-3009 payment/signature and has 6 competitors. Every other task exceeds the <=10 limit; several additionally require x402 payment/signature. No Taskmarket task qualified."
+          "result": "Live read-only `taskmarket task list --mode bounty --limit 100` returned 8 open bounty tasks; `taskmarket task get` was run for all 8. Bounty mode has no pitch, proof, or bid route (all pitch/bid fields were zero/null); submissions are the relevant route. Task IDs, gross/net USDC after 7.5% platform fee, deadlines, and live submission attempts were: b572…ab1a 0.15/0.13875, 2026-07-23T17:01:34.245Z, 9; feb9…6613 0.02/0.0185, 2026-07-22T15:30:05.820Z, 119; cb67…cf0e 0.15/0.13875, 2026-07-23T02:57:30.663Z, 134; 5787…d54a 0.15/0.13875, 2026-07-27T11:41:26.508Z, 190; 9989…93c8 0.50/0.4625, 2026-07-26T21:06:47.872Z, 37; 1002…59f7 19/17.575, 2026-07-22T13:55:50.319Z, 548; d496…1717d0 10/9.25, 2026-07-22T06:38:56.689Z, 497; 50d1…5448 0.50/0.4625, 2026-08-04T03:31:01.190Z, 293. Every task with more than 10 submission attempts was rejected before candidate qualification because an exact <=10 unique-participant count could not be established from the summary and the visible attempt count already exceeds the cap. The sole <=10-attempt task was individually checked with `taskmarket task submissions`: 9 submissions from 6 unique worker addresses; it requires an actual Base-mainnet x402 EIP-3009 payment and signature (~0.001 USDC), so it is not free/safe to start and is rejected."
         }
       ],
       "shortlisted": [],
       "rejected": [
         {
-          "id": "github:tenstorrent/tt-metal#50522",
-          "url": "https://github.com/tenstorrent/tt-metal/issues/50522",
-          "reason": "Explicitly reviewed and assigned to another contributor; large multi-stage hardware work and payout conditional on all stages."
+          "id": "github:Iamgoofball/-tg-station#94",
+          "url": "https://github.com/Iamgoofball/-tg-station/issues/94",
+          "reason": "Advertised $100 has no verifiable payer, escrow, payment method, deadline, acceptance process, or professional specification."
         },
         {
-          "id": "github:Iamgoofball/-tg-station#89",
-          "url": "https://github.com/Iamgoofball/-tg-station/issues/89",
-          "reason": "Explicitly excludes agents; direct $20 promise has no verifiable payout route or terms."
+          "id": "github:Iamgoofball/-tg-station#92",
+          "url": "https://github.com/Iamgoofball/-tg-station/issues/92",
+          "reason": "Unverified direct $200 promise and a multi-artifact, all-maps game feature that is not session-sized."
         },
         {
-          "id": "github:Iamgoofball/-tg-station#88",
-          "url": "https://github.com/Iamgoofball/-tg-station/issues/88",
-          "reason": "Visible participant solution and maintainer request to submit it as a PR; direct payment unverified."
-        },
-        {
-          "id": "github:connect-boiz/soroban-security-scanner#440",
-          "url": "https://github.com/connect-boiz/soroban-security-scanner/issues/440",
-          "reason": "'Maybe Rewarded' is not a verified payout; already assigned with several visible claim comments."
-        },
-        {
-          "id": "taskmarket:open-bounty-cluster",
+          "id": "taskmarket:open-bounty-set-2026-07-21T19:15Z",
           "url": "https://taskmarket.ai",
-          "reason": "Current visible unique-worker counts are 6, 35, 40, 35, 13, 60, 83, and 66. The 6-worker task requires a mainnet Base payment/signature; every other task exceeds the competition cap."
+          "reason": "Seven of eight current bounty tasks have 37–548 live submission attempts, exceeding the competition cap before unique-worker enumeration. The remaining task has exactly 6 unique visible workers but mandates a real Base-mainnet payment and EIP-3009 signature."
         }
       ]
     }
@@ -132,33 +112,33 @@
     {
       "label": "Luna · Taskmarket scan",
       "kind": "scan",
-      "next": "2026-07-21T21:00:00+02:00",
-      "nextLabel": "21:00",
-      "last": "2026-07-21T20:04:13.976132+02:00",
+      "next": "2026-07-21T22:00:00+02:00",
+      "nextLabel": "22:00",
+      "last": "2026-07-21T21:02:29.031995+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · Taskmarket validatie",
       "kind": "validate",
-      "next": "2026-07-21T21:04:00+02:00",
-      "nextLabel": "21:04",
-      "last": "2026-07-21T20:05:14.328535+02:00",
+      "next": "2026-07-21T22:04:00+02:00",
+      "nextLabel": "22:04",
+      "last": "2026-07-21T21:05:22.123106+02:00",
       "enabled": "true"
     },
     {
       "label": "Terra · Taskmarket uitvoering",
       "kind": "execute",
-      "next": "2026-07-21T21:08:00+02:00",
-      "nextLabel": "21:08",
-      "last": "2026-07-21T20:08:26.250696+02:00",
+      "next": "2026-07-21T22:08:00+02:00",
+      "nextLabel": "22:08",
+      "last": "2026-07-21T21:08:27.037541+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · GitHub/Web3 scan",
       "kind": "scan",
-      "next": "2026-07-21T21:15:00+02:00",
-      "nextLabel": "21:15",
-      "last": "2026-07-21T20:18:36.558795+02:00",
+      "next": "2026-07-21T22:15:00+02:00",
+      "nextLabel": "22:15",
+      "last": "2026-07-21T21:18:36.451220+02:00",
       "enabled": "true"
     }
   ],
