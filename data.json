@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T16:18:01.397808+02:00",
-  "generatedLabel": "21 July 2026 · 16:18",
+  "generatedAt": "2026-07-21T16:20:23.059823+02:00",
+  "generatedLabel": "21 July 2026 · 16:20",
   "fx": {
     "usdEur": 0.8752,
     "date": "laatst bekende referentie"
@@ -50,10 +50,10 @@
     "solApproved": 0,
     "terraAt": "2026-07-19T07:26:54Z",
     "terraSubmitted": 0,
-    "externalAt": "2026-07-21T14:11:31Z",
+    "externalAt": "2026-07-21T14:18:54Z",
     "externalResult": "no-new-qualified-opportunity",
     "externalShortlisted": 0,
-    "externalRejected": 5
+    "externalRejected": 4
   },
   "scanDetails": {
     "taskmarket": {
@@ -148,75 +148,50 @@
         {
           "category": "open-source/dev-task",
           "url": "https://api.github.com/search/issues",
-          "result": "Live searches for open issues created today found 29 bounty-label matches, 156 bounty-body matches, and 311 reward-body matches. Most were mirrored/generated bounty-board content, vague Maybe Rewarded campaigns, smart-contract/DeFi/tokenomics work, referral/spam, security reports, or non-cash/in-game promises. The only newly credible repository candidate was checked individually."
+          "result": "Live searches limited to 2026-07-21 returned 154 open bounty-term matches, 290 reward-term matches, and 126 IssueHunt/funded-term matches. The bulk was generated bounty-board material, GrantFox 'Maybe Rewarded' tasks (no exact payout), direct/unverified promises, security reports, smart-contract/DeFi work, or spam/referral content. The only newly plausible normal-code task was triaged individually."
         },
         {
           "category": "open-source/dev-task",
-          "url": "https://github.com/tenstorrent/tt-metal/issues/50612",
-          "result": "Live issue, comments, timeline, repository, community-profile, and PR searches checked. It is open (created/updated 2026-07-21T14:06Z), with zero comments, no assignee, no issue-number-linked PR, and an established active Apache-2.0 repository with CONTRIBUTING.md. However the $10,000 title contains no payer, currency/payment rail, escrow/platform, deadline, eligibility, claim requirement, fees, payout trigger, or decision-maker. It also overlaps active/closed internal Welford/GroupNorm work. Payout is unverified and scope is not session-sized; rejected."
+          "url": "https://github.com/oaslananka/infra-lens-mcp/issues/112",
+          "result": "Live issue, comments, repository, and all-state PR search checked. Issue is open; created 2026-07-21T13:59:43Z and updated 2026-07-21T14:12:28Z. Its lone maintainer comment says implementation is ready, and open PR #113 was created 2026-07-21T14:13:09Z and updated 2026-07-21T14:16:17Z. The embedded Opire help text permits rewards but states no actual payer, amount, currency, payment route, deadline, or payout trigger."
         },
         {
           "category": "web3 task market",
           "url": "taskmarket task list/get/submissions (local CLI, read-only)",
-          "result": "All 7 currently open bounty-mode tasks were fetched with task get and their mode-relevant submissions list; claim, pitch, benchmark and auction lists were empty. Every bounty exceeded the <=10 competitor gate: reported/returned submissions 36, 42, 82, 15, 344, 405 and 159; visible distinct actor-field counts were respectively 30, 35, 34, 12, 58, 78 and 65. Several also explicitly require x402 payment/signing or wallet proof. All rejected; no Taskmarket action was taken."
+          "result": "All seven currently open bounty-mode tasks were fetched with both task get and mode-relevant submissions. They are platform-escrowed and have net rewards after 7.5% fee, but none passes competition: submission/unique-worker counts were 37/30, 43/35, 83/34, 16/13, 346/58, 407/78, and 160/66. The 16-submission captcha task also requires x402 payment and signing; the 160-submission note task requires an EIP-3009 payment signature. No task has <=10 visible unique competitors."
         },
         {
           "category": "web3 dev/design/content",
           "url": "https://superteam.fun/api/search/bounty",
-          "result": "First-party API returned the same five OPEN-labelled listings: Cap for Clacton (political/spam engagement exclusion), Goatfish and Panta (not new; full participant count unavailable from the primary feed, so rejected under unknown-count gate; Panta is prediction-market content), and Usuals/Paj (deadlines passed; Paj winner announced)."
-        },
-        {
-          "category": "web3 grants",
-          "url": "https://superteam.fun/api/grants/live",
-          "result": "First-party API returned 43 broad application/grant programs rather than a fixed-scope task with exact per-deliverable payout, deadline, and public full competition count; rejected."
+          "result": "First-party API returned the same five OPEN-labelled listings: Cap for Clacton (deadline in the metadata is 2026-07-21 but the listing requires political/social-media engagement and says work ended July 19), Goatfish (social-media/video deliverable and 32 comments but complete entrant count unavailable), Panta (prediction-market promotion, 34 comments), Usuals (deadline passed), and Paj (deadline passed and winner announced). No listing met the work-type, freshness, and known-competition gates."
         },
         {
           "category": "open-source/dev-task",
           "url": "https://algora.io/api/bounties",
-          "result": "First-party page returned successfully and did not expose any open bounty listing."
-        },
-        {
-          "category": "security contest",
-          "url": "https://code4rena.com/audits",
-          "result": "First-party embedded data reports Active [] and Upcoming []; no current contest."
-        },
-        {
-          "category": "security contest",
-          "url": "https://audits.sherlock.xyz/contests",
-          "result": "First-party page reports running Metric (public bug bounty), Tare (public best-efforts), and private Raindrops Solana. They are finding-dependent/shared-pool security work with no complete public duplicate/participant count, and are not ordinary fixed-scope tasks; rejected."
-        },
-        {
-          "category": "security competition",
-          "url": "https://cantina.xyz/opportunities/competitions",
-          "result": "First-party page returned HTTP 403 to this read-only scanner, leaving status, payout, and competition unverifiable; no candidate qualified."
+          "result": "First-party endpoint returned only a Not Acceptable error and did not expose live listings. Status, payout, and competition are therefore unknown; no candidate can qualify."
         }
       ],
       "shortlisted": [],
       "rejected": [
         {
-          "id": "github:tenstorrent/tt-metal#50612",
-          "url": "https://github.com/tenstorrent/tt-metal/issues/50612",
-          "reason": "Fresh open $10,000-labelled issue, zero visible comments/assignees/linked issue-number PRs, and a credible active repo. Rejected: issue body provides no verifiable payer, currency/payment method, escrow, deadline, eligibility, claim requirement, fees, payout trigger, or decision-maker; its direct promise is unverified. It also overlaps internal active/closed Welford/GroupNorm work and is not session-sized."
+          "id": "github:oaslananka/infra-lens-mcp#112",
+          "url": "https://github.com/oaslananka/infra-lens-mcp/issues/112",
+          "reason": "Rejected despite being fresh and in an active MIT repository: no exact funded reward or payment terms are present, and the maintainer already states the implementation is ready. Open PR https://github.com/oaslananka/infra-lens-mcp/pull/113 directly implements it, so visible competitor/solution count is at least one."
         },
         {
           "id": "taskmarket:open-bounty-cluster",
           "url": "https://taskmarket.ai",
-          "reason": "All seven currently open bounties had 15-405 submissions and 12-78 distinct visible actor fields after direct get+submissions checks. Some require payment/signing/wallet proof. None meets the <=10 competitors and free/safe-start gates."
+          "reason": "All seven live bounty-mode tasks exceeded the <=10 competition gate (13-78 visible unique worker addresses and 16-407 submissions). Two additionally require payment/signing."
         },
         {
           "id": "github:generated-or-unverified-delta",
           "url": "https://api.github.com/search/issues",
-          "reason": "Today's remaining search delta consisted of generated/mirrored bounty-board posts, GrantFox Maybe Rewarded tasks without exact task-specific payout, unverified offers, non-cash/in-game rewards, security reports, or excluded smart-contract/DeFi/tokenomics/referral work."
+          "reason": "Remaining fresh matches were generated/mirrored bounty-board posts, GrantFox Maybe Rewarded tasks without an exact task-specific payout, unverified offers, security reports, smart-contract/DeFi work, or referral/spam content."
         },
         {
           "id": "superteam:open-search-cluster",
           "url": "https://superteam.fun/api/search/bounty",
-          "reason": "No new eligible listing: one excluded political/spam task, one excluded prediction-market task, two expired tasks, and two live task pages whose full visible competitor count is unavailable or already known crowded."
-        },
-        {
-          "id": "security:running-cluster",
-          "url": "https://audits.sherlock.xyz/contests",
-          "reason": "Finding-dependent shared-pool/private security contests have unknown full competitor and duplicate-submission counts; excluded from normal fixed-scope paid work."
+          "reason": "No eligible listing: excluded political/social-media-spam work, excluded prediction-market promotion, expired/awarded listings, and a live social-media contest with unknown full participant count."
         }
       ]
     }
@@ -251,7 +226,7 @@
       "kind": "scan",
       "next": "2026-07-21T17:15:00+02:00",
       "nextLabel": "17:15",
-      "last": "2026-07-21T16:12:17.042190+02:00",
+      "last": "2026-07-21T16:19:47.257819+02:00",
       "enabled": "true"
     }
   ],
