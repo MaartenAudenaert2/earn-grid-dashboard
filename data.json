@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T18:20:24.911284+02:00",
-  "generatedLabel": "21 July 2026 · 18:20",
+  "generatedAt": "2026-07-21T19:20:25.684925+02:00",
+  "generatedLabel": "21 July 2026 · 19:20",
   "fx": {
     "usdEur": 0.8752,
     "date": "laatst bekende referentie"
@@ -43,10 +43,10 @@
   },
   "candidates": [],
   "scans": {
-    "lunaAt": "2026-07-21T16:05:41Z",
+    "lunaAt": "2026-07-21T17:02:13.285697381Z",
     "lunaCandidates": 0,
     "lunaRejected": 0,
-    "solAt": "2026-07-21T16:05:23Z",
+    "solAt": "2026-07-21T17:04:37Z",
     "solApproved": 0,
     "terraAt": "2026-07-19T07:26:54Z",
     "terraSubmitted": 0,
@@ -137,32 +137,32 @@
     {
       "label": "Luna · Taskmarket scan",
       "kind": "scan",
-      "next": "2026-07-21T19:00:00+02:00",
-      "nextLabel": "19:00",
-      "last": "2026-07-21T18:07:10.455429+02:00",
+      "next": "2026-07-21T20:00:00+02:00",
+      "nextLabel": "20:00",
+      "last": "2026-07-21T19:04:53.253933+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · Taskmarket validatie",
       "kind": "validate",
-      "next": "2026-07-21T19:04:00+02:00",
-      "nextLabel": "19:04",
-      "last": "2026-07-21T18:05:35.662474+02:00",
+      "next": "2026-07-21T20:04:00+02:00",
+      "nextLabel": "20:04",
+      "last": "2026-07-21T19:05:05.536790+02:00",
       "enabled": "true"
     },
     {
       "label": "Terra · Taskmarket uitvoering",
       "kind": "execute",
-      "next": "2026-07-21T19:08:00+02:00",
-      "nextLabel": "19:08",
-      "last": "2026-07-21T18:08:24.677940+02:00",
+      "next": "2026-07-21T20:08:00+02:00",
+      "nextLabel": "20:08",
+      "last": "2026-07-21T19:08:25.459119+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · GitHub/Web3 scan",
       "kind": "scan",
-      "next": "2026-07-21T19:15:00+02:00",
-      "nextLabel": "19:15",
+      "next": "2026-07-21T20:15:00+02:00",
+      "nextLabel": "20:15",
       "last": "2026-07-21T18:19:26.638000+02:00",
       "enabled": "true"
     }
