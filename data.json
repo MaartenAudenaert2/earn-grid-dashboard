@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T17:20:44.331687+02:00",
-  "generatedLabel": "22 July 2026 · 17:20",
+  "generatedAt": "2026-07-22T18:20:45.045356+02:00",
+  "generatedLabel": "22 July 2026 · 18:20",
   "fx": {
     "usdEur": 0.8752,
     "date": "laatst bekende referentie"
@@ -43,21 +43,21 @@
   },
   "candidates": [],
   "scans": {
-    "lunaAt": "2026-07-22T15:05:07.728183379Z",
+    "lunaAt": "2026-07-22T16:03:21.948522495Z",
     "lunaCandidates": 0,
-    "lunaRejected": 6,
-    "solAt": "2026-07-22T15:05:36Z",
+    "lunaRejected": 7,
+    "solAt": "2026-07-22T16:05:21Z",
     "solApproved": 0,
     "terraAt": "2026-07-19T07:26:54Z",
     "terraSubmitted": 0,
-    "externalAt": "2026-07-22T15:18:30Z",
+    "externalAt": "2026-07-22T16:19:08Z",
     "externalResult": "no-new-qualified-opportunity",
     "externalShortlisted": 0,
     "externalRejected": 0
   },
   "scanDetails": {
     "taskmarket": {
-      "scannedOpenTasks": 6,
+      "scannedOpenTasks": 7,
       "approved": [],
       "pitched": [
         {
@@ -81,7 +81,7 @@
           "taskIds": [
             "0x2365c7694be50babbfd2c176f0a3a4a7517bd5c970b5e6be8a3af58997e1cbcd"
           ],
-          "details": "pendingWorkerAction=pitch; worker cost=0.001 USDC; no action taken"
+          "details": "pitchCount=5; uniqueWorkers=5; our wallet has pitch d8f504ad-a6a6-46f1-83e9-685886abc115; pendingWorkerAction=pitch; workerCostUsdc=0.001; no action"
         },
         {
           "reason": "external_media_model_or_missing_required_guide",
@@ -98,34 +98,43 @@
             "0x60ffa49c7108378756f9ad8b2af91dbb9786850a718dfe778eab824ccdad8006",
             "0xe46ddf411af3ce559bf5a6b584ccf1f90c0c494864f542452f3fef0639577a89",
             "0xc22618ed4727998231db9317d3a0e25565fd7b3e71b9bbd276911303b3c3874c"
-          ]
+          ],
+          "details": "real external audio/video/image model required and guide-dependent deliverables"
         },
         {
           "reason": "external_outreach_or_nonverifiable_external_payout",
           "taskIds": [
             "0xfea655ecd3654de97c33c8b4bd7bc94f88392cb223bbe544dc6b9005e6f5f52c"
-          ]
+          ],
+          "details": "requires recruiting an external sponsor and payout includes revenue share"
         },
         {
           "reason": "external_paid_x402_or_nonverifiable_split_payout",
           "taskIds": [
             "0xb572510c687f254cb763989553a74a9dff1c76687579f8507335c2461de1ab1a"
-          ]
+          ],
+          "details": "requires external x402 payment and top-3 split payout"
         },
         {
-          "reason": "competition_unverified_or_over10",
+          "reason": "competition_over10",
           "taskIds": [
-            "0xfeb98106531ea1bd30f727a0c458809e0c05159c5c6c4e65ca7d0245a3b16613",
-            "0xcb67b0a48505c60ddba84023942a93c433bb0c31722028e0b62807074e0ccf0e",
-            "0x998986befc9f1f47ae1ac783402795f441ec6a9177b598fae58f62266b4b93c8",
-            "0x50d1dea29821649b87c2cb08558bd9cd984c9678d9f8d30ce608eef877ca5448"
-          ]
+            "0xcb67b0a48505c60ddba84023942a93c433bb0c31722028e0b62807074e0ccf0e"
+          ],
+          "details": "submissionCount=320"
         },
         {
-          "reason": "wrong_network_base_sepolia",
+          "reason": "external_paid_service_or_competition_over10",
+          "taskIds": [
+            "0x998986befc9f1f47ae1ac783402795f441ec6a9177b598fae58f62266b4b93c8"
+          ],
+          "details": "paid CAPTCHA service; submissionCount=61"
+        },
+        {
+          "reason": "wrong_network_base_sepolia_or_competition_over10",
           "taskIds": [
             "0x50d1dea29821649b87c2cb08558bd9cd984c9678d9f8d30ce608eef877ca5448"
-          ]
+          ],
+          "details": "Base Sepolia testnet; submissionCount=392"
         }
       ]
     },
@@ -143,33 +152,33 @@
     {
       "label": "Luna · Taskmarket scan",
       "kind": "scan",
-      "next": "2026-07-22T18:00:00+02:00",
-      "nextLabel": "18:00",
-      "last": "2026-07-22T17:05:58.131734+02:00",
+      "next": "2026-07-22T19:00:00+02:00",
+      "nextLabel": "19:00",
+      "last": "2026-07-22T18:03:56.190536+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · Taskmarket validatie",
       "kind": "validate",
-      "next": "2026-07-22T18:04:00+02:00",
-      "nextLabel": "18:04",
-      "last": "2026-07-22T17:05:53.770485+02:00",
+      "next": "2026-07-22T19:04:00+02:00",
+      "nextLabel": "19:04",
+      "last": "2026-07-22T18:05:46.089204+02:00",
       "enabled": "true"
     },
     {
       "label": "Terra · Taskmarket uitvoering",
       "kind": "execute",
-      "next": "2026-07-22T18:08:00+02:00",
-      "nextLabel": "18:08",
-      "last": "2026-07-22T17:08:44.111208+02:00",
+      "next": "2026-07-22T19:08:00+02:00",
+      "nextLabel": "19:08",
+      "last": "2026-07-22T18:08:44.845433+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · GitHub/Web3 scan",
       "kind": "scan",
-      "next": "2026-07-22T18:15:00+02:00",
-      "nextLabel": "18:15",
-      "last": "2026-07-22T17:19:07.597542+02:00",
+      "next": "2026-07-22T19:15:00+02:00",
+      "nextLabel": "19:15",
+      "last": "2026-07-22T18:19:24.454249+02:00",
       "enabled": "true"
     }
   ],
