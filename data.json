@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T02:20:32.088350+02:00",
-  "generatedLabel": "22 July 2026 · 02:20",
+  "generatedAt": "2026-07-22T03:20:32.927539+02:00",
+  "generatedLabel": "22 July 2026 · 03:20",
   "fx": {
     "usdEur": 0.8752,
     "date": "laatst bekende referentie"
@@ -36,17 +36,17 @@
   "walletEur": 8.73,
   "pr": {
     "url": "https://github.com/tgstation/tgstation/pull/97103",
-    "state": "OPEN",
+    "state": "CLOSED",
     "mergeable": "MERGEABLE",
     "reviewDecision": "",
-    "updatedAt": "2026-07-21T12:33:22Z"
+    "updatedAt": "2026-07-22T00:44:09Z"
   },
   "candidates": [],
   "scans": {
-    "lunaAt": "2026-07-22T00:04:10Z",
+    "lunaAt": "2026-07-22T01:05:17.507796Z",
     "lunaCandidates": 0,
     "lunaRejected": 0,
-    "solAt": "2026-07-22T00:05:04Z",
+    "solAt": "2026-07-22T01:05:42Z",
     "solApproved": 0,
     "terraAt": "2026-07-19T07:26:54Z",
     "terraSubmitted": 0,
@@ -66,31 +66,31 @@
       "rejected": [
         {
           "taskId": "0xfea655ecd3654de97c33c8b4bd7bc94f88392cb223bbe544dc6b9005e6f5f52c",
-          "reason": "Afgewezen: 21 unieke concurrerende wallets, boven maximum 10; bovendien risicovolle publieke sponsorwerving en omzetdeelverificatie."
+          "reason": "Afgewezen: publieke sponsorwerving en omzetdeelverificatie; geen gegarandeerde bonus of positieve verwachte netto-opbrengst."
         },
         {
           "taskId": "0xb572510c687f254cb763989553a74a9dff1c76687579f8507335c2461de1ab1a",
-          "reason": "Afgewezen: vereist voorafgaande externe x402-betaling van 0.001 USDC en uitbetaling is niet gegarandeerd."
+          "reason": "Afgewezen: vereist externe Base-x402-betaling; alleen top 3 delen de beloning, dus geen gegarandeerde positieve netto-opbrengst."
         },
         {
           "taskId": "0xfeb98106531ea1bd30f727a0c458809e0c05159c5c6c4e65ca7d0245a3b16613",
-          "reason": "Afgewezen: 41 unieke concurrerende wallets, boven maximum 10; netto-opbrengst slechts 0.0185 USDC."
+          "reason": "Afgewezen: verzadigde bounty met meer dan 10 concurrerende wallets en slechts 0.0185 USDC netto beloningspot."
         },
         {
           "taskId": "0xcb67b0a48505c60ddba84023942a93c433bb0c31722028e0b62807074e0ccf0e",
-          "reason": "Afgewezen: 46 unieke concurrerende wallets, boven maximum 10; uitbetaling is niet gegarandeerd."
+          "reason": "Afgewezen: verzadigde bounty met meer dan 10 concurrerende wallets; uitbetaling aan een nieuwe inzending is niet gegarandeerd."
         },
         {
           "taskId": "0x998986befc9f1f47ae1ac783402795f441ec6a9177b598fae58f62266b4b93c8",
-          "reason": "Afgewezen: 36 unieke concurrerende wallets, boven maximum 10; externe x402-CAPTCHA-opdracht is verdacht en hoog risico."
+          "reason": "Afgewezen: CAPTCHA-oplossing plus externe x402-betaling is verdacht en hoog risico."
         },
         {
           "taskId": "0xd4962d4534961d4e93f93848f552dd41d48e2091a9fbb36ecc9503a8621717d0",
-          "reason": "Afgewezen: 88 unieke concurrerende wallets, boven maximum 10; brede subjectieve researchdeliverable is onvoldoende voorspelbaar."
+          "reason": "Afgewezen: zeer hoge concurrentie boven 10 wallets en brede subjectieve researchdeliverable."
         },
         {
           "taskId": "0x50d1dea29821649b87c2cb08558bd9cd984c9678d9f8d30ce608eef877ca5448",
-          "reason": "Afgewezen: 87 unieke concurrerende wallets, boven maximum 10; vereist faucetgebruik en voorafgaande externe x402-betaling op Base Sepolia."
+          "reason": "Afgewezen: vereist Base-Sepolia-faucet en externe x402-betaling; concurrentie boven 10 wallets."
         }
       ]
     },
@@ -104,33 +104,33 @@
     {
       "label": "Luna · Taskmarket scan",
       "kind": "scan",
-      "next": "2026-07-22T03:00:00+02:00",
-      "nextLabel": "03:00",
-      "last": "2026-07-22T02:05:28.689997+02:00",
+      "next": "2026-07-22T04:00:00+02:00",
+      "nextLabel": "04:00",
+      "last": "2026-07-22T03:05:53.674456+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · Taskmarket validatie",
       "kind": "validate",
-      "next": "2026-07-22T03:04:00+02:00",
-      "nextLabel": "03:04",
-      "last": "2026-07-22T02:05:51.871875+02:00",
+      "next": "2026-07-22T04:04:00+02:00",
+      "nextLabel": "04:04",
+      "last": "2026-07-22T03:06:28.386790+02:00",
       "enabled": "true"
     },
     {
       "label": "Terra · Taskmarket uitvoering",
       "kind": "execute",
-      "next": "2026-07-22T03:08:00+02:00",
-      "nextLabel": "03:08",
-      "last": "2026-07-22T02:08:31.858459+02:00",
+      "next": "2026-07-22T04:08:00+02:00",
+      "nextLabel": "04:08",
+      "last": "2026-07-22T03:08:32.699581+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · GitHub/Web3 scan",
       "kind": "scan",
-      "next": "2026-07-22T03:15:00+02:00",
-      "nextLabel": "03:15",
-      "last": "2026-07-22T02:17:46.480125+02:00",
+      "next": "2026-07-22T04:15:00+02:00",
+      "nextLabel": "04:15",
+      "last": "2026-07-22T03:19:49.603853+02:00",
       "enabled": "true"
     }
   ],
@@ -146,10 +146,10 @@
     ],
     "githubPr": {
       "url": "https://github.com/tgstation/tgstation/pull/97103",
-      "state": "OPEN",
+      "state": "CLOSED",
       "mergeable": "MERGEABLE",
       "reviewDecision": "",
-      "updatedAt": "2026-07-21T12:33:22Z"
+      "updatedAt": "2026-07-22T00:44:09Z"
     }
   },
   "notes": [
