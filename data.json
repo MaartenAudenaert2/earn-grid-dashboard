@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T16:20:43.569493+02:00",
-  "generatedLabel": "22 July 2026 · 16:20",
+  "generatedAt": "2026-07-22T17:20:44.331687+02:00",
+  "generatedLabel": "22 July 2026 · 17:20",
   "fx": {
     "usdEur": 0.8752,
     "date": "laatst bekende referentie"
@@ -43,21 +43,21 @@
   },
   "candidates": [],
   "scans": {
-    "lunaAt": "2026-07-22T14:03:28.8088817Z",
+    "lunaAt": "2026-07-22T15:05:07.728183379Z",
     "lunaCandidates": 0,
-    "lunaRejected": 0,
-    "solAt": "2026-07-22T14:04:53Z",
+    "lunaRejected": 6,
+    "solAt": "2026-07-22T15:05:36Z",
     "solApproved": 0,
     "terraAt": "2026-07-19T07:26:54Z",
     "terraSubmitted": 0,
-    "externalAt": "2026-07-22T14:16:05Z",
+    "externalAt": "2026-07-22T15:18:30Z",
     "externalResult": "no-new-qualified-opportunity",
     "externalShortlisted": 0,
-    "externalRejected": 40
+    "externalRejected": 0
   },
   "scanDetails": {
     "taskmarket": {
-      "scannedOpenTasks": 0,
+      "scannedOpenTasks": 6,
       "approved": [],
       "pitched": [
         {
@@ -75,255 +75,101 @@
           "note": "Pitch is bevestigd; er is nog geen selectie, merge, acceptatie of betaling. De mogelijke beloning telt niet als inkomen."
         }
       ],
-      "rejected": []
+      "rejected": [
+        {
+          "reason": "wallet_already_participated",
+          "taskIds": [
+            "0x2365c7694be50babbfd2c176f0a3a4a7517bd5c970b5e6be8a3af58997e1cbcd"
+          ],
+          "details": "pendingWorkerAction=pitch; worker cost=0.001 USDC; no action taken"
+        },
+        {
+          "reason": "external_media_model_or_missing_required_guide",
+          "taskIds": [
+            "0xf9f85f13a45c2486b618122efe694b520e9e5f9723398b2b523452c824cd07ba",
+            "0xc6b79bd5a4117213586c7193709495e6527621163373da053bec22210697f888",
+            "0x816855943eca6ee0fcaa02475064280146d9c760d0005bcd9c8ca51c075389ea",
+            "0x8188a375e07b0e0edd93c986142c7796b5a3014d213347e6fd0bd839bfdec48e",
+            "0xf695c3875725e78dc777388b0713a120827a236b5b9d80c55f39860eb32bbc45",
+            "0x6a3d14873dd21735732242c15915ac94d1b88130a7b6746e47bbc38a25440cf8",
+            "0x5fd91818c7cc0c76cc0823326416e427f757edfc924ffc73e9c73040f099cb21",
+            "0x37b75bf9c4f12262834c020710a723c218d727a22218413b849ba3ce247396c9",
+            "0xab6871942fb13f7cfdec23d73a32a230c8b6d2c3880b96bfb7c14844405502ca",
+            "0x60ffa49c7108378756f9ad8b2af91dbb9786850a718dfe778eab824ccdad8006",
+            "0xe46ddf411af3ce559bf5a6b584ccf1f90c0c494864f542452f3fef0639577a89",
+            "0xc22618ed4727998231db9317d3a0e25565fd7b3e71b9bbd276911303b3c3874c"
+          ]
+        },
+        {
+          "reason": "external_outreach_or_nonverifiable_external_payout",
+          "taskIds": [
+            "0xfea655ecd3654de97c33c8b4bd7bc94f88392cb223bbe544dc6b9005e6f5f52c"
+          ]
+        },
+        {
+          "reason": "external_paid_x402_or_nonverifiable_split_payout",
+          "taskIds": [
+            "0xb572510c687f254cb763989553a74a9dff1c76687579f8507335c2461de1ab1a"
+          ]
+        },
+        {
+          "reason": "competition_unverified_or_over10",
+          "taskIds": [
+            "0xfeb98106531ea1bd30f727a0c458809e0c05159c5c6c4e65ca7d0245a3b16613",
+            "0xcb67b0a48505c60ddba84023942a93c433bb0c31722028e0b62807074e0ccf0e",
+            "0x998986befc9f1f47ae1ac783402795f441ec6a9177b598fae58f62266b4b93c8",
+            "0x50d1dea29821649b87c2cb08558bd9cd984c9678d9f8d30ce608eef877ca5448"
+          ]
+        },
+        {
+          "reason": "wrong_network_base_sepolia",
+          "taskIds": [
+            "0x50d1dea29821649b87c2cb08558bd9cd984c9678d9f8d30ce608eef877ca5448"
+          ]
+        }
+      ]
     },
     "validation": {
       "approved": [],
       "rejected": []
     },
     "external": {
-      "sources": [
-        {
-          "category": "safety",
-          "result": "No wallet, signing, claim, bid, submission, payment, account creation, on-chain action, token approval, transfer, balance query, or wallet query was performed."
-        }
-      ],
+      "sources": [],
       "shortlisted": [],
-      "rejected": [
-        {
-          "id": "github:Expensify/App#95742",
-          "url": "https://github.com/Expensify/App/issues/95742",
-          "reason": "Solved by merged linked PR #95875."
-        },
-        {
-          "id": "github:tenstorrent/tt-metal#30869",
-          "url": "https://github.com/tenstorrent/tt-metal/issues/30869",
-          "reason": "Assigned and has an open implementation PR; hardware scope is not session-sized."
-        },
-        {
-          "id": "github:tenstorrent/tt-metal#50522",
-          "url": "https://github.com/tenstorrent/tt-metal/issues/50522",
-          "reason": "Assigned; implementation path is hardware-dependent and not session-sized."
-        },
-        {
-          "id": "github:tenstorrent/tt-metal#50612",
-          "url": "https://github.com/tenstorrent/tt-metal/issues/50612",
-          "reason": "Assigned and covered by open PR #50624."
-        },
-        {
-          "id": "github:boundlessfi/boundless-contract#72",
-          "url": "https://github.com/boundlessfi/boundless-contract/issues/72",
-          "reason": "Claimed by multiple workers and covered by open PR #85; payment terms incomplete."
-        },
-        {
-          "id": "github:nirium-protocol/nirium-sdk#10",
-          "url": "https://github.com/nirium-protocol/nirium-sdk/issues/10",
-          "reason": "Crowded and covered by open PR #18."
-        },
-        {
-          "id": "github:nirium-protocol/nirium-sdk#11",
-          "url": "https://github.com/nirium-protocol/nirium-sdk/issues/11",
-          "reason": "Seven visible claim/work commenters and open PR #19."
-        },
-        {
-          "id": "github:conduit-protocol/streamFi-contracts#54",
-          "url": "https://github.com/conduit-protocol/streamFi-contracts/issues/54",
-          "reason": "GrantFox assigned it to another worker."
-        },
-        {
-          "id": "github:StellarConduit/stellarconduit-sync-engine#22",
-          "url": "https://github.com/StellarConduit/stellarconduit-sync-engine/issues/22",
-          "reason": "No exact payer, amount, payment route, or payout trigger; one claim comment."
-        },
-        {
-          "id": "github:monk-io/monk-plugin#137",
-          "url": "https://github.com/monk-io/monk-plugin/issues/137",
-          "reason": "Security-bounty category requiring product sign-up/installation; payout terms unverified."
-        },
-        {
-          "id": "github:xevrion-v2/agent-playground#8264",
-          "url": "https://github.com/xevrion-v2/agent-playground/issues/8264",
-          "reason": "Covered by immediate matching PR #8269; payment unverified."
-        },
-        {
-          "id": "github:Iamgoofball/-tg-station#155",
-          "url": "https://github.com/Iamgoofball/-tg-station/issues/155",
-          "reason": "Unverified direct-pay promise and oversized scope."
-        },
-        {
-          "id": "github:Eaprime1/custos#235",
-          "url": "https://github.com/Eaprime1/custos/issues/235",
-          "reason": "Fresh issue but has open PR #237; stated reward is 150 project XP, not an independently verifiable paid bounty."
-        },
-        {
-          "id": "github:Tylerx3udv/cli#1",
-          "url": "https://github.com/Tylerx3udv/cli/issues/1",
-          "reason": "$10 label is not funded: the sole /reward 10 command was rejected by Opirebot because the platform minimum is $20. One worker has already /try-claimed it; repository was created minutes before the issue."
-        },
-        {
-          "id": "github:Tylerx3udv/go-github#1",
-          "url": "https://github.com/Tylerx3udv/go-github/issues/1",
-          "reason": "$10 label is not funded: the sole /reward 10 command was rejected by Opirebot because the platform minimum is $20; repository was created minutes before the issue."
-        },
-        {
-          "id": "taskmarket:0x2365c7694be50babbfd2c176f0a3a4a7517bd5c970b5e6be8a3af58997e1cbcd",
-          "url": "taskmarket://task/0x2365c7694be50babbfd2c176f0a3a4a7517bd5c970b5e6be8a3af58997e1cbcd",
-          "reason": "Open pitch task with 1.999999-USDC net escrow, but a pitch costs 0.001 USDC and the acting wallet already has one pending pitch. Three distinct workers are visible; selection and payout are contingent."
-        },
-        {
-          "id": "taskmarket:0xf9f85f13a45c2486b618122efe694b520e9e5f9723398b2b523452c824cd07ba",
-          "url": "taskmarket://task/0xf9f85f13a45c2486b618122efe694b520e9e5f9723398b2b523452c824cd07ba",
-          "reason": "Escrowed 5.55-USDC net reward but creative audio-model contest, not professional open-source/Web3 engineering; 7 submissions from 5 workers."
-        },
-        {
-          "id": "taskmarket:0xc6b79bd5a4117213586c7193709495e6527621163373da053bec22210697f888",
-          "url": "taskmarket://task/0xc6b79bd5a4117213586c7193709495e6527621163373da053bec22210697f888",
-          "reason": "Escrowed 8.325-USDC net reward but creative video-model contest, not professional open-source/Web3 engineering; 7 submissions from 6 workers."
-        },
-        {
-          "id": "github:Iamgoofball/-tg-station#185",
-          "url": "https://github.com/Iamgoofball/-tg-station/issues/185",
-          "reason": "Fresh, open, no comments/assignees/linked PRs, but a low-activity personal fork offers only a $500 title: no payer, payment route, escrow, payout trigger, deadline, or evidence the fork maintainer accepts the work; scope asks for fake player bots and rule-breaking behavior."
-        },
-        {
-          "id": "github:NashKara96/resty#1",
-          "url": "https://github.com/NashKara96/resty/issues/1",
-          "reason": "Open and quiet, but the sole /reward 10 was rejected by Opirebot because the platform minimum is $20; therefore the $10 label is not a funded payout. Repository was created and last pushed on 2026-07-21."
-        },
-        {
-          "id": "github:Talenttrust/Talenttrust-Frontend#462",
-          "url": "https://github.com/Talenttrust/Talenttrust-Frontend/issues/462",
-          "reason": "Open, no comments/PRs, external PRs allowed, but primary terms say only 'may be rewarded': no exact amount, currency, payer, payment route, payout trigger, or deadline."
-        },
-        {
-          "id": "github:Talenttrust/Talenttrust-Frontend#465",
-          "url": "https://github.com/Talenttrust/Talenttrust-Frontend/issues/465",
-          "reason": "Same unverified GrantFox 'may be rewarded' payment terms; two visible work/assignment commenters (mxrtins04 and Juwon345)."
-        },
-        {
-          "id": "github:globe-and-citizen/cnc-portal#2334",
-          "url": "https://github.com/globe-and-citizen/cnc-portal/issues/2334",
-          "reason": "Open and quiet, but the primary issue contains no reward amount, payer, payment method, payout trigger, or deadline; it is an ordinary feature request, not a verifiable bounty."
-        },
-        {
-          "id": "github:devasignhq/website#41",
-          "url": "https://github.com/devasignhq/website/issues/41",
-          "reason": "Open, quiet documentation request, but no bounty/payment terms, amount, payer, deadline, or external-contribution evidence; repository has one star and no recent push since 2026-07-17."
-        },
-        {
-          "id": "github:mergeos-bounties/Loru#19",
-          "url": "https://github.com/mergeos-bounties/Loru/issues/19",
-          "reason": "Open 25-MRG ledger-credit offer, not independently verifiable cash/escrow; three claim/work commenters and matching open PR #531 already target the acceptance criteria."
-        },
-        {
-          "id": "github:Da-Mikey/hermes-agent-evolution#50",
-          "url": "https://github.com/Da-Mikey/hermes-agent-evolution/issues/50",
-          "reason": "Open and quiet, but no payment terms; target is a zero-star personal fork with no push since 2026-07-20."
-        },
-        {
-          "id": "github:advatar/ActiveChain#22",
-          "url": "https://github.com/advatar/ActiveChain/issues/22",
-          "reason": "No payout promise; a matching open implementation PR #23 was created minutes after the issue."
-        },
-        {
-          "id": "github:invertase/react-native-google-mobile-ads#867",
-          "url": "https://github.com/invertase/react-native-google-mobile-ads/issues/867",
-          "reason": "Established repository and open bug report, but neither issue nor comment gives a bounty/funding promise, payer, payment route, or payout trigger."
-        },
-        {
-          "id": "github:conduit-protocol/streamFi-sdk#74",
-          "url": "https://github.com/conduit-protocol/streamFi-sdk/issues/74",
-          "reason": "Advertises a $150 tier but is labelled only “Maybe Rewarded,” has no payment route/trigger/deadline, and GrantFox assigned it to Omoboi-dev after four claim comments."
-        },
-        {
-          "id": "github:conduit-protocol/streamFi-app#86",
-          "url": "https://github.com/conduit-protocol/streamFi-app/issues/86",
-          "reason": "Advertises a $150 tier but is labelled only “Maybe Rewarded,” has no payment route/trigger/deadline, and GrantFox assigned it to Omoboi-dev after four claim comments."
-        },
-        {
-          "id": "github:conduit-protocol/streamFi-contracts#75",
-          "url": "https://github.com/conduit-protocol/streamFi-contracts/issues/75",
-          "reason": "GrantFox campaign candidate is assigned to another worker; the “Maybe Rewarded” label does not verify a payable bounty."
-        },
-        {
-          "id": "github:relayhop/sn-monetization-runtime#202",
-          "url": "https://github.com/relayhop/sn-monetization-runtime/issues/202",
-          "reason": "unknown payment and participant count"
-        },
-        {
-          "id": "github:Extra-Chill/data-machine-events#511",
-          "url": "https://github.com/Extra-Chill/data-machine-events/issues/511",
-          "reason": "no payment and apparently already resolved/superseded"
-        },
-        {
-          "id": "github:conduit-protocol/streamFi-contracts#91",
-          "url": "https://github.com/conduit-protocol/streamFi-contracts/issues/91",
-          "reason": "already claimed and payout terms unverified"
-        },
-        {
-          "id": "github:mergeos-bounties/NokaMan#22",
-          "url": "https://github.com/mergeos-bounties/NokaMan/issues/22",
-          "reason": "stale, internal credit, claimed, and covered by open PR"
-        },
-        {
-          "id": "github:CabinetOnFire/BehaviorTreeG#1",
-          "url": "https://github.com/CabinetOnFire/BehaviorTreeG/issues/1",
-          "reason": "payment is not verifiable"
-        },
-        {
-          "id": "github:sherrmann/Spoolman-NG#333",
-          "url": "https://github.com/sherrmann/Spoolman-NG/issues/333",
-          "reason": "not a paid task"
-        },
-        {
-          "id": "github:monk-io/monk-plugin#145",
-          "url": "https://github.com/monk-io/monk-plugin/issues/145",
-          "reason": "Security/bug-bounty report rather than a normal open-source implementation task; primary issue requires product signup and installation but states no exact amount, payer, payment method, payout trigger, or deadline."
-        },
-        {
-          "id": "github:conduit-protocol/streamFi-app#109",
-          "url": "https://github.com/conduit-protocol/streamFi-app/issues/109",
-          "reason": "The $150 tier is an unverified issue label with no payer, escrow, payment route, trigger, fees, or deadline; two distinct workers have made three recent work/claim comments."
-        },
-        {
-          "id": "github:Adamantine-guild/guildpass-mobile#161",
-          "url": "https://github.com/Adamantine-guild/guildpass-mobile/issues/161",
-          "reason": "Assigned to silentgeckoaudit3801, whose comment links a two-commit implementation branch; the Maybe Rewarded label supplies no exact payable amount, payer, method, trigger, or deadline."
-        }
-      ]
+      "rejected": []
     }
   },
   "schedule": [
     {
       "label": "Luna · Taskmarket scan",
       "kind": "scan",
-      "next": "2026-07-22T17:00:00+02:00",
-      "nextLabel": "17:00",
-      "last": "2026-07-22T16:04:25.957234+02:00",
+      "next": "2026-07-22T18:00:00+02:00",
+      "nextLabel": "18:00",
+      "last": "2026-07-22T17:05:58.131734+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · Taskmarket validatie",
       "kind": "validate",
-      "next": "2026-07-22T17:04:00+02:00",
-      "nextLabel": "17:04",
-      "last": "2026-07-22T16:05:43.818217+02:00",
+      "next": "2026-07-22T18:04:00+02:00",
+      "nextLabel": "18:04",
+      "last": "2026-07-22T17:05:53.770485+02:00",
       "enabled": "true"
     },
     {
       "label": "Terra · Taskmarket uitvoering",
       "kind": "execute",
-      "next": "2026-07-22T17:08:00+02:00",
-      "nextLabel": "17:08",
-      "last": "2026-07-22T16:08:43.357223+02:00",
+      "next": "2026-07-22T18:08:00+02:00",
+      "nextLabel": "18:08",
+      "last": "2026-07-22T17:08:44.111208+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · GitHub/Web3 scan",
       "kind": "scan",
-      "next": "2026-07-22T17:15:00+02:00",
-      "nextLabel": "17:15",
-      "last": "2026-07-22T16:19:01.649410+02:00",
+      "next": "2026-07-22T18:15:00+02:00",
+      "nextLabel": "18:15",
+      "last": "2026-07-22T17:19:07.597542+02:00",
       "enabled": "true"
     }
   ],
