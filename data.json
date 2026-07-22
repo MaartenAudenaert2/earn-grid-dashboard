@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T01:20:31.321709+02:00",
-  "generatedLabel": "22 July 2026 · 01:20",
+  "generatedAt": "2026-07-22T02:20:32.088350+02:00",
+  "generatedLabel": "22 July 2026 · 02:20",
   "fx": {
     "usdEur": 0.8752,
     "date": "laatst bekende referentie"
@@ -43,17 +43,17 @@
   },
   "candidates": [],
   "scans": {
-    "lunaAt": "2026-07-21T23:03:31Z",
+    "lunaAt": "2026-07-22T00:04:10Z",
     "lunaCandidates": 0,
     "lunaRejected": 0,
-    "solAt": "2026-07-21T23:05:08Z",
+    "solAt": "2026-07-22T00:05:04Z",
     "solApproved": 0,
     "terraAt": "2026-07-19T07:26:54Z",
     "terraSubmitted": 0,
-    "externalAt": "2026-07-21T23:18:15Z",
-    "externalResult": "no-new-qualified-opportunity",
+    "externalAt": "",
+    "externalResult": "onbekend",
     "externalShortlisted": 0,
-    "externalRejected": 8
+    "externalRejected": 0
   },
   "scanDetails": {
     "taskmarket": {
@@ -63,157 +63,74 @@
     },
     "validation": {
       "approved": [],
-      "rejected": []
-    },
-    "external": {
-      "sources": [
-        {
-          "category": "open-source/dev-task",
-          "url": "https://api.github.com/search/issues?q=is%3Aissue%20is%3Aopen%20%28bounty%20OR%20reward%20OR%20funded%29%20in%3Atitle%2Cbody%20updated%3A%3E%3D2026-07-20",
-          "result": "Authenticated primary-source search returned 2,914 results. The fresh results were dominated by bounty-board mirrors, security/bug-bounty work, unverified direct promises, referral/engagement tasks, and projects with claims or solution activity."
-        },
-        {
-          "category": "open-source/dev-task",
-          "url": "https://github.com/auscaster/frantic-board/issues/301",
-          "result": "Open mirror, created 2026-07-12T04:21:10Z and updated 2026-07-21T23:02:53Z. Its primary body identifies Frantic as source of truth but states worker price $8, 1 slot (filled), status needs work. Visible history has 55 comments and prior claim/delivery/revision events; last source-status evidence says no open claim slots. Rejected: slot unavailable and prior submissions/claims."
-        },
-        {
-          "category": "open-source/dev-task",
-          "url": "https://github.com/auscaster/frantic-board/issues/106",
-          "result": "Open mirror, created 2026-06-21T04:58:06Z and updated 2026-07-21T20:19:51Z. Body says worker price $0, 100 slots (45 available), with 559 claim/delivery/revision comments. Rejected: zero cash reward and excessive existing participation; not a paid coding opportunity."
-        },
-        {
-          "category": "open-source/dev-task",
-          "url": "https://github.com/Iamgoofball/-tg-station/issues/123",
-          "result": "Open, created 2026-07-21T22:36:51Z and updated 2026-07-21T23:07:10Z. The bounty body does not establish an accountable payer, payment method, payout trigger, fee, deadline, or escrow. A visible third-party 'solution submitted' comment was posted at the update time. Rejected: unverified direct-payment promise plus an existing candidate delivery."
-        },
-        {
-          "category": "open-source/dev-task",
-          "url": "https://github.com/Scottcjn/rustchain-bounties/issues/16255",
-          "result": "Open, created 2026-07-19T21:43:49Z, updated 2026-07-21T20:05:00Z; stated 8 RTC payout after a mergeable PR and RTC-wallet disclosure. Eight comments contain several attempts/claims. Two candidate PRs are open (#16278 and #16282) and one is closed (#16263). Rejected: crowded, active solution PRs, and payment requires a wallet/ledger path outside this no-wallet scope."
-        },
-        {
-          "category": "open-source/dev-task",
-          "url": "https://github.com/Scottcjn/rustchain-bounties/issues/16252",
-          "result": "Open, created 2026-07-19T21:43:45Z, updated 2026-07-21T19:51:55Z; stated 12 RTC payout after merged PR and RTC-wallet disclosure. Comments say target PR Scottcjn/Rustchain#8018 was merged and bounty awarded/sent. Rejected: already solved/paid."
-        },
-        {
-          "category": "web3 task market",
-          "url": "https://taskmarket.ai",
-          "result": "Ran read-only `taskmarket task list --mode bounty --limit 100`, then `taskmarket task get` and `taskmarket task submissions` for all seven current open bounty-mode listings. In bounty mode only submissions apply; pitch/proof/bid routes are mode-inapplicable. No prior participation by this job was indicated."
-        },
-        {
-          "category": "web3 task market",
-          "url": "https://taskmarket.ai/task/0xfea655ecd3654de97c33c8b4bd7bc94f88392cb223bbe544dc6b9005e6f5f52c",
-          "result": "Open; created 2026-07-21T23:12:21.843Z; deadline 2026-07-28T23:12:21.835Z; gross/net 1.081082/1 USDC; escrow hash present; 7.5% fee; no stake; 2 submissions by 1 unique worker. Deliverable requires acquiring an unrelated sponsor to send at least 25 USDC on Base. The advertised 15% sponsor bonus is paid separately within 3 business days, not covered by the displayed 1-USDC escrow. Rejected: referral/outreach task requiring a third-party financial transfer, ambiguous separate bonus payout, and not professional fixed-scope digital work."
-        },
-        {
-          "category": "web3 task market",
-          "url": "https://taskmarket.ai/task/0xb572510c687f254cb763989553a74a9dff1c76687579f8507335c2461de1ab1a",
-          "result": "Open; created 2026-07-21T17:01:34.257Z; deadline 2026-07-23T17:01:34.245Z; gross/net 0.15/0.13875 USDC; escrow shown; 7.5% fee; 17 submissions by 8 unique workers; top three split the reward. Requires Base-mainnet x402 EIP-3009 signature/payment (~0.001 USDC). Rejected: financial signing/payment is mandatory."
-        },
-        {
-          "category": "web3 task market",
-          "url": "https://taskmarket.ai/task/0xfeb98106531ea1bd30f727a0c458809e0c05159c5c6c4e65ca7d0245a3b16613",
-          "result": "Open; created 2026-07-21T03:30:05.825Z; deadline 2026-07-22T15:30:05.820Z; gross/net 0.02/0.0185 USDC; escrow shown; 7.5% fee; 243 submissions by 41 unique workers. Rejected: competition exceeds 10."
-        },
-        {
-          "category": "web3 task market",
-          "url": "https://taskmarket.ai/task/0xcb67b0a48505c60ddba84023942a93c433bb0c31722028e0b62807074e0ccf0e",
-          "result": "Open; created 2026-07-21T02:57:30.670Z; deadline 2026-07-23T02:57:30.663Z; gross/net 0.15/0.13875 USDC; escrow shown; 7.5% fee; 259 submissions by 46 unique workers. Rejected: competition exceeds 10."
-        },
-        {
-          "category": "web3 task market",
-          "url": "https://taskmarket.ai/task/0x998986befc9f1f47ae1ac783402795f441ec6a9177b598fae58f62266b4b93c8",
-          "result": "Open; created 2026-07-19T21:06:47.875Z; deadline 2026-07-26T21:06:47.872Z; gross/net 0.5/0.4625 USDC; escrow shown; 7.5% fee; 58 submissions by 36 unique workers. Requires a 0.01-USDC Base payment and payment proof. Rejected: competition exceeds 10 and a financial payment/signature is mandatory."
-        },
-        {
-          "category": "web3 task market",
-          "url": "https://taskmarket.ai/task/0xd4962d4534961d4e93f93848f552dd41d48e2091a9fbb36ecc9503a8621717d0",
-          "result": "Open; created 2026-07-19T06:38:56.693Z; deadline 2026-07-22T06:38:56.689Z; gross/net 10/9.25 USDC; escrow shown; 7.5% fee; 582 submissions by 88 unique workers. Rejected: competition exceeds 10."
-        },
-        {
-          "category": "web3 task market",
-          "url": "https://taskmarket.ai/task/0x50d1dea29821649b87c2cb08558bd9cd984c9678d9f8d30ce608eef877ca5448",
-          "result": "Open; created 2026-07-05T03:31:01.198Z; deadline 2026-08-04T03:31:01.190Z; gross/net 0.5/0.4625 USDC; escrow shown; 7.5% fee; 353 submissions by 87 unique workers. Requires wallet use and an EIP-3009 payment signature, notwithstanding its testnet-faucet route. Rejected: competition exceeds 10 and signing/wallet connection is mandatory."
-        }
-      ],
-      "shortlisted": [],
       "rejected": [
         {
-          "id": "github:auscaster/frantic-board#301",
-          "url": "https://github.com/auscaster/frantic-board/issues/301",
-          "reason": "The single $8 slot is filled; existing claim/delivery/revision history and no open claim slots."
+          "taskId": "0xfea655ecd3654de97c33c8b4bd7bc94f88392cb223bbe544dc6b9005e6f5f52c",
+          "reason": "Afgewezen: 21 unieke concurrerende wallets, boven maximum 10; bovendien risicovolle publieke sponsorwerving en omzetdeelverificatie."
         },
         {
-          "id": "github:auscaster/frantic-board#106",
-          "url": "https://github.com/auscaster/frantic-board/issues/106",
-          "reason": "Worker price is $0 and it has 559 visible participation events."
+          "taskId": "0xb572510c687f254cb763989553a74a9dff1c76687579f8507335c2461de1ab1a",
+          "reason": "Afgewezen: vereist voorafgaande externe x402-betaling van 0.001 USDC en uitbetaling is niet gegarandeerd."
         },
         {
-          "id": "github:Iamgoofball/-tg-station#123",
-          "url": "https://github.com/Iamgoofball/-tg-station/issues/123",
-          "reason": "No verifiable payout terms; an external candidate delivery is already visible."
+          "taskId": "0xfeb98106531ea1bd30f727a0c458809e0c05159c5c6c4e65ca7d0245a3b16613",
+          "reason": "Afgewezen: 41 unieke concurrerende wallets, boven maximum 10; netto-opbrengst slechts 0.0185 USDC."
         },
         {
-          "id": "github:Scottcjn/rustchain-bounties#16255",
-          "url": "https://github.com/Scottcjn/rustchain-bounties/issues/16255",
-          "reason": "Multiple claims and two active solution PRs; payout requires wallet/ledger path."
+          "taskId": "0xcb67b0a48505c60ddba84023942a93c433bb0c31722028e0b62807074e0ccf0e",
+          "reason": "Afgewezen: 46 unieke concurrerende wallets, boven maximum 10; uitbetaling is niet gegarandeerd."
         },
         {
-          "id": "github:Scottcjn/rustchain-bounties#16252",
-          "url": "https://github.com/Scottcjn/rustchain-bounties/issues/16252",
-          "reason": "Target implementation has been merged and the stated 12-RTC bounty reported paid."
+          "taskId": "0x998986befc9f1f47ae1ac783402795f441ec6a9177b598fae58f62266b4b93c8",
+          "reason": "Afgewezen: 36 unieke concurrerende wallets, boven maximum 10; externe x402-CAPTCHA-opdracht is verdacht en hoog risico."
         },
         {
-          "id": "taskmarket:0xfea655ecd3654de97c33c8b4bd7bc94f88392cb223bbe544dc6b9005e6f5f52c",
-          "url": "https://taskmarket.ai/task/0xfea655ecd3654de97c33c8b4bd7bc94f88392cb223bbe544dc6b9005e6f5f52c",
-          "reason": "Sponsor-referral/outreach task requiring a third-party USDC payment; separate bonus is not escrow-backed."
+          "taskId": "0xd4962d4534961d4e93f93848f552dd41d48e2091a9fbb36ecc9503a8621717d0",
+          "reason": "Afgewezen: 88 unieke concurrerende wallets, boven maximum 10; brede subjectieve researchdeliverable is onvoldoende voorspelbaar."
         },
         {
-          "id": "taskmarket:0xb572510c687f254cb763989553a74a9dff1c76687579f8507335c2461de1ab1a",
-          "url": "https://taskmarket.ai/task/0xb572510c687f254cb763989553a74a9dff1c76687579f8507335c2461de1ab1a",
-          "reason": "Requires Base-mainnet payment signature."
-        },
-        {
-          "id": "taskmarket:remaining-open-bounty-set-2026-07-21T23:18Z",
-          "url": "https://taskmarket.ai",
-          "reason": "Five remaining bounty tasks have 36–88 unique visible workers, exceeding the <=10 cap; two also require payment signatures."
+          "taskId": "0x50d1dea29821649b87c2cb08558bd9cd984c9678d9f8d30ce608eef877ca5448",
+          "reason": "Afgewezen: 87 unieke concurrerende wallets, boven maximum 10; vereist faucetgebruik en voorafgaande externe x402-betaling op Base Sepolia."
         }
       ]
+    },
+    "external": {
+      "sources": [],
+      "shortlisted": [],
+      "rejected": []
     }
   },
   "schedule": [
     {
       "label": "Luna · Taskmarket scan",
       "kind": "scan",
-      "next": "2026-07-22T02:00:00+02:00",
-      "nextLabel": "02:00",
-      "last": "2026-07-22T01:04:54.718724+02:00",
+      "next": "2026-07-22T03:00:00+02:00",
+      "nextLabel": "03:00",
+      "last": "2026-07-22T02:05:28.689997+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · Taskmarket validatie",
       "kind": "validate",
-      "next": "2026-07-22T02:04:00+02:00",
-      "nextLabel": "02:04",
-      "last": "2026-07-22T01:05:21.746968+02:00",
+      "next": "2026-07-22T03:04:00+02:00",
+      "nextLabel": "03:04",
+      "last": "2026-07-22T02:05:51.871875+02:00",
       "enabled": "true"
     },
     {
       "label": "Terra · Taskmarket uitvoering",
       "kind": "execute",
-      "next": "2026-07-22T02:08:00+02:00",
-      "nextLabel": "02:08",
-      "last": "2026-07-22T01:08:31.110954+02:00",
+      "next": "2026-07-22T03:08:00+02:00",
+      "nextLabel": "03:08",
+      "last": "2026-07-22T02:08:31.858459+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · GitHub/Web3 scan",
       "kind": "scan",
-      "next": "2026-07-22T02:15:00+02:00",
-      "nextLabel": "02:15",
-      "last": "2026-07-22T01:19:32.933349+02:00",
+      "next": "2026-07-22T03:15:00+02:00",
+      "nextLabel": "03:15",
+      "last": "2026-07-22T02:17:46.480125+02:00",
       "enabled": "true"
     }
   ],
