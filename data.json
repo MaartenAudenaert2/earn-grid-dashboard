@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T22:20:48.466552+02:00",
-  "generatedLabel": "22 July 2026 · 22:20",
+  "generatedAt": "2026-07-22T23:20:49.234773+02:00",
+  "generatedLabel": "22 July 2026 · 23:20",
   "fx": {
     "usdEur": 0.8752,
     "date": "laatst bekende referentie"
@@ -43,14 +43,14 @@
   },
   "candidates": [],
   "scans": {
-    "lunaAt": "2026-07-22T20:03:26Z",
+    "lunaAt": "2026-07-22T21:03:41Z",
     "lunaCandidates": 0,
     "lunaRejected": 0,
-    "solAt": "2026-07-22T20:05:10Z",
+    "solAt": "2026-07-22T21:05:38Z",
     "solApproved": 0,
     "terraAt": "2026-07-19T07:26:54Z",
     "terraSubmitted": 0,
-    "externalAt": "2026-07-22T20:19:20Z",
+    "externalAt": "2026-07-22T21:18:54Z",
     "externalResult": "no-new-qualified-opportunity",
     "externalShortlisted": 0,
     "externalRejected": 0
@@ -79,7 +79,35 @@
     },
     "validation": {
       "approved": [],
-      "rejected": []
+      "rejected": [
+        {
+          "taskId": "0x2365c7694be50babbfd2c176f0a3a4a7517bd5c970b5e6be8a3af58997e1cbcd",
+          "reason": "wallet_already_participated",
+          "liveEvidence": {
+            "network": "Base",
+            "status": "open",
+            "mode": "pitch",
+            "deadline": "2026-07-24T05:38:39.155Z",
+            "expiry": "2026-07-29T05:38:39.148Z",
+            "netRewardUsdc": "1.999999",
+            "competition": 6,
+            "ourWalletPitchId": "d8f504ad-a6a6-46f1-83e9-685886abc115",
+            "pendingWorkerAction": "pitch",
+            "eligibleAddress": null,
+            "requiresPayment": true,
+            "paymentAmountBaseUnits": "1000",
+            "stakeRequired": false,
+            "submissionWindowOpen": false,
+            "submissions": 0
+          }
+        },
+        {
+          "reason": "no_luna_candidates",
+          "scannedOpen": 18,
+          "candidateCount": 0,
+          "details": "Luna promoted no new candidate; 17 bounty listings had only worker submit actions and unknown or over-limit unique competition, with four additionally requiring disallowed external cost, service, or network interaction."
+        }
+      ]
     },
     "external": {
       "sources": [],
@@ -91,33 +119,33 @@
     {
       "label": "Luna · Taskmarket scan",
       "kind": "scan",
-      "next": "2026-07-22T23:00:00+02:00",
-      "nextLabel": "23:00",
-      "last": "2026-07-22T22:04:52.768077+02:00",
+      "next": "2026-07-23T00:00:00+02:00",
+      "nextLabel": "00:00",
+      "last": "2026-07-22T23:05:30.798931+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · Taskmarket validatie",
       "kind": "validate",
-      "next": "2026-07-22T23:04:00+02:00",
-      "nextLabel": "23:04",
-      "last": "2026-07-22T22:05:23.833841+02:00",
+      "next": "2026-07-23T00:04:00+02:00",
+      "nextLabel": "00:04",
+      "last": "2026-07-22T23:05:59.980300+02:00",
       "enabled": "true"
     },
     {
       "label": "Terra · Taskmarket uitvoering",
       "kind": "execute",
-      "next": "2026-07-22T23:08:00+02:00",
-      "nextLabel": "23:08",
-      "last": "2026-07-22T22:08:48.241716+02:00",
+      "next": "2026-07-23T00:08:00+02:00",
+      "nextLabel": "00:08",
+      "last": "2026-07-22T23:08:49.006270+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · GitHub/Web3 scan",
       "kind": "scan",
-      "next": "2026-07-22T23:15:00+02:00",
-      "nextLabel": "23:15",
-      "last": "2026-07-22T22:20:21.906178+02:00",
+      "next": "2026-07-23T00:15:00+02:00",
+      "nextLabel": "00:15",
+      "last": "2026-07-22T23:19:50.661635+02:00",
       "enabled": "true"
     }
   ],
