@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T14:20:42.070949+02:00",
-  "generatedLabel": "22 July 2026 · 14:20",
+  "generatedAt": "2026-07-22T15:20:42.804433+02:00",
+  "generatedLabel": "22 July 2026 · 15:20",
   "fx": {
     "usdEur": 0.8752,
     "date": "laatst bekende referentie"
@@ -43,17 +43,17 @@
   },
   "candidates": [],
   "scans": {
-    "lunaAt": "2026-07-22T12:04:18Z",
+    "lunaAt": "2026-07-22T13:02:46Z",
     "lunaCandidates": 0,
     "lunaRejected": 0,
-    "solAt": "2026-07-22T12:04:52Z",
+    "solAt": "2026-07-22T13:05:23Z",
     "solApproved": 0,
     "terraAt": "2026-07-19T07:26:54Z",
     "terraSubmitted": 0,
-    "externalAt": "2026-07-22T12:20:11Z",
+    "externalAt": "2026-07-22T13:20:00Z",
     "externalResult": "no-new-qualified-opportunity",
     "externalShortlisted": 0,
-    "externalRejected": 31
+    "externalRejected": 37
   },
   "scanDetails": {
     "taskmarket": {
@@ -84,16 +84,8 @@
     "external": {
       "sources": [
         {
-          "category": "github",
-          "result": "GitHub primary-source discovery at 2026-07-22T12:20:11Z returned 197 distinct recent search matches. Most were synthetic bounty-board mirrors, security-vulnerability claims (a separate market), spam/referral/duplicate-issue prompts, or ordinary issues with reward-related text. Nine plausible development candidates received live issue/comment/repository/PR triage. None met the payment, competition, and contribution gates: two ordinary requests had no payout terms; one established-project bug had no bounty; one direct issue was covered by an open PR; MergeOS was claimed with matching open PR #531 and only offered internal MRG credit; the three GrantFox StreamFi issues were assigned to other workers and labelled only “Maybe Rewarded.”"
-        },
-        {
-          "category": "taskmarket",
-          "result": "Live Taskmarket scan completed `taskmarket task list --status open --limit 100`, then `taskmarket task get` plus the mode-relevant `pitches` or `submissions` list for all 19 open tasks. All detail/list requests succeeded. The only engineering-adjacent pitch has 3 unique workers, requires a 0.001-USDC pitch, and this wallet already participated. The only <=10-worker bounty tasks are creative audio/video tasks requiring external paid generation services. Every remaining task has 12–88 unique workers and/or requires x402 payment, sponsorship/outreach, CAPTCHA payment, or non-engineering work. No candidate is free, professional engineering work with <=10 verified unique competitors."
-        },
-        {
           "category": "safety",
-          "result": "No wallet, signing, claim, bid, submission, payment, account creation, on-chain action, balance query, or wallet query was performed."
+          "result": "No wallet, signing, claim, bid, submission, payment, account creation, on-chain action, token approval, transfer, balance query, or wallet query was performed."
         }
       ],
       "shortlisted": [],
@@ -252,6 +244,36 @@
           "id": "github:conduit-protocol/streamFi-contracts#75",
           "url": "https://github.com/conduit-protocol/streamFi-contracts/issues/75",
           "reason": "GrantFox campaign candidate is assigned to another worker; the “Maybe Rewarded” label does not verify a payable bounty."
+        },
+        {
+          "id": "github:relayhop/sn-monetization-runtime#202",
+          "url": "https://github.com/relayhop/sn-monetization-runtime/issues/202",
+          "reason": "unknown payment and participant count"
+        },
+        {
+          "id": "github:Extra-Chill/data-machine-events#511",
+          "url": "https://github.com/Extra-Chill/data-machine-events/issues/511",
+          "reason": "no payment and apparently already resolved/superseded"
+        },
+        {
+          "id": "github:conduit-protocol/streamFi-contracts#91",
+          "url": "https://github.com/conduit-protocol/streamFi-contracts/issues/91",
+          "reason": "already claimed and payout terms unverified"
+        },
+        {
+          "id": "github:mergeos-bounties/NokaMan#22",
+          "url": "https://github.com/mergeos-bounties/NokaMan/issues/22",
+          "reason": "stale, internal credit, claimed, and covered by open PR"
+        },
+        {
+          "id": "github:CabinetOnFire/BehaviorTreeG#1",
+          "url": "https://github.com/CabinetOnFire/BehaviorTreeG/issues/1",
+          "reason": "payment is not verifiable"
+        },
+        {
+          "id": "github:sherrmann/Spoolman-NG#333",
+          "url": "https://github.com/sherrmann/Spoolman-NG/issues/333",
+          "reason": "not a paid task"
         }
       ]
     }
@@ -260,32 +282,32 @@
     {
       "label": "Luna · Taskmarket scan",
       "kind": "scan",
-      "next": "2026-07-22T15:00:00+02:00",
-      "nextLabel": "15:00",
-      "last": "2026-07-22T14:05:40.076789+02:00",
+      "next": "2026-07-22T16:00:00+02:00",
+      "nextLabel": "16:00",
+      "last": "2026-07-22T15:05:16.521217+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · Taskmarket validatie",
       "kind": "validate",
-      "next": "2026-07-22T15:04:00+02:00",
-      "nextLabel": "15:04",
-      "last": "2026-07-22T14:05:23.562063+02:00",
+      "next": "2026-07-22T16:04:00+02:00",
+      "nextLabel": "16:04",
+      "last": "2026-07-22T15:05:41.456829+02:00",
       "enabled": "true"
     },
     {
       "label": "Terra · Taskmarket uitvoering",
       "kind": "execute",
-      "next": "2026-07-22T15:08:00+02:00",
-      "nextLabel": "15:08",
-      "last": "2026-07-22T14:08:41.857794+02:00",
+      "next": "2026-07-22T16:08:00+02:00",
+      "nextLabel": "16:08",
+      "last": "2026-07-22T15:08:42.550307+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · GitHub/Web3 scan",
       "kind": "scan",
-      "next": "2026-07-22T15:15:00+02:00",
-      "nextLabel": "15:15",
+      "next": "2026-07-22T16:15:00+02:00",
+      "nextLabel": "16:15",
       "last": "2026-07-22T14:20:17.240175+02:00",
       "enabled": "true"
     }
