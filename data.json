@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T11:20:39.451104+02:00",
-  "generatedLabel": "22 July 2026 · 11:20",
+  "generatedAt": "2026-07-22T11:23:10.302194+02:00",
+  "generatedLabel": "22 July 2026 · 11:23",
   "fx": {
     "usdEur": 0.8752,
     "date": "laatst bekende referentie"
@@ -12,19 +12,19 @@
     "progress": 0.0,
     "pending": [
       {
-        "source": "tgstation/tgstation#97103",
-        "amount": 3,
-        "currency": "GBP",
-        "status": "pending-unverified",
-        "note": "Directe £3-toezegging voor issue #97081; PR is open en mergeable, maar nog niet gemerged of betaald.",
-        "url": "https://github.com/tgstation/tgstation/pull/97103"
-      },
-      {
         "source": "Taskmarket submission",
         "amount": null,
         "currency": "USDC",
         "status": "awaiting-review",
         "note": "Een ingediende security-review-bijdrage wacht op beoordeling. De 9,25-USDC-nettopool is gedeeld tussen 311 inzendingen; er is geen individuele opbrengst bevestigd.",
+        "url": ""
+      },
+      {
+        "source": "Taskmarket AgentWork-integratiepitch",
+        "amount": null,
+        "currency": "USDC",
+        "status": "awaiting-selection",
+        "note": "Er is 0,001 USDC betaald voor de pitch. De mogelijke netto-beloning van 1,999999 USDC telt pas na selectie, acceptatie en bevestigde betaling.",
         "url": ""
       }
     ],
@@ -50,10 +50,10 @@
     "solApproved": 0,
     "terraAt": "2026-07-19T07:26:54Z",
     "terraSubmitted": 0,
-    "externalAt": "2026-07-22T08:19:26Z",
+    "externalAt": "2026-07-22T09:20:53Z",
     "externalResult": "no-new-qualified-opportunity",
     "externalShortlisted": 0,
-    "externalRejected": 8
+    "externalRejected": 15
   },
   "scanDetails": {
     "taskmarket": {
@@ -374,11 +374,11 @@
       "sources": [
         {
           "category": "github",
-          "result": "Read-only primary GitHub screening covered recent open explicit bounty/funding results plus current Tenstorrent and Expensify bounty queues. Credible Tenstorrent candidates #50522 and #50612 are assigned and have linked implementation PR activity; older Tenstorrent items were stale or crowded. Monk-plugin bug reports are security-style reports with no verifiable payment terms and sign-up/install prerequisites. Current Expensify $250 issues had 6-44+ comments or a due-for-payment status, so none met the low-competition/current-work gate. Searches for MaartenAudenaert2 found no issue or PR in the Monk or Tenstorrent candidate repos."
+          "result": "Read-only primary-source triage screened fresh explicit-reward GitHub issues, including current linked PRs, closed PRs, comments, assignees and payment terms. Nirium #11 has seven competing claim/work commenters and linked PR #19; StreamFi #54 is bot-assigned; StellarConduit #22 and the current GrantFox “Maybe Rewarded” cohort lack a verifiable exact payout promise. The fresh xevrion duplicate batch has immediate matching PRs and contributor-selected /bounty amounts without a payer/escrow route. Iamgoofball #155 is an unverified, overscoped direct-PayPal promise. Security-bounty, KYC, trade/DeFi and referral/review items were excluded."
         },
         {
           "category": "taskmarket",
-          "result": "Live read-only list returned 19 open tasks. The only professional software integration task was re-fetched with task get, pitches, and submissions: it has two distinct pending pitches, no submissions, an escrowed 1.999999-USDC net reward, and a mandatory 0.001-USDC pitch cost. Remaining tasks were creative-media work, sponsorship/referral work, paid x402/signing tasks, or had 14-354 submissions."
+          "result": "Live read-only task list returned 19 open tasks (18 bounty, 1 pitch). Every low-count task was re-fetched with task get and mode-relevant pitches/submissions/proofs. The only software task has three pending pitches and a mandatory 0.001-USDC pitch fee; low-count remaining tasks are creative media contests requiring external generation services. All other listed tasks had more than ten submissions, sponsorship/referral, x402 payment/signing requirements, or non-engineering deliverables."
         }
       ],
       "shortlisted": [],
@@ -396,7 +396,7 @@
         {
           "id": "taskmarket:0x2365c7694be50babbfd2c176f0a3a4a7517bd5c970b5e6be8a3af58997e1cbcd",
           "url": "taskmarket://task/0x2365c7694be50babbfd2c176f0a3a4a7517bd5c970b5e6be8a3af58997e1cbcd",
-          "reason": "Live task get plus pitches/submissions recheck: open pitch task, escrowed net reward 1.999999 USDC, no submissions, and two pending pitches by two distinct worker addresses. Submitting a pitch costs 0.001 USDC, so it is not free to start; selection and payment also require a third-party maintainer to merge the integration."
+          "reason": "Live task get, pitches, submissions and proofs recheck: pitch task remains open with 1.999999-USDC net escrow and three distinct pending pitches. A worker pitch costs 0.001 USDC, so it is not free to start; the selected-worker outcome remains contingent on unrelated-maintainer acceptance."
         },
         {
           "id": "github:boundlessfi/boundless-contract#72",
@@ -422,6 +422,41 @@
           "id": "github:tenstorrent/tt-metal#50612",
           "url": "https://github.com/tenstorrent/tt-metal/issues/50612",
           "reason": "Official $10,000 Tenstorrent bounty is already assigned to jasondavies. The maintainer confirms assignment, and open PR #50624 explicitly closes the issue with implemented hardware benchmarks; it is not available for a competing submission."
+        },
+        {
+          "id": "github:nirium-protocol/nirium-sdk#11",
+          "url": "https://github.com/nirium-protocol/nirium-sdk/issues/11",
+          "reason": "Open $50-USDC GrantFox/Stellar Foundation campaign issue, but it is already crowded: seven distinct commenters sought or stated work, and open PR #19 explicitly implements the Telegram x402 bot."
+        },
+        {
+          "id": "github:conduit-protocol/streamFi-contracts#54",
+          "url": "https://github.com/conduit-protocol/streamFi-contracts/issues/54",
+          "reason": "GrantFox bot explicitly assigned the issue to Emmanueljr-stack; maintainer followed up with that worker. The $40 campaign task is therefore not available for a competing submission."
+        },
+        {
+          "id": "github:StellarConduit/stellarconduit-sync-engine#22",
+          "url": "https://github.com/StellarConduit/stellarconduit-sync-engine/issues/22",
+          "reason": "One contributor has already offered to work on it, and the primary issue only bears “Maybe Rewarded” / GrantFox labels: no exact reward amount, payer commitment, payment method, or payout trigger is stated. Payment is unverified."
+        },
+        {
+          "id": "github:xevrion-v2/agent-playground#8264",
+          "url": "https://github.com/xevrion-v2/agent-playground/issues/8264",
+          "reason": "Its exact duplicate-slice PR #8269 was opened one minute after the issue and explicitly closes #8264. Parent #33 lets contributors choose /bounty amounts and contains no payer, escrow, payment method, or payout trigger, so the $50 marker is unverified."
+        },
+        {
+          "id": "github:Iamgoofball/-tg-station#155",
+          "url": "https://github.com/Iamgoofball/-tg-station/issues/155",
+          "reason": "The $7,500 label is an unverified direct promise: the issue merely says payment comes “upon PR creation through PayPal”, with no named payer, escrow, terms, deadline, acceptance trigger, or credible payout route. The requested game-wide gacha overhaul is not session-sized."
+        },
+        {
+          "id": "taskmarket:0xf9f85f13a45c2486b618122efe694b520e9e5f9723398b2b523452c824cd07ba",
+          "url": "taskmarket://task/0xf9f85f13a45c2486b618122efe694b520e9e5f9723398b2b523452c824cd07ba",
+          "reason": "Escrowed 5.55-USDC net reward and no stake, but this is a creative audio contest requiring a real external music model rather than professional open-source/Web3 engineering. Live submissions list contains 7 records from 5 unique workers."
+        },
+        {
+          "id": "taskmarket:0xc6b79bd5a4117213586c7193709495e6527621163373da053bec22210697f888",
+          "url": "taskmarket://task/0xc6b79bd5a4117213586c7193709495e6527621163373da053bec22210697f888",
+          "reason": "Escrowed 8.325-USDC net reward and no stake, but it requires a real external text-to-video model and is a creative video contest, not professional open-source/Web3 engineering. Live submissions list contains 5 records from 4 unique workers."
         }
       ]
     }
@@ -456,7 +491,7 @@
       "kind": "scan",
       "next": "2026-07-22T12:15:00+02:00",
       "nextLabel": "12:15",
-      "last": "2026-07-22T10:20:12.908736+02:00",
+      "last": "2026-07-22T11:22:06.668096+02:00",
       "enabled": "true"
     }
   ],

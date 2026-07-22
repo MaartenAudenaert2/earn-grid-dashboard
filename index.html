@@ -71,6 +71,8 @@
     .scan-details summary::after { content:'+'; color:var(--mint); font:18px var(--mono); }
     .scan-details[open] summary::after { content:'−'; }
     .scan-details summary:hover { background:rgba(131,239,178,.045); }
+    .scan-details summary > span:first-child { display:grid; gap:5px; }
+    .detail-cta { display:inline-flex; align-items:center; gap:8px; color:var(--mint); font:11px var(--mono); white-space:nowrap; }
     .detail-stack { padding:0 18px 14px; display:grid; gap:8px; }
     .detail-card { border:1px solid var(--line); border-radius:8px; padding:11px; background:var(--panel-2); }
     .detail-title { display:flex; align-items:flex-start; justify-content:space-between; gap:10px; color:var(--ink); font-size:12px; }
@@ -188,7 +190,7 @@
       const external = details.external || {};
       const safeLink = (url, label = 'Bron') => /^https?:\/\//i.test(String(url || '')) ? ` <a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">${label}</a>` : '';
       const card = (title, text, url = '', meta = '') => `<article class="detail-card"><div class="detail-title"><span>${title}${safeLink(url)}</span>${meta ? `<span class="badge">${meta}</span>` : ''}</div><p>${text}</p></article>`;
-      const block = (title, count, cards, empty) => `<details class="scan-details"><summary><span>${title}</span><span class="badge ${count ? 'wait' : 'good'}">${count}</span></summary><div class="detail-stack">${cards.length ? cards.join('') : `<div class="empty-detail">${empty}</div>`}</div></details>`;
+      const section = (title, summary, time, cards, empty) => `<details class="scan-details"><summary><span><span class="side-label">${title}</span><span class="side-value">${summary} · ${dateLabel(time)}</span></span><span class="detail-cta">Details <span class="badge ${cards.length ? 'wait' : 'good'}">${cards.length}</span></span></summary><div class="detail-stack">${cards.length ? cards.join('') : `<div class="empty-detail">${empty}</div>`}</div></details>`;
       document.querySelector('#result-time').textContent = dateLabel(s.externalAt || s.lunaAt);
       const rows = [
         ['Taskmarket · Luna', `${s.lunaCandidates} kandidaat / ${s.lunaRejected} afgekeurd`, s.lunaAt],
@@ -207,15 +209,31 @@
       });
       const externalSources = (external.sources || []).map(item => card(escapeHtml(item.category || 'Gecontroleerde bron'), escapeHtml(item.result || 'Geen detail opgeslagen.'), item.url || ''));
       const externalRejected = (external.rejected || []).map(item => card(escapeHtml(item.id || 'Afgekeurde kans'), escapeHtml(item.reason || 'Afgekeurd.'), item.url || '', 'afgekeurd'));
-      const approved = [...(tm.approved || []), ...(validation.approved || []), ...(external.shortlisted || [])].map(item => card(escapeHtml(item.title || item.deliverable || item.taskId || item.id || 'Gekwalificeerde kans'), escapeHtml(item.approvalReason || item.reason || 'Goedgekeurd voor verdere uitvoering.'), item.url || '', 'goedgekeurd'));
+      const tmPitched = (tm.pitched || []).map(item => card(escapeHtml(item.title || 'Taskmarket-pitch'), `Pitch betaald: ${escapeHtml(item.paidEntryUsdc || '?')} USDC · mogelijke netto-beloning ${escapeHtml(item.netRewardUsdc || '?')} USDC · ${escapeHtml(item.competitionAtEntry ?? '?')} pitches. ${escapeHtml(item.note || 'Wacht op selectie.')}`, '', 'pitch geplaatst'));
+      const approvalCards = (items, fallback) => (items || []).map(item => card(escapeHtml(item.title || item.deliverable || item.taskId || item.id || fallback), escapeHtml(item.approvalReason || item.reason || 'Goedgekeurd voor verdere uitvoering.'), item.url || '', 'goedgekeurd'));
+      const tmApproved = approvalCards(tm.approved, 'Taskmarket-kandidaat');
+      const solApproved = approvalCards(validation.approved, 'Sol-goedkeuring');
+      const externalApproved = approvalCards(external.shortlisted, 'Gekwalificeerde kans');
       const validationRejected = (validation.rejected || []).map(item => card(escapeHtml(item.taskId || item.id || 'Validatie-afwijzing'), escapeHtml(item.reason || 'Afgekeurd door live-validatie.'), item.url || '', 'afgekeurd'));
-      document.querySelector('#results').innerHTML = `${rows.map(([label,value,time]) => `<div class="scan-row"><span class="side-label">${escapeHtml(label)}</span><span class="side-value">${escapeHtml(value)} · ${escapeHtml(dateLabel(time))}</span></div>`).join('')}${block('Alles wat is goedgekeurd', approved.length, approved, 'Geen kans werd vrijgegeven.')}${block(`Taskmarket · ${tm.scannedOpenTasks || 0} bekeken`, tmRejected.length, tmRejected, 'Geen Taskmarket-afwijzingen opgeslagen.')}${block('GitHub/Web3 · alle gecontroleerde bronnen', externalSources.length, externalSources, 'Geen bronresultaten opgeslagen.')}${block('GitHub/Web3 · afgekeurde kansen', externalRejected.length, externalRejected, 'Geen externe kansen afgekeurd.')}${block('Sol-validatie · afgekeurd', validationRejected.length, validationRejected, 'Geen extra Sol-afwijzingen.')}`;
+      const taskmarketCards = [...tmPitched, ...tmApproved, ...tmRejected];
+      const solCards = [...solApproved, ...validationRejected];
+      const externalCards = [...externalApproved, ...externalSources, ...externalRejected];
+      const terraCards = s.terraSubmitted ? [card('Taskmarket · Terra', `${escapeHtml(s.terraSubmitted)} nieuwe indiening(en) in de laatste run.`, '', 'ingediend')] : [];
+      document.querySelector('#results').innerHTML = [
+        section('Taskmarket · Luna', `${s.lunaCandidates} kandidaat / ${s.lunaRejected} afgekeurd / ${tmPitched.length} pitch`, s.lunaAt, taskmarketCards, 'Geen Taskmarket-details opgeslagen.'),
+        section('Taskmarket · Sol', `${s.solApproved} goedgekeurd voor uitvoering`, s.solAt, solCards, 'Geen Sol-validatie-details opgeslagen.'),
+        section('GitHub & Web3 · Terra', s.externalResult === 'no-new-qualified-opportunity' ? 'Geen nieuwe gekwalificeerde kans' : s.externalResult, s.externalAt, externalCards, 'Geen GitHub/Web3-details opgeslagen.'),
+        section('Taskmarket · Terra', `${s.terraSubmitted} nieuwe indiening(en)`, s.terraAt, terraCards, 'Geen nieuwe uitvoering in de laatste run.')
+      ].join('');
     }
 
     function work(data) {
       const items = [];
       const pr = data.activeWork.githubPr || {};
-      if (pr.url) items.push(`<div class="work-item"><div class="work-title"><a href="${escapeHtml(pr.url)}" target="_blank" rel="noreferrer">tgstation #97103</a><span class="badge wait">${escapeHtml(pr.state || 'OPEN')}</span></div><div class="work-detail">£3 directe belofte, maar niet gegarandeerd en pas relevant na merge/afstemming. Status: ${escapeHtml(pr.mergeable || 'onbekend')}.</div></div>`);
+      if (pr.url && pr.state === 'OPEN') items.push(`<div class="work-item"><div class="work-title"><a href="${escapeHtml(pr.url)}" target="_blank" rel="noreferrer">tgstation #97103</a><span class="badge wait">${escapeHtml(pr.state)}</span></div><div class="work-detail">Geen bevestigde opbrengst; status: ${escapeHtml(pr.mergeable || 'onbekend')}.</div></div>`);
+      for (const item of data.activeWork.taskmarketPitches || []) {
+        items.push(`<div class="work-item"><div class="work-title"><span>${escapeHtml(item.title || 'Taskmarket-pitch')}</span><span class="badge wait">pitch geplaatst</span></div><div class="work-detail">${escapeHtml(item.paidEntryUsdc || '?')} USDC betaald · mogelijke netto-beloning ${escapeHtml(item.netRewardUsdc || '?')} USDC · ${escapeHtml(item.competitionAtEntry ?? '?')} pitches. ${escapeHtml(item.note || 'Wacht op selectie.')}</div></div>`);
+      }
       for (const item of data.activeWork.taskmarketSubmissions || []) {
         const reward = Number(item.rewardBaseUnits || 0) / 1_000_000;
         items.push(`<div class="work-item"><div class="work-title"><span>Taskmarket-inzending</span><span class="badge wait">${escapeHtml(item.status || 'open')}</span></div><div class="work-detail">Ingezonden ${escapeHtml(dateLabel(item.submittedAt))}. Bounty-pool: ${numeric(reward)} USDC; gedeeld en nog niet bevestigd als opbrengst.</div></div>`);
