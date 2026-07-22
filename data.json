@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T09:20:37.519640+02:00",
-  "generatedLabel": "22 July 2026 · 09:20",
+  "generatedAt": "2026-07-22T11:08:41.774137+02:00",
+  "generatedLabel": "22 July 2026 · 11:08",
   "fx": {
     "usdEur": 0.8752,
     "date": "laatst bekende referentie"
@@ -31,7 +31,7 @@
     "payments": []
   },
   "wallet": {
-    "balanceUsdc": 9.973749
+    "balanceUsdc": 9.972749
   },
   "walletEur": 8.73,
   "pr": {
@@ -43,10 +43,10 @@
   },
   "candidates": [],
   "scans": {
-    "lunaAt": "2026-07-22T07:05:24Z",
+    "lunaAt": "2026-07-22T09:05:22Z",
     "lunaCandidates": 0,
     "lunaRejected": 0,
-    "solAt": "2026-07-22T07:05:09Z",
+    "solAt": "2026-07-22T09:05:15Z",
     "solApproved": 0,
     "terraAt": "2026-07-19T07:26:54Z",
     "terraSubmitted": 0,
@@ -57,18 +57,13 @@
   },
   "scanDetails": {
     "taskmarket": {
-      "scannedOpenTasks": 19,
+      "scannedOpenTasks": 0,
       "approved": [],
       "rejected": []
     },
     "validation": {
       "approved": [],
-      "rejected": [
-        {
-          "taskId": "0x2365c7694be50babbfd2c176f0a3a4a7517bd5c970b5e6be8a3af58997e1cbcd",
-          "reason": "Rejected after live re-fetch on Taskmarket production/Base mainnet: status open, exact 32-byte task ID valid, task deadline 2026-07-29T05:38:39.148Z, pitch deadline 2026-07-24T05:38:39.155Z, submissionWindowOpen false, and worker pitch pendingAction currently available with eligibleAddress null. Entry requires paymentAmount 1000 USDC base units (0.001 USDC), violating the no-paid-entry rule. Reward is 2.162162 USDC, netReward 1.999999 USDC, no stake. Live pitches show 1 pitch from 1 unique competing wallet; our wallet has not participated. The selected-worker deliverable also depends on external GitHub maintainer acceptance, merge, and canonical publication, so it is not fully locally producible or verifiable."
-        }
-      ]
+      "rejected": []
     },
     "external": {
       "sources": [],
@@ -78,35 +73,35 @@
   },
   "schedule": [
     {
+      "label": "Sol · GitHub/Web3 scan",
+      "kind": "scan",
+      "next": "2026-07-22T11:15:00+02:00",
+      "nextLabel": "11:15",
+      "last": "2026-07-22T10:20:12.908736+02:00",
+      "enabled": "true"
+    },
+    {
       "label": "Luna · Taskmarket scan",
       "kind": "scan",
-      "next": "2026-07-22T10:00:00+02:00",
-      "nextLabel": "10:00",
-      "last": "2026-07-22T09:06:55.366425+02:00",
+      "next": "2026-07-22T12:00:00+02:00",
+      "nextLabel": "12:00",
+      "last": "2026-07-22T11:07:01.384444+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · Taskmarket validatie",
       "kind": "validate",
-      "next": "2026-07-22T10:04:00+02:00",
-      "nextLabel": "10:04",
-      "last": "2026-07-22T09:05:31.756802+02:00",
+      "next": "2026-07-22T12:04:00+02:00",
+      "nextLabel": "12:04",
+      "last": "2026-07-22T11:05:44.598041+02:00",
       "enabled": "true"
     },
     {
       "label": "Terra · Taskmarket uitvoering",
       "kind": "execute",
-      "next": "2026-07-22T10:08:00+02:00",
-      "nextLabel": "10:08",
-      "last": "2026-07-22T09:08:37.303752+02:00",
-      "enabled": "true"
-    },
-    {
-      "label": "Sol · GitHub/Web3 scan",
-      "kind": "scan",
-      "next": "2026-07-22T10:15:00+02:00",
-      "nextLabel": "10:15",
-      "last": "2026-07-22T09:19:03.948660+02:00",
+      "next": "2026-07-22T12:08:00+02:00",
+      "nextLabel": "12:08",
+      "last": "2026-07-22T11:08:39.205149+02:00",
       "enabled": "true"
     }
   ],
