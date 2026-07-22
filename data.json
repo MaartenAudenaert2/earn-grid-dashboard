@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T15:20:42.804433+02:00",
-  "generatedLabel": "22 July 2026 · 15:20",
+  "generatedAt": "2026-07-22T16:20:43.569493+02:00",
+  "generatedLabel": "22 July 2026 · 16:20",
   "fx": {
     "usdEur": 0.8752,
     "date": "laatst bekende referentie"
@@ -43,17 +43,17 @@
   },
   "candidates": [],
   "scans": {
-    "lunaAt": "2026-07-22T13:02:46Z",
+    "lunaAt": "2026-07-22T14:03:28.8088817Z",
     "lunaCandidates": 0,
     "lunaRejected": 0,
-    "solAt": "2026-07-22T13:05:23Z",
+    "solAt": "2026-07-22T14:04:53Z",
     "solApproved": 0,
     "terraAt": "2026-07-19T07:26:54Z",
     "terraSubmitted": 0,
-    "externalAt": "2026-07-22T13:20:00Z",
+    "externalAt": "2026-07-22T14:16:05Z",
     "externalResult": "no-new-qualified-opportunity",
     "externalShortlisted": 0,
-    "externalRejected": 37
+    "externalRejected": 40
   },
   "scanDetails": {
     "taskmarket": {
@@ -274,6 +274,21 @@
           "id": "github:sherrmann/Spoolman-NG#333",
           "url": "https://github.com/sherrmann/Spoolman-NG/issues/333",
           "reason": "not a paid task"
+        },
+        {
+          "id": "github:monk-io/monk-plugin#145",
+          "url": "https://github.com/monk-io/monk-plugin/issues/145",
+          "reason": "Security/bug-bounty report rather than a normal open-source implementation task; primary issue requires product signup and installation but states no exact amount, payer, payment method, payout trigger, or deadline."
+        },
+        {
+          "id": "github:conduit-protocol/streamFi-app#109",
+          "url": "https://github.com/conduit-protocol/streamFi-app/issues/109",
+          "reason": "The $150 tier is an unverified issue label with no payer, escrow, payment route, trigger, fees, or deadline; two distinct workers have made three recent work/claim comments."
+        },
+        {
+          "id": "github:Adamantine-guild/guildpass-mobile#161",
+          "url": "https://github.com/Adamantine-guild/guildpass-mobile/issues/161",
+          "reason": "Assigned to silentgeckoaudit3801, whose comment links a two-commit implementation branch; the Maybe Rewarded label supplies no exact payable amount, payer, method, trigger, or deadline."
         }
       ]
     }
@@ -282,33 +297,33 @@
     {
       "label": "Luna · Taskmarket scan",
       "kind": "scan",
-      "next": "2026-07-22T16:00:00+02:00",
-      "nextLabel": "16:00",
-      "last": "2026-07-22T15:05:16.521217+02:00",
+      "next": "2026-07-22T17:00:00+02:00",
+      "nextLabel": "17:00",
+      "last": "2026-07-22T16:04:25.957234+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · Taskmarket validatie",
       "kind": "validate",
-      "next": "2026-07-22T16:04:00+02:00",
-      "nextLabel": "16:04",
-      "last": "2026-07-22T15:05:41.456829+02:00",
+      "next": "2026-07-22T17:04:00+02:00",
+      "nextLabel": "17:04",
+      "last": "2026-07-22T16:05:43.818217+02:00",
       "enabled": "true"
     },
     {
       "label": "Terra · Taskmarket uitvoering",
       "kind": "execute",
-      "next": "2026-07-22T16:08:00+02:00",
-      "nextLabel": "16:08",
-      "last": "2026-07-22T15:08:42.550307+02:00",
+      "next": "2026-07-22T17:08:00+02:00",
+      "nextLabel": "17:08",
+      "last": "2026-07-22T16:08:43.357223+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · GitHub/Web3 scan",
       "kind": "scan",
-      "next": "2026-07-22T16:15:00+02:00",
-      "nextLabel": "16:15",
-      "last": "2026-07-22T14:20:17.240175+02:00",
+      "next": "2026-07-22T17:15:00+02:00",
+      "nextLabel": "17:15",
+      "last": "2026-07-22T16:19:01.649410+02:00",
       "enabled": "true"
     }
   ],
