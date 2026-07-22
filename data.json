@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T07:20:35.873954+02:00",
-  "generatedLabel": "22 July 2026 · 07:20",
+  "generatedAt": "2026-07-22T08:20:36.728172+02:00",
+  "generatedLabel": "22 July 2026 · 08:20",
   "fx": {
     "usdEur": 0.8752,
     "date": "laatst bekende referentie"
@@ -41,12 +41,21 @@
     "reviewDecision": "",
     "updatedAt": "2026-07-22T00:44:09Z"
   },
-  "candidates": [],
+  "candidates": [
+    {
+      "source": "Taskmarket",
+      "title": "Exact pitch for one canonical official MCP/tool registry destination; if selected, merged maintainer-accepted integration, live canonical page, install/call instructions, successful test transcript, timestamps, and worker wallet.",
+      "reward": "1.999999 USDC",
+      "competition": 1,
+      "deadline": "2026-07-29T05:38:39.148Z",
+      "url": ""
+    }
+  ],
   "scans": {
-    "lunaAt": "2026-07-22T07:03:28+02:00",
-    "lunaCandidates": 0,
+    "lunaAt": "2026-07-22T06:02:32Z",
+    "lunaCandidates": 1,
     "lunaRejected": 0,
-    "solAt": "2026-07-22T05:05:02Z",
+    "solAt": "2026-07-22T06:05:15Z",
     "solApproved": 0,
     "terraAt": "2026-07-19T07:26:54Z",
     "terraSubmitted": 0,
@@ -58,12 +67,69 @@
   "scanDetails": {
     "taskmarket": {
       "scannedOpenTasks": 0,
-      "approved": [],
+      "approved": [
+        {
+          "taskId": "0x2365c7694be50babbfd2c176f0a3a4a7517bd5c970b5e6be8a3af58997e1cbcd",
+          "mode": "pitch",
+          "rewardUsdc": 2.162162,
+          "netRewardUsdc": 1.999999,
+          "deadline": "2026-07-29T05:38:39.148Z",
+          "competition": {
+            "totalVisibleEntries": 1,
+            "visibleSubmissions": 0,
+            "uniqueWorkers": 1,
+            "pitches": 1,
+            "bids": 0,
+            "claims": 0,
+            "awards": 0,
+            "other": 0
+          },
+          "submissionCount": 0,
+          "uniqueWorkers": 1,
+          "pitchCount": 1,
+          "bidCount": 0,
+          "claimedBy": null,
+          "awardCount": 0,
+          "submissionWindowOpen": false,
+          "pendingWorkerAction": {
+            "action": "pitch",
+            "eligibleAddress": null,
+            "requiresPayment": true,
+            "paymentAmountBaseUnits": "1000",
+            "availableUntil": "2026-07-24T05:38:39.155Z"
+          },
+          "workerCostUsdc": 0.001,
+          "stake": {
+            "required": false,
+            "amountUsdc": 0,
+            "stakeBps": 0
+          },
+          "accountsOrKyc": {
+            "required": [
+              "GitHub account capable of opening a PR"
+            ],
+            "kycRequired": false,
+            "verifiedLocally": false
+          },
+          "deliverable": "Exact pitch for one canonical official MCP/tool registry destination; if selected, merged maintainer-accepted integration, live canonical page, install/call instructions, successful test transcript, timestamps, and worker wallet.",
+          "riskNotes": [
+            "Selection is requester-controlled and the proposed integration still depends on unrelated maintainer review/merge and a live canonical surface.",
+            "A GitHub account and external maintainer acceptance are required; local Git/GitHub CLI binaries exist but account authentication was not verified.",
+            "Pitch entry costs 0.001 USDC; no stake; no KYC, trading, DeFi, bridge, approval, secret, or advance-payment requirement found."
+          ],
+          "whyCandidate": "Fresh open pitch task with about 47 hours to pitch deadline, one visible competing pitch/worker, zero submissions and awards, no stake, and a concrete installable MCP integration rather than a link-only deliverable. Entry cost is 0.001 USDC and the wallet balance is sufficient; reserve Sol approval for the paid pitch and any later external PR."
+        }
+      ],
       "rejected": []
     },
     "validation": {
       "approved": [],
-      "rejected": []
+      "rejected": [
+        {
+          "taskId": "0x2365c7694be50babbfd2c176f0a3a4a7517bd5c970b5e6be8a3af58997e1cbcd",
+          "reason": "Afgewezen na live hercontrole: de worker-pitch vereist een betaalde instap van 1000 USDC-basiseenheden (0.001 USDC), wat de expliciete no-paid-entry-regel schendt. Bovendien hangt de uiteindelijke deliverable af van externe GitHub-maintaineracceptatie en een merge/publicatie en is daardoor niet volledig lokaal produceerbaar en verifieerbaar. Live status open; pitchdeadline 2026-07-24T05:38:39.155Z; taakdeadline 2026-07-29T05:38:39.148Z; submissionWindowOpen false; 1 pitch van 1 unieke concurrerende wallet; onze wallet heeft niet deelgenomen; reward 2.162162 USDC; netReward 1.999999 USDC; geen stake."
+        }
+      ]
     },
     "external": {
       "sources": [],
@@ -75,33 +141,33 @@
     {
       "label": "Luna · Taskmarket scan",
       "kind": "scan",
-      "next": "2026-07-22T08:00:00+02:00",
-      "nextLabel": "08:00",
-      "last": "2026-07-22T07:04:32.488297+02:00",
+      "next": "2026-07-22T09:00:00+02:00",
+      "nextLabel": "09:00",
+      "last": "2026-07-22T08:04:30.760779+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · Taskmarket validatie",
       "kind": "validate",
-      "next": "2026-07-22T08:04:00+02:00",
-      "nextLabel": "08:04",
-      "last": "2026-07-22T07:05:15.976851+02:00",
+      "next": "2026-07-22T09:04:00+02:00",
+      "nextLabel": "09:04",
+      "last": "2026-07-22T08:05:52.453533+02:00",
       "enabled": "true"
     },
     {
       "label": "Terra · Taskmarket uitvoering",
       "kind": "execute",
-      "next": "2026-07-22T08:08:00+02:00",
-      "nextLabel": "08:08",
-      "last": "2026-07-22T07:08:35.672111+02:00",
+      "next": "2026-07-22T09:08:00+02:00",
+      "nextLabel": "09:08",
+      "last": "2026-07-22T08:08:36.355667+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · GitHub/Web3 scan",
       "kind": "scan",
-      "next": "2026-07-22T08:15:00+02:00",
-      "nextLabel": "08:15",
-      "last": "2026-07-22T06:21:37.698894+02:00",
+      "next": "2026-07-22T09:15:00+02:00",
+      "nextLabel": "09:15",
+      "last": "2026-07-22T08:18:42.174352+02:00",
       "enabled": "true"
     }
   ],
