@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T05:20:34.497863+02:00",
-  "generatedLabel": "22 July 2026 · 05:20",
+  "generatedAt": "2026-07-22T06:20:35.179256+02:00",
+  "generatedLabel": "22 July 2026 · 06:20",
   "fx": {
     "usdEur": 0.8752,
     "date": "laatst bekende referentie"
@@ -43,10 +43,10 @@
   },
   "candidates": [],
   "scans": {
-    "lunaAt": "2026-07-22T03:03:33Z",
+    "lunaAt": "2026-07-22T04:03:02Z",
     "lunaCandidates": 0,
     "lunaRejected": 0,
-    "solAt": "2026-07-22T03:05:03Z",
+    "solAt": "2026-07-22T04:05:02Z",
     "solApproved": 0,
     "terraAt": "2026-07-19T07:26:54Z",
     "terraSubmitted": 0,
@@ -57,7 +57,7 @@
   },
   "scanDetails": {
     "taskmarket": {
-      "scannedOpenTasks": 0,
+      "scannedOpenTasks": 19,
       "approved": [],
       "rejected": []
     },
@@ -75,33 +75,33 @@
     {
       "label": "Luna · Taskmarket scan",
       "kind": "scan",
-      "next": "2026-07-22T06:00:00+02:00",
-      "nextLabel": "06:00",
-      "last": "2026-07-22T05:04:31.468544+02:00",
+      "next": "2026-07-22T07:00:00+02:00",
+      "nextLabel": "07:00",
+      "last": "2026-07-22T06:03:41.246418+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · Taskmarket validatie",
       "kind": "validate",
-      "next": "2026-07-22T06:04:00+02:00",
-      "nextLabel": "06:04",
-      "last": "2026-07-22T05:05:19.788801+02:00",
+      "next": "2026-07-22T07:04:00+02:00",
+      "nextLabel": "07:04",
+      "last": "2026-07-22T06:05:18.148252+02:00",
       "enabled": "true"
     },
     {
       "label": "Terra · Taskmarket uitvoering",
       "kind": "execute",
-      "next": "2026-07-22T06:08:00+02:00",
-      "nextLabel": "06:08",
-      "last": "2026-07-22T05:08:34.279564+02:00",
+      "next": "2026-07-22T07:08:00+02:00",
+      "nextLabel": "07:08",
+      "last": "2026-07-22T06:08:34.974957+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · GitHub/Web3 scan",
       "kind": "scan",
-      "next": "2026-07-22T06:15:00+02:00",
-      "nextLabel": "06:15",
-      "last": "2026-07-22T04:19:37.763371+02:00",
+      "next": "2026-07-22T07:15:00+02:00",
+      "nextLabel": "07:15",
+      "last": "2026-07-22T05:22:15.869727+02:00",
       "enabled": "true"
     }
   ],
