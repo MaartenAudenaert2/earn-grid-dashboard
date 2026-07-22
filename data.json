@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T11:08:41.774137+02:00",
-  "generatedLabel": "22 July 2026 · 11:08",
+  "generatedAt": "2026-07-22T11:11:07.958718+02:00",
+  "generatedLabel": "22 July 2026 · 11:11",
   "fx": {
     "usdEur": 0.8752,
     "date": "laatst bekende referentie"
@@ -50,10 +50,10 @@
     "solApproved": 0,
     "terraAt": "2026-07-19T07:26:54Z",
     "terraSubmitted": 0,
-    "externalAt": "",
-    "externalResult": "onbekend",
+    "externalAt": "2026-07-22T08:19:26Z",
+    "externalResult": "no-new-qualified-opportunity",
     "externalShortlisted": 0,
-    "externalRejected": 0
+    "externalRejected": 8
   },
   "scanDetails": {
     "taskmarket": {
@@ -66,9 +66,59 @@
       "rejected": []
     },
     "external": {
-      "sources": [],
+      "sources": [
+        {
+          "category": "github",
+          "result": "Read-only primary GitHub screening covered recent open explicit bounty/funding results plus current Tenstorrent and Expensify bounty queues. Credible Tenstorrent candidates #50522 and #50612 are assigned and have linked implementation PR activity; older Tenstorrent items were stale or crowded. Monk-plugin bug reports are security-style reports with no verifiable payment terms and sign-up/install prerequisites. Current Expensify $250 issues had 6-44+ comments or a due-for-payment status, so none met the low-competition/current-work gate. Searches for MaartenAudenaert2 found no issue or PR in the Monk or Tenstorrent candidate repos."
+        },
+        {
+          "category": "taskmarket",
+          "result": "Live read-only list returned 19 open tasks. The only professional software integration task was re-fetched with task get, pitches, and submissions: it has two distinct pending pitches, no submissions, an escrowed 1.999999-USDC net reward, and a mandatory 0.001-USDC pitch cost. Remaining tasks were creative-media work, sponsorship/referral work, paid x402/signing tasks, or had 14-354 submissions."
+        }
+      ],
       "shortlisted": [],
-      "rejected": []
+      "rejected": [
+        {
+          "id": "github:Expensify/App#95742",
+          "url": "https://github.com/Expensify/App/issues/95742",
+          "reason": "Solved: linked PR #95875 was merged on 2026-07-20; issue title says payment is due 2026-07-29."
+        },
+        {
+          "id": "github:tenstorrent/tt-metal#30869",
+          "url": "https://github.com/tenstorrent/tt-metal/issues/30869",
+          "reason": "Already assigned to ajumpa and an open draft implementation PR #50680 was posted at 2026-07-22T05:30:25Z. The $2,000 payout requires all three hardware bring-up stages; it is not session-sized or low competition."
+        },
+        {
+          "id": "taskmarket:0x2365c7694be50babbfd2c176f0a3a4a7517bd5c970b5e6be8a3af58997e1cbcd",
+          "url": "taskmarket://task/0x2365c7694be50babbfd2c176f0a3a4a7517bd5c970b5e6be8a3af58997e1cbcd",
+          "reason": "Live task get plus pitches/submissions recheck: open pitch task, escrowed net reward 1.999999 USDC, no submissions, and two pending pitches by two distinct worker addresses. Submitting a pitch costs 0.001 USDC, so it is not free to start; selection and payment also require a third-party maintainer to merge the integration."
+        },
+        {
+          "id": "github:boundlessfi/boundless-contract#72",
+          "url": "https://github.com/boundlessfi/boundless-contract/issues/72",
+          "reason": "Not low-competition: five visible independent claim comments (2026-07-16 through 2026-07-21) and open PR #85 explicitly fixes #72. The task remains open but the GrantFox payment terms are not fully specified in the primary issue."
+        },
+        {
+          "id": "github:nirium-protocol/nirium-sdk#10",
+          "url": "https://github.com/nirium-protocol/nirium-sdk/issues/10",
+          "reason": "Already being implemented: open PR #18 explicitly closes #10, and six visible claim/implementation comments exist. Issue states a $25 USDC GrantFox/Stellar Foundation campaign reward, but it is no longer low-competition."
+        },
+        {
+          "id": "github:monk-io/monk-plugin#137",
+          "url": "https://github.com/monk-io/monk-plugin/issues/137",
+          "reason": "Fresh security-style bug report, not a normal implementation bounty. The primary issue specifies no amount, payer, payout method, trigger, deadline, or submission route; it also requires a monk.io sign-up and product installation. Repository activity is real, but the current bounty promise is unverified and the required account/product actions are out of scope for read-only screening."
+        },
+        {
+          "id": "github:tenstorrent/tt-metal#50522",
+          "url": "https://github.com/tenstorrent/tt-metal/issues/50522",
+          "reason": "Official $1,500 Tenstorrent bounty, but maintainer jberkowitzTT states it was reviewed and assigned to sreeshanth-soma. A separate ModernBERT PR #50635 was opened then closed. The all-three-stage hardware bring-up has no session-sized path; payout is only after all stages and subject to program terms/tax requirements."
+        },
+        {
+          "id": "github:tenstorrent/tt-metal#50612",
+          "url": "https://github.com/tenstorrent/tt-metal/issues/50612",
+          "reason": "Official $10,000 Tenstorrent bounty is already assigned to jasondavies. The maintainer confirms assignment, and open PR #50624 explicitly closes the issue with implemented hardware benchmarks; it is not available for a competing submission."
+        }
+      ]
     }
   },
   "schedule": [
