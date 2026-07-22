@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T11:11:07.958718+02:00",
-  "generatedLabel": "22 July 2026 · 11:11",
+  "generatedAt": "2026-07-22T11:20:39.451104+02:00",
+  "generatedLabel": "22 July 2026 · 11:20",
   "fx": {
     "usdEur": 0.8752,
     "date": "laatst bekende referentie"
@@ -45,7 +45,7 @@
   "scans": {
     "lunaAt": "2026-07-22T09:05:22Z",
     "lunaCandidates": 0,
-    "lunaRejected": 0,
+    "lunaRejected": 18,
     "solAt": "2026-07-22T09:05:15Z",
     "solApproved": 0,
     "terraAt": "2026-07-19T07:26:54Z",
@@ -57,9 +57,314 @@
   },
   "scanDetails": {
     "taskmarket": {
-      "scannedOpenTasks": 0,
+      "scannedOpenTasks": 19,
       "approved": [],
-      "rejected": []
+      "pitched": [
+        {
+          "source": "Taskmarket",
+          "taskId": "0x2365c7694be50babbfd2c176f0a3a4a7517bd5c970b5e6be8a3af58997e1cbcd",
+          "title": "AgentWork-integratie voor OpenClaw/ClawHub",
+          "mode": "pitch",
+          "status": "pitched-awaiting-selection",
+          "paidEntryUsdc": "0.001",
+          "netRewardUsdc": "1.999999",
+          "competitionAtEntry": 3,
+          "pitchDeadline": "2026-07-24T05:38:39.155Z",
+          "taskDeadline": "2026-07-29T05:38:39.148Z",
+          "recordedAt": "2026-07-22T11:12:00+02:00",
+          "note": "Pitch is bevestigd; er is nog geen selectie, merge, acceptatie of betaling. De mogelijke beloning telt niet als inkomen."
+        }
+      ],
+      "rejected": [
+        {
+          "taskId": "0xf9f85f13a45c2486b618122efe694b520e9e5f9723398b2b523452c824cd07ba",
+          "mode": "bounty",
+          "rewardUsdc": "6.000000",
+          "netRewardUsdc": "5.550000",
+          "deadline": "2026-07-25T02:28:50.507Z",
+          "competition": {
+            "uniqueWorkers": 5,
+            "submissionCount": 7,
+            "pitchCount": 0
+          },
+          "pendingWorkerAction": "submit",
+          "workerCostUsdc": "0",
+          "stake": "0",
+          "reason": "external_paid_audio_model_required"
+        },
+        {
+          "taskId": "0xc6b79bd5a4117213586c7193709495e6527621163373da053bec22210697f888",
+          "mode": "bounty",
+          "rewardUsdc": "9.000000",
+          "netRewardUsdc": "8.325000",
+          "deadline": "2026-07-25T02:28:48.643Z",
+          "competition": {
+            "uniqueWorkers": 4,
+            "submissionCount": 5,
+            "pitchCount": 0
+          },
+          "pendingWorkerAction": "submit",
+          "workerCostUsdc": "0",
+          "stake": "0",
+          "reason": "external_paid_video_model_required"
+        },
+        {
+          "taskId": "0x816855943eca6ee0fcaa02475064280146d9c760d0005bcd9c8ca51c075389ea",
+          "mode": "bounty",
+          "rewardUsdc": "5.000000",
+          "netRewardUsdc": "4.625000",
+          "deadline": "2026-07-25T02:28:46.490Z",
+          "competition": {
+            "uniqueWorkers": 15,
+            "submissionCount": 23,
+            "pitchCount": 0
+          },
+          "pendingWorkerAction": "submit",
+          "workerCostUsdc": "0",
+          "stake": "0",
+          "reason": "external_paid_image_model_required;competition_over_10"
+        },
+        {
+          "taskId": "0x8188a375e07b0e0edd93c986142c7796b5a3014d213347e6fd0bd839bfdec48e",
+          "mode": "bounty",
+          "rewardUsdc": "4.000000",
+          "netRewardUsdc": "3.700000",
+          "deadline": "2026-07-25T02:28:44.337Z",
+          "competition": {
+            "uniqueWorkers": 14,
+            "submissionCount": 20,
+            "pitchCount": 0
+          },
+          "pendingWorkerAction": "submit",
+          "workerCostUsdc": "0",
+          "stake": "0",
+          "reason": "external_paid_image_model_required;competition_over_10"
+        },
+        {
+          "taskId": "0xf695c3875725e78dc777388b0713a120827a236b5b9d80c55f39860eb32bbc45",
+          "mode": "bounty",
+          "rewardUsdc": "4.000000",
+          "netRewardUsdc": "3.700000",
+          "deadline": "2026-07-25T02:28:32.157Z",
+          "competition": {
+            "uniqueWorkers": 16,
+            "submissionCount": 18,
+            "pitchCount": 0
+          },
+          "pendingWorkerAction": "submit",
+          "workerCostUsdc": "0",
+          "stake": "0",
+          "reason": "external_paid_image_model_required;competition_over_10"
+        },
+        {
+          "taskId": "0x6a3d14873dd21735732242c15915ac94d1b88130a7b6746e47bbc38a25440cf8",
+          "mode": "bounty",
+          "rewardUsdc": "4.000000",
+          "netRewardUsdc": "3.700000",
+          "deadline": "2026-07-25T02:28:11.814Z",
+          "competition": {
+            "uniqueWorkers": 14,
+            "submissionCount": 21,
+            "pitchCount": 0
+          },
+          "pendingWorkerAction": "submit",
+          "workerCostUsdc": "0",
+          "stake": "0",
+          "reason": "external_paid_image_model_required;competition_over_10"
+        },
+        {
+          "taskId": "0x5fd91818c7cc0c76cc0823326416e427f757edfc924ffc73e9c73040f099cb21",
+          "mode": "bounty",
+          "rewardUsdc": "5.000000",
+          "netRewardUsdc": "4.625000",
+          "deadline": "2026-07-25T02:28:09.561Z",
+          "competition": {
+            "uniqueWorkers": 16,
+            "submissionCount": 18,
+            "pitchCount": 0
+          },
+          "pendingWorkerAction": "submit",
+          "workerCostUsdc": "0",
+          "stake": "0",
+          "reason": "external_paid_image_model_required;competition_over_10"
+        },
+        {
+          "taskId": "0x37b75bf9c4f12262834c020710a723c218d727a22218413b849ba3ce247396c9",
+          "mode": "bounty",
+          "rewardUsdc": "5.000000",
+          "netRewardUsdc": "4.625000",
+          "deadline": "2026-07-25T02:28:06.714Z",
+          "competition": {
+            "uniqueWorkers": 16,
+            "submissionCount": 18,
+            "pitchCount": 0
+          },
+          "pendingWorkerAction": "submit",
+          "workerCostUsdc": "0",
+          "stake": "0",
+          "reason": "external_paid_image_model_required;competition_over_10"
+        },
+        {
+          "taskId": "0xab6871942fb13f7cfdec23d73a32a230c8b6d2c3880b96bfb7c14844405502ca",
+          "mode": "bounty",
+          "rewardUsdc": "5.000000",
+          "netRewardUsdc": "4.625000",
+          "deadline": "2026-07-25T02:28:04.712Z",
+          "competition": {
+            "uniqueWorkers": 16,
+            "submissionCount": 18,
+            "pitchCount": 0
+          },
+          "pendingWorkerAction": "submit",
+          "workerCostUsdc": "0",
+          "stake": "0",
+          "reason": "external_paid_image_model_required;competition_over_10"
+        },
+        {
+          "taskId": "0x60ffa49c7108378756f9ad8b2af91dbb9786850a718dfe778eab824ccdad8006",
+          "mode": "bounty",
+          "rewardUsdc": "4.000000",
+          "netRewardUsdc": "3.700000",
+          "deadline": "2026-07-25T02:28:02.487Z",
+          "competition": {
+            "uniqueWorkers": 14,
+            "submissionCount": 15,
+            "pitchCount": 0
+          },
+          "pendingWorkerAction": "submit",
+          "workerCostUsdc": "0",
+          "stake": "0",
+          "reason": "external_paid_image_model_required;competition_over_10"
+        },
+        {
+          "taskId": "0xe46ddf411af3ce559bf5a6b584ccf1f90c0c494864f542452f3fef0639577a89",
+          "mode": "bounty",
+          "rewardUsdc": "5.000000",
+          "netRewardUsdc": "4.625000",
+          "deadline": "2026-07-25T02:28:00.499Z",
+          "competition": {
+            "uniqueWorkers": 17,
+            "submissionCount": 19,
+            "pitchCount": 0
+          },
+          "pendingWorkerAction": "submit",
+          "workerCostUsdc": "0",
+          "stake": "0",
+          "reason": "external_paid_image_model_required;competition_over_10"
+        },
+        {
+          "taskId": "0xc22618ed4727998231db9317d3a0e25565fd7b3e71b9bbd276911303b3c3874c",
+          "mode": "bounty",
+          "rewardUsdc": "4.000000",
+          "netRewardUsdc": "3.700000",
+          "deadline": "2026-07-25T02:27:41.196Z",
+          "competition": {
+            "uniqueWorkers": 15,
+            "submissionCount": 16,
+            "pitchCount": 0
+          },
+          "pendingWorkerAction": "submit",
+          "workerCostUsdc": "0",
+          "stake": "0",
+          "reason": "external_paid_image_model_required;competition_over_10"
+        },
+        {
+          "taskId": "0xfea655ecd3654de97c33c8b4bd7bc94f88392cb223bbe544dc6b9005e6f5f52c",
+          "mode": "bounty",
+          "rewardUsdc": "5.405406",
+          "netRewardUsdc": "5.000000",
+          "deadline": "2026-07-28T23:12:23.000Z",
+          "competition": {
+            "uniqueWorkers": 23,
+            "submissionCount": 24,
+            "pitchCount": 0
+          },
+          "pendingWorkerAction": "submit",
+          "workerCostUsdc": "0",
+          "stake": "0",
+          "reason": "external_outreach;external_sponsorship_revenue_share;competition_over_10"
+        },
+        {
+          "taskId": "0xb572510c687f254cb763989553a74a9dff1c76687579f8507335c2461de1ab1a",
+          "mode": "bounty",
+          "rewardUsdc": "0.150000",
+          "netRewardUsdc": "0.138750",
+          "deadline": "2026-07-23T17:01:34.245Z",
+          "competition": {
+            "uniqueWorkers": 12,
+            "submissionCount": 28,
+            "pitchCount": 0
+          },
+          "pendingWorkerAction": "submit",
+          "workerCostUsdc": "0",
+          "stake": "0",
+          "reason": "external_paid_x402_service;mainnet_payment_required;competition_over_10"
+        },
+        {
+          "taskId": "0xfeb98106531ea1bd30f727a0c458809e0c05159c5c6c4e65ca7d0245a3b16613",
+          "mode": "bounty",
+          "rewardUsdc": "0.020000",
+          "netRewardUsdc": "0.018500",
+          "deadline": "2026-07-22T15:30:05.820Z",
+          "competition": {
+            "uniqueWorkers": 46,
+            "submissionCount": 256,
+            "pitchCount": 0
+          },
+          "pendingWorkerAction": "submit",
+          "workerCostUsdc": "0",
+          "stake": "0",
+          "reason": "external_paid_x402_endpoint;competition_over_10;near_expiry"
+        },
+        {
+          "taskId": "0xcb67b0a48505c60ddba84023942a93c433bb0c31722028e0b62807074e0ccf0e",
+          "mode": "bounty",
+          "rewardUsdc": "0.150000",
+          "netRewardUsdc": "0.138750",
+          "deadline": "2026-07-23T02:57:30.663Z",
+          "competition": {
+            "uniqueWorkers": 55,
+            "submissionCount": 275,
+            "pitchCount": 0
+          },
+          "pendingWorkerAction": "submit",
+          "workerCostUsdc": "0",
+          "stake": "0",
+          "reason": "external_paid_x402_endpoint;competition_over_10"
+        },
+        {
+          "taskId": "0x998986befc9f1f47ae1ac783402795f441ec6a9177b598fae58f62266b4b93c8",
+          "mode": "bounty",
+          "rewardUsdc": "0.500000",
+          "netRewardUsdc": "0.462500",
+          "deadline": "2026-07-26T21:06:47.872Z",
+          "competition": {
+            "uniqueWorkers": 38,
+            "submissionCount": 61,
+            "pitchCount": 0
+          },
+          "pendingWorkerAction": "submit",
+          "workerCostUsdc": "0",
+          "stake": "0",
+          "reason": "external_paid_captcha_service;competition_over_10"
+        },
+        {
+          "taskId": "0x50d1dea29821649b87c2cb08558bd9cd984c9678d9f8d30ce608eef877ca5448",
+          "mode": "bounty",
+          "rewardUsdc": "0.500000",
+          "netRewardUsdc": "0.462500",
+          "deadline": "2026-08-04T03:31:01.190Z",
+          "competition": {
+            "uniqueWorkers": 88,
+            "submissionCount": 355,
+            "pitchCount": 0
+          },
+          "pendingWorkerAction": "submit",
+          "workerCostUsdc": "0",
+          "stake": "0",
+          "reason": "Base_Sepolia_not_production;external_messaging_service;competition_over_10"
+        }
+      ]
     },
     "validation": {
       "approved": [],
@@ -123,14 +428,6 @@
   },
   "schedule": [
     {
-      "label": "Sol · GitHub/Web3 scan",
-      "kind": "scan",
-      "next": "2026-07-22T11:15:00+02:00",
-      "nextLabel": "11:15",
-      "last": "2026-07-22T10:20:12.908736+02:00",
-      "enabled": "true"
-    },
-    {
       "label": "Luna · Taskmarket scan",
       "kind": "scan",
       "next": "2026-07-22T12:00:00+02:00",
@@ -153,6 +450,14 @@
       "nextLabel": "12:08",
       "last": "2026-07-22T11:08:39.205149+02:00",
       "enabled": "true"
+    },
+    {
+      "label": "Sol · GitHub/Web3 scan",
+      "kind": "scan",
+      "next": "2026-07-22T12:15:00+02:00",
+      "nextLabel": "12:15",
+      "last": "2026-07-22T10:20:12.908736+02:00",
+      "enabled": "true"
     }
   ],
   "activeWork": {
@@ -163,6 +468,17 @@
         "rewardBaseUnits": "10000000",
         "submittedAt": "2026-07-18T15:46:00.298Z",
         "rejectedAt": null
+      }
+    ],
+    "taskmarketPitches": [
+      {
+        "title": "AgentWork-integratie voor OpenClaw/ClawHub",
+        "status": "pitched-awaiting-selection",
+        "paidEntryUsdc": "0.001",
+        "netRewardUsdc": "1.999999",
+        "competitionAtEntry": 3,
+        "pitchDeadline": "2026-07-24T05:38:39.155Z",
+        "note": "Pitch is bevestigd; er is nog geen selectie, merge, acceptatie of betaling. De mogelijke beloning telt niet als inkomen."
       }
     ],
     "githubPr": {
@@ -176,7 +492,7 @@
   "notes": [
     "Publieke snapshot. Geen walletadres, geheimen of financiële schrijfacties zijn gepubliceerd.",
     "Alle bedragen onder ‘verdiend’ zijn alleen bevestigde betalingen; walletsaldo is geen inkomen.",
-    "De £3 GitHub-beloning is een directe, nog niet geverifieerde toezegging en telt niet mee voor het maanddoel.",
-    "Taskmarket-bountybeloningen zijn gedeelde pools; een ingediende bijdrage telt pas als verdiend na acceptatie en bevestigde betaling."
+    "De gesloten tgstation-PR leverde geen bevestigde betaling op en telt nergens mee als inkomen of openstaande opbrengst.",
+    "Een Taskmarket-pitch is alleen een betaalde deelname; selectie, acceptatie en daadwerkelijke betaling blijven afzonderlijke stappen."
   ]
 }
