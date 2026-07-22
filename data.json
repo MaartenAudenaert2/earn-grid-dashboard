@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T13:20:40.848841+02:00",
-  "generatedLabel": "22 July 2026 · 13:20",
+  "generatedAt": "2026-07-22T14:20:42.070949+02:00",
+  "generatedLabel": "22 July 2026 · 14:20",
   "fx": {
     "usdEur": 0.8752,
     "date": "laatst bekende referentie"
@@ -43,21 +43,21 @@
   },
   "candidates": [],
   "scans": {
-    "lunaAt": "2026-07-22T11:04:13Z",
+    "lunaAt": "2026-07-22T12:04:18Z",
     "lunaCandidates": 0,
-    "lunaRejected": 18,
-    "solAt": "2026-07-22T11:05:13Z",
+    "lunaRejected": 0,
+    "solAt": "2026-07-22T12:04:52Z",
     "solApproved": 0,
     "terraAt": "2026-07-19T07:26:54Z",
     "terraSubmitted": 0,
-    "externalAt": "2026-07-22T11:18:33Z",
+    "externalAt": "2026-07-22T12:20:11Z",
     "externalResult": "no-new-qualified-opportunity",
     "externalShortlisted": 0,
-    "externalRejected": 22
+    "externalRejected": 31
   },
   "scanDetails": {
     "taskmarket": {
-      "scannedOpenTasks": 19,
+      "scannedOpenTasks": 0,
       "approved": [],
       "pitched": [
         {
@@ -75,80 +75,7 @@
           "note": "Pitch is bevestigd; er is nog geen selectie, merge, acceptatie of betaling. De mogelijke beloning telt niet als inkomen."
         }
       ],
-      "rejected": [
-        {
-          "taskId": "0xf9f85f13a45c2486b618122efe694b520e9e5f9723398b2b523452c824cd07ba",
-          "reason": "externalPaidAudioModel; 7 submissions and 5 unique workers; our wallet absent"
-        },
-        {
-          "taskId": "0xc6b79bd5a4117213586c7193709495e6527621163373da053bec22210697f888",
-          "reason": "externalPaidVideoModel; 7 submissions and 6 unique workers; our wallet absent"
-        },
-        {
-          "taskId": "0x816855943eca6ee0fcaa02475064280146d9c760d0005bcd9c8ca51c075389ea",
-          "reason": "competitionUnknown; 25 listed submissions"
-        },
-        {
-          "taskId": "0x8188a375e07b0e0edd93c986142c7796b5a3014d213347e6fd0bd839bfdec48e",
-          "reason": "competitionUnknown; 21 listed submissions"
-        },
-        {
-          "taskId": "0xf695c3875725e78dc777388b0713a120827a236b5b9d80c55f39860eb32bbc45",
-          "reason": "competitionUnknown; 19 listed submissions"
-        },
-        {
-          "taskId": "0x6a3d14873dd21735732242c15915ac94d1b88130a7b6746e47bbc38a25440cf8",
-          "reason": "competitionUnknown; 22 listed submissions"
-        },
-        {
-          "taskId": "0x5fd91818c7cc0c76cc0823326416e427f757edfc924ffc73e9c73040f099cb21",
-          "reason": "competitionUnknown; 19 listed submissions"
-        },
-        {
-          "taskId": "0x37b75bf9c4f12262834c020710a723c218d727a22218413b849ba3ce247396c9",
-          "reason": "competitionUnknown; 20 listed submissions"
-        },
-        {
-          "taskId": "0xab6871942fb13f7cfdec23d73a32a230c8b6d2c3880b96bfb7c14844405502ca",
-          "reason": "competitionUnknown; 19 listed submissions"
-        },
-        {
-          "taskId": "0x60ffa49c7108378756f9ad8b2af91dbb9786850a718dfe778eab824ccdad8006",
-          "reason": "competitionUnknown; 18 listed submissions"
-        },
-        {
-          "taskId": "0xe46ddf411af3ce559bf5a6b584ccf1f90c0c494864f542452f3fef0639577a89",
-          "reason": "competitionUnknown; 19 listed submissions"
-        },
-        {
-          "taskId": "0xc22618ed4727998231db9317d3a0e25565fd7b3e71b9bbd276911303b3c3874c",
-          "reason": "competitionUnknown; 17 listed submissions"
-        },
-        {
-          "taskId": "0xfea655ecd3654de97c33c8b4bd7bc94f88392cb223bbe544dc6b9005e6f5f52c",
-          "reason": "competitionUnknown; sponsor-outreach/revenue-share workflow; 24 listed submissions"
-        },
-        {
-          "taskId": "0xb572510c687f254cb763989553a74a9dff1c76687579f8507335c2461de1ab1a",
-          "reason": "externalPaidMessaging; competitionUnknown; 29 listed submissions"
-        },
-        {
-          "taskId": "0xfeb98106531ea1bd30f727a0c458809e0c05159c5c6c4e65ca7d0245a3b16613",
-          "reason": "competitionUnknown; 261 listed submissions"
-        },
-        {
-          "taskId": "0xcb67b0a48505c60ddba84023942a93c433bb0c31722028e0b62807074e0ccf0e",
-          "reason": "competitionUnknown; 278 listed submissions"
-        },
-        {
-          "taskId": "0x998986befc9f1f47ae1ac783402795f441ec6a9177b598fae58f62266b4b93c8",
-          "reason": "externalPaidCaptchaService; competitionUnknown; 61 listed submissions"
-        },
-        {
-          "taskId": "0x50d1dea29821649b87c2cb08558bd9cd984c9678d9f8d30ce608eef877ca5448",
-          "reason": "BaseSepolia/testnet; externalPaidMessaging; competitionUnknown; 355 listed submissions"
-        }
-      ]
+      "rejected": []
     },
     "validation": {
       "approved": [],
@@ -158,15 +85,15 @@
       "sources": [
         {
           "category": "github",
-          "result": "Authenticated GitHub primary-source searches covered newly created open bounty-labelled issues and fresh reward/funded matches. The apparent new candidates were a personal-fork $500 title with no payment terms, an unfunded rejected $10 Opire command, and GrantFox campaign issues whose primary terms explicitly say only 'may be rewarded'. Fresh representative checks included issue state, dates, comments, assignees, PR searches, repository activity, and PR policy. No candidate had a concrete, verifiable payout promise and at most 10 confirmed competitors."
+          "result": "GitHub primary-source discovery at 2026-07-22T12:20:11Z returned 197 distinct recent search matches. Most were synthetic bounty-board mirrors, security-vulnerability claims (a separate market), spam/referral/duplicate-issue prompts, or ordinary issues with reward-related text. Nine plausible development candidates received live issue/comment/repository/PR triage. None met the payment, competition, and contribution gates: two ordinary requests had no payout terms; one established-project bug had no bounty; one direct issue was covered by an open PR; MergeOS was claimed with matching open PR #531 and only offered internal MRG credit; the three GrantFox StreamFi issues were assigned to other workers and labelled only “Maybe Rewarded.”"
         },
         {
           "category": "taskmarket",
-          "result": "Live `taskmarket task list --status open --limit 100` returned 19 tasks. For every task, `taskmarket task get` and its mode-relevant read-only list (`pitches` for pitch; `submissions` for bounty) completed successfully. The sole low-count engineering-adjacent pitch has 3 unique workers and requires a 0.001-USDC pitch fee; two low-count bounties are creative-media contests (5 and 6 workers); all remaining bounty tasks have 12–88 unique workers, are x402/payment/sponsorship activity, or both. No free, professional open-source/Web3 engineering task with <=10 verified competitors survived."
+          "result": "Live Taskmarket scan completed `taskmarket task list --status open --limit 100`, then `taskmarket task get` plus the mode-relevant `pitches` or `submissions` list for all 19 open tasks. All detail/list requests succeeded. The only engineering-adjacent pitch has 3 unique workers, requires a 0.001-USDC pitch, and this wallet already participated. The only <=10-worker bounty tasks are creative audio/video tasks requiring external paid generation services. Every remaining task has 12–88 unique workers and/or requires x402 payment, sponsorship/outreach, CAPTCHA payment, or non-engineering work. No candidate is free, professional engineering work with <=10 verified unique competitors."
         },
         {
           "category": "safety",
-          "result": "No wallet, signing, claim, bid, submission, payment, account, on-chain action, or wallet/account query was performed in this scan."
+          "result": "No wallet, signing, claim, bid, submission, payment, account creation, on-chain action, balance query, or wallet query was performed."
         }
       ],
       "shortlisted": [],
@@ -280,6 +207,51 @@
           "id": "github:Talenttrust/Talenttrust-Frontend#465",
           "url": "https://github.com/Talenttrust/Talenttrust-Frontend/issues/465",
           "reason": "Same unverified GrantFox 'may be rewarded' payment terms; two visible work/assignment commenters (mxrtins04 and Juwon345)."
+        },
+        {
+          "id": "github:globe-and-citizen/cnc-portal#2334",
+          "url": "https://github.com/globe-and-citizen/cnc-portal/issues/2334",
+          "reason": "Open and quiet, but the primary issue contains no reward amount, payer, payment method, payout trigger, or deadline; it is an ordinary feature request, not a verifiable bounty."
+        },
+        {
+          "id": "github:devasignhq/website#41",
+          "url": "https://github.com/devasignhq/website/issues/41",
+          "reason": "Open, quiet documentation request, but no bounty/payment terms, amount, payer, deadline, or external-contribution evidence; repository has one star and no recent push since 2026-07-17."
+        },
+        {
+          "id": "github:mergeos-bounties/Loru#19",
+          "url": "https://github.com/mergeos-bounties/Loru/issues/19",
+          "reason": "Open 25-MRG ledger-credit offer, not independently verifiable cash/escrow; three claim/work commenters and matching open PR #531 already target the acceptance criteria."
+        },
+        {
+          "id": "github:Da-Mikey/hermes-agent-evolution#50",
+          "url": "https://github.com/Da-Mikey/hermes-agent-evolution/issues/50",
+          "reason": "Open and quiet, but no payment terms; target is a zero-star personal fork with no push since 2026-07-20."
+        },
+        {
+          "id": "github:advatar/ActiveChain#22",
+          "url": "https://github.com/advatar/ActiveChain/issues/22",
+          "reason": "No payout promise; a matching open implementation PR #23 was created minutes after the issue."
+        },
+        {
+          "id": "github:invertase/react-native-google-mobile-ads#867",
+          "url": "https://github.com/invertase/react-native-google-mobile-ads/issues/867",
+          "reason": "Established repository and open bug report, but neither issue nor comment gives a bounty/funding promise, payer, payment route, or payout trigger."
+        },
+        {
+          "id": "github:conduit-protocol/streamFi-sdk#74",
+          "url": "https://github.com/conduit-protocol/streamFi-sdk/issues/74",
+          "reason": "Advertises a $150 tier but is labelled only “Maybe Rewarded,” has no payment route/trigger/deadline, and GrantFox assigned it to Omoboi-dev after four claim comments."
+        },
+        {
+          "id": "github:conduit-protocol/streamFi-app#86",
+          "url": "https://github.com/conduit-protocol/streamFi-app/issues/86",
+          "reason": "Advertises a $150 tier but is labelled only “Maybe Rewarded,” has no payment route/trigger/deadline, and GrantFox assigned it to Omoboi-dev after four claim comments."
+        },
+        {
+          "id": "github:conduit-protocol/streamFi-contracts#75",
+          "url": "https://github.com/conduit-protocol/streamFi-contracts/issues/75",
+          "reason": "GrantFox campaign candidate is assigned to another worker; the “Maybe Rewarded” label does not verify a payable bounty."
         }
       ]
     }
@@ -288,33 +260,33 @@
     {
       "label": "Luna · Taskmarket scan",
       "kind": "scan",
-      "next": "2026-07-22T14:00:00+02:00",
-      "nextLabel": "14:00",
-      "last": "2026-07-22T13:05:00.896640+02:00",
+      "next": "2026-07-22T15:00:00+02:00",
+      "nextLabel": "15:00",
+      "last": "2026-07-22T14:05:40.076789+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · Taskmarket validatie",
       "kind": "validate",
-      "next": "2026-07-22T14:04:00+02:00",
-      "nextLabel": "14:04",
-      "last": "2026-07-22T13:05:32.891305+02:00",
+      "next": "2026-07-22T15:04:00+02:00",
+      "nextLabel": "15:04",
+      "last": "2026-07-22T14:05:23.562063+02:00",
       "enabled": "true"
     },
     {
       "label": "Terra · Taskmarket uitvoering",
       "kind": "execute",
-      "next": "2026-07-22T14:08:00+02:00",
-      "nextLabel": "14:08",
-      "last": "2026-07-22T13:08:40.643414+02:00",
+      "next": "2026-07-22T15:08:00+02:00",
+      "nextLabel": "15:08",
+      "last": "2026-07-22T14:08:41.857794+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · GitHub/Web3 scan",
       "kind": "scan",
-      "next": "2026-07-22T14:15:00+02:00",
-      "nextLabel": "14:15",
-      "last": "2026-07-22T13:19:27.252934+02:00",
+      "next": "2026-07-22T15:15:00+02:00",
+      "nextLabel": "15:15",
+      "last": "2026-07-22T14:20:17.240175+02:00",
       "enabled": "true"
     }
   ],
