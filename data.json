@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-23T07:20:55.442245+02:00",
-  "generatedLabel": "23 July 2026 · 07:20",
+  "generatedAt": "2026-07-23T08:20:56.157741+02:00",
+  "generatedLabel": "23 July 2026 · 08:20",
   "fx": {
     "usdEur": 0.8752,
     "date": "laatst bekende referentie"
@@ -43,21 +43,21 @@
   },
   "candidates": [],
   "scans": {
-    "lunaAt": "2026-07-23T05:03:46.854791652Z",
+    "lunaAt": "2026-07-23T06:04:36Z",
     "lunaCandidates": 0,
     "lunaRejected": 0,
-    "solAt": "2026-07-23T05:05:45Z",
+    "solAt": "2026-07-23T06:05:45Z",
     "solApproved": 0,
     "terraAt": "2026-07-19T07:26:54Z",
     "terraSubmitted": 0,
-    "externalAt": "2026-07-23T05:19:59Z",
+    "externalAt": "2026-07-23T06:18:30Z",
     "externalResult": "no-new-qualified-opportunity",
     "externalShortlisted": 0,
     "externalRejected": 0
   },
   "scanDetails": {
     "taskmarket": {
-      "scannedOpenTasks": 17,
+      "scannedOpenTasks": 0,
       "approved": [],
       "pitched": [
         {
@@ -91,33 +91,33 @@
     {
       "label": "Luna · Taskmarket scan",
       "kind": "scan",
-      "next": "2026-07-23T08:00:00+02:00",
-      "nextLabel": "08:00",
-      "last": "2026-07-23T07:05:52.279849+02:00",
+      "next": "2026-07-23T09:00:00+02:00",
+      "nextLabel": "09:00",
+      "last": "2026-07-23T08:06:02.726228+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · Taskmarket validatie",
       "kind": "validate",
-      "next": "2026-07-23T08:04:00+02:00",
-      "nextLabel": "08:04",
-      "last": "2026-07-23T07:05:55.122361+02:00",
+      "next": "2026-07-23T09:04:00+02:00",
+      "nextLabel": "09:04",
+      "last": "2026-07-23T08:05:59.642302+02:00",
       "enabled": "true"
     },
     {
       "label": "Terra · Taskmarket uitvoering",
       "kind": "execute",
-      "next": "2026-07-23T08:08:00+02:00",
-      "nextLabel": "08:08",
-      "last": "2026-07-23T07:08:55.245932+02:00",
+      "next": "2026-07-23T09:08:00+02:00",
+      "nextLabel": "09:08",
+      "last": "2026-07-23T08:08:55.925306+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · GitHub/Web3 scan",
       "kind": "scan",
-      "next": "2026-07-23T08:15:00+02:00",
-      "nextLabel": "08:15",
-      "last": "2026-07-23T06:20:02.451571+02:00",
+      "next": "2026-07-23T09:15:00+02:00",
+      "nextLabel": "09:15",
+      "last": "2026-07-23T08:19:42.962411+02:00",
       "enabled": "true"
     }
   ],
