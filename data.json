@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-23T01:20:50.853377+02:00",
-  "generatedLabel": "23 July 2026 · 01:20",
+  "generatedAt": "2026-07-23T02:20:51.532995+02:00",
+  "generatedLabel": "23 July 2026 · 02:20",
   "fx": {
     "usdEur": 0.8752,
     "date": "laatst bekende referentie"
@@ -43,21 +43,21 @@
   },
   "candidates": [],
   "scans": {
-    "lunaAt": "2026-07-22T23:05:43Z",
+    "lunaAt": "2026-07-23T00:03:48Z",
     "lunaCandidates": 0,
-    "lunaRejected": 17,
-    "solAt": "2026-07-22T23:05:22Z",
+    "lunaRejected": 5,
+    "solAt": "2026-07-23T00:05:27Z",
     "solApproved": 0,
     "terraAt": "2026-07-19T07:26:54Z",
     "terraSubmitted": 0,
-    "externalAt": "2026-07-22T23:18:42Z",
+    "externalAt": "2026-07-23T00:18:29Z",
     "externalResult": "no-new-qualified-opportunity",
     "externalShortlisted": 0,
     "externalRejected": 0
   },
   "scanDetails": {
     "taskmarket": {
-      "scannedOpenTasks": 18,
+      "scannedOpenTasks": 5,
       "approved": [],
       "pitched": [
         {
@@ -77,72 +77,57 @@
       ],
       "rejected": [
         {
-          "taskId": "0xf9f85f13a45c2486b618122efe694b520e9e5f9723398b2b523452c824cd07ba",
-          "reason": "9 unique workers, but required audio-model service (Suno/Udio or equivalent) is an external paid service; affordability not verifiable"
+          "reason": "alreadyParticipated",
+          "count": 1,
+          "taskIds": [
+            "0x2365c7694be50babbfd2c176f0a3a4a7517bd5c970b5e6be8a3af58997e1cbcd"
+          ],
+          "evidence": "Our wallet is one of 8 pitches; worker pendingAction is exact pitch, Base, payment 1000 base units, no stake."
         },
         {
-          "taskId": "0xc6b79bd5a4117213586c7193709495e6527621163373da053bec22210697f888",
-          "reason": "9 unique workers, but required text-to-video model service is an external paid service; affordability not verifiable"
+          "reason": "competitionOverLimitOrUnresolvedAndCreativeCapabilityMismatch",
+          "count": 12,
+          "taskIds": [
+            "0xf9f85f13a45c2486b618122efe694b520e9e5f9723398b2b523452c824cd07ba",
+            "0xc6b79bd5a4117213586c7193709495e6527621163373da053bec22210697f888",
+            "0x816855943eca6ee0fcaa02475064280146d9c760d0005bcd9c8ca51c075389ea",
+            "0x8188a375e07b0e0edd93c986142c7796b5a3014d213347e6fd0bd839bfdec48e",
+            "0xf695c3875725e78dc777388b0713a120827a236b5b9d80c55f39860eb32bbc45",
+            "0x6a3d14873dd21735732242c15915ac94d1b88130a7b6746e47bbc38a25440cf8",
+            "0x5fd91818c7cc0c76cc0823326416e427f757edfc924ffc73e9c73040f099cb21",
+            "0x37b75bf9c4f12262834c020710a723c218d727a22218413b849ba3ce247396c9",
+            "0xab6871942fb13f7cfdec23d73a32a230c8b6d2c3880b96bfb7c14844405502ca",
+            "0x60ffa49c7108378756f9ad8b2af91dbb9786850a718dfe778eab824ccdad8006",
+            "0xe46ddf411af3ce559bf5a6b584ccf1f90c0c494864f542452f3fef0639577a89",
+            "0xc22618ed4727998231db9317d3a0e25565fd7b3e71b9bbd276911303b3c3874c"
+          ],
+          "evidence": "Live re-fetches show 13-41 submissions per task; unique competition is not safely <=10. Required real audio/video/image-model outputs are not locally verifiable."
         },
         {
-          "taskId": "0x816855943eca6ee0fcaa02475064280146d9c760d0005bcd9c8ca51c075389ea",
-          "reason": "25 known unique workers; competition exceeds 10; external image-model service required"
+          "reason": "competitionOverLimitOrUnresolved",
+          "count": 1,
+          "taskIds": [
+            "0xcb67b0a48505c60ddba84023942a93c433bb0c31722028e0b62807074e0ccf0e"
+          ],
+          "evidence": "Live re-fetch shows 332 submissions and many distinct worker addresses; competition exceeds the <=10 preference."
         },
         {
-          "taskId": "0x8188a375e07b0e0edd93c986142c7796b5a3014d213347e6fd0bd839bfdec48e",
-          "reason": "22 known unique workers; competition exceeds 10; external image-model service required"
+          "reason": "externalPaidServiceOrTransfer",
+          "count": 3,
+          "taskIds": [
+            "0xfea655ecd3654de97c33c8b4bd7bc94f88392cb223bbe544dc6b9005e6f5f52c",
+            "0xb572510c687f254cb763989553a74a9dff1c76687579f8507335c2461de1ab1a",
+            "0x998986befc9f1f47ae1ac783402795f441ec6a9177b598fae58f62266b4b93c8"
+          ],
+          "evidence": "Requires external payment/transfer: sponsor >=25 USDC, mainnet x402 ~0.001 USDC, CAPTCHA x402 0.01 USDC."
         },
         {
-          "taskId": "0xf695c3875725e78dc777388b0713a120827a236b5b9d80c55f39860eb32bbc45",
-          "reason": "24 known unique workers; competition exceeds 10; external image-model service required"
-        },
-        {
-          "taskId": "0x6a3d14873dd21735732242c15915ac94d1b88130a7b6746e47bbc38a25440cf8",
-          "reason": "22 known unique workers; competition exceeds 10; external image-model service required"
-        },
-        {
-          "taskId": "0x5fd91818c7cc0c76cc0823326416e427f757edfc924ffc73e9c73040f099cb21",
-          "reason": "25 known unique workers; competition exceeds 10; external image-model service required"
-        },
-        {
-          "taskId": "0x37b75bf9c4f12262834c020710a723c218d727a22218413b849ba3ce247396c9",
-          "reason": "26 known unique workers; competition exceeds 10; external image-model service required"
-        },
-        {
-          "taskId": "0xab6871942fb13f7cfdec23d73a32a230c8b6d2c3880b96bfb7c14844405502ca",
-          "reason": "25 known unique workers; competition exceeds 10; external image-model service required"
-        },
-        {
-          "taskId": "0x60ffa49c7108378756f9ad8b2af91dbb9786850a718dfe778eab824ccdad8006",
-          "reason": "24 known unique workers; competition exceeds 10; external image-model service required"
-        },
-        {
-          "taskId": "0xe46ddf411af3ce559bf5a6b584ccf1f90c0c494864f542452f3fef0639577a89",
-          "reason": "24 known unique workers; competition exceeds 10; external image-model service required"
-        },
-        {
-          "taskId": "0xc22618ed4727998231db9317d3a0e25565fd7b3e71b9bbd276911303b3c3874c",
-          "reason": "24 known unique workers; competition exceeds 10; external image-model service required"
-        },
-        {
-          "taskId": "0xfea655ecd3654de97c33c8b4bd7bc94f88392cb223bbe544dc6b9005e6f5f52c",
-          "reason": "24 known unique workers; competition exceeds 10; external outreach/sponsorship and third-party payment required; payout not independently verifiable"
-        },
-        {
-          "taskId": "0xb572510c687f254cb763989553a74a9dff1c76687579f8507335c2461de1ab1a",
-          "reason": "12 known unique workers; competition exceeds 10; requires external paid x402 messaging service"
-        },
-        {
-          "taskId": "0xcb67b0a48505c60ddba84023942a93c433bb0c31722028e0b62807074e0ccf0e",
-          "reason": "66 known unique workers; competition exceeds 10; external x402 endpoint task"
-        },
-        {
-          "taskId": "0x998986befc9f1f47ae1ac783402795f441ec6a9177b598fae58f62266b4b93c8",
-          "reason": "39 known unique workers; competition exceeds 10; requires external paid CAPTCHA service"
-        },
-        {
-          "taskId": "0x50d1dea29821649b87c2cb08558bd9cd984c9678d9f8d30ce608eef877ca5448",
-          "reason": "89 known unique workers; competition exceeds 10; Base Sepolia/testnet, not Base production"
+          "reason": "wrongNetworkAndExternalPaidService",
+          "count": 1,
+          "taskIds": [
+            "0x50d1dea29821649b87c2cb08558bd9cd984c9678d9f8d30ce608eef877ca5448"
+          ],
+          "evidence": "Task explicitly uses Base Sepolia and an external x402 payment; scan network is Base mainnet."
         }
       ]
     },
@@ -160,33 +145,33 @@
     {
       "label": "Luna · Taskmarket scan",
       "kind": "scan",
-      "next": "2026-07-23T02:00:00+02:00",
-      "nextLabel": "02:00",
-      "last": "2026-07-23T01:06:38.238293+02:00",
+      "next": "2026-07-23T03:00:00+02:00",
+      "nextLabel": "03:00",
+      "last": "2026-07-23T02:04:38.778391+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · Taskmarket validatie",
       "kind": "validate",
-      "next": "2026-07-23T02:04:00+02:00",
-      "nextLabel": "02:04",
-      "last": "2026-07-23T01:05:37.954070+02:00",
+      "next": "2026-07-23T03:04:00+02:00",
+      "nextLabel": "03:04",
+      "last": "2026-07-23T02:05:38.835805+02:00",
       "enabled": "true"
     },
     {
       "label": "Terra · Taskmarket uitvoering",
       "kind": "execute",
-      "next": "2026-07-23T02:08:00+02:00",
-      "nextLabel": "02:08",
-      "last": "2026-07-23T01:08:50.638623+02:00",
+      "next": "2026-07-23T03:08:00+02:00",
+      "nextLabel": "03:08",
+      "last": "2026-07-23T02:08:51.328057+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · GitHub/Web3 scan",
       "kind": "scan",
-      "next": "2026-07-23T02:15:00+02:00",
-      "nextLabel": "02:15",
-      "last": "2026-07-23T01:19:50.807342+02:00",
+      "next": "2026-07-23T03:15:00+02:00",
+      "nextLabel": "03:15",
+      "last": "2026-07-23T02:19:29.150276+02:00",
       "enabled": "true"
     }
   ],
