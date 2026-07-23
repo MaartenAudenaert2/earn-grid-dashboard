@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-23T03:20:52.212559+02:00",
-  "generatedLabel": "23 July 2026 · 03:20",
+  "generatedAt": "2026-07-23T04:20:52.910584+02:00",
+  "generatedLabel": "23 July 2026 · 04:20",
   "fx": {
     "usdEur": 0.8752,
     "date": "laatst bekende referentie"
@@ -43,21 +43,21 @@
   },
   "candidates": [],
   "scans": {
-    "lunaAt": "2026-07-23T01:04:03Z",
+    "lunaAt": "2026-07-23T02:07:27Z",
     "lunaCandidates": 0,
-    "lunaRejected": 0,
-    "solAt": "2026-07-23T01:05:22Z",
+    "lunaRejected": 6,
+    "solAt": "2026-07-23T02:05:50Z",
     "solApproved": 0,
     "terraAt": "2026-07-19T07:26:54Z",
     "terraSubmitted": 0,
-    "externalAt": "2026-07-23T01:16:02Z",
+    "externalAt": "2026-07-23T02:17:53Z",
     "externalResult": "no-new-qualified-opportunity",
     "externalShortlisted": 0,
     "externalRejected": 0
   },
   "scanDetails": {
     "taskmarket": {
-      "scannedOpenTasks": 0,
+      "scannedOpenTasks": 6,
       "approved": [],
       "pitched": [
         {
@@ -75,7 +75,156 @@
           "note": "Pitch is bevestigd; er is nog geen selectie, merge, acceptatie of betaling. De mogelijke beloning telt niet als inkomen."
         }
       ],
-      "rejected": []
+      "rejected": [
+        {
+          "reason": "wallet_already_participated",
+          "tasks": [
+            {
+              "taskId": "0x2365c7694be50babbfd2c176f0a3a4a7517bd5c970b5e6be8a3af58997e1cbcd",
+              "mode": "pitch",
+              "status": "open",
+              "competition": 8,
+              "pitchCount": 8,
+              "pendingWorkerAction": "pitch",
+              "workerCostUsdc": 0.001,
+              "stake": 0,
+              "deadline": "2026-07-24T05:38:39.155Z"
+            }
+          ]
+        },
+        {
+          "reason": "external_paid_audio_model",
+          "tasks": [
+            {
+              "taskId": "0xf9f85f13a45c2486b618122efe694b520e9e5f9723398b2b523452c824cd07ba",
+              "mode": "bounty",
+              "status": "open",
+              "competition": 10,
+              "submissionCount": 15,
+              "deadline": "2026-07-25T02:28:50.507Z"
+            }
+          ]
+        },
+        {
+          "reason": "external_paid_image_model",
+          "tasks": [
+            {
+              "taskId": "0xc6b79bd5a4117213586c7193709495e6527621163373da053bec22210697f888",
+              "mode": "bounty",
+              "status": "open",
+              "competition": 9,
+              "submissionCount": 13,
+              "deadline": "2026-07-25T02:28:48.643Z"
+            }
+          ]
+        },
+        {
+          "reason": "competition_gt_10",
+          "tasks": [
+            {
+              "taskId": "0x816855943eca6ee0fcaa02475064280146d9c760d0005bcd9c8ca51c075389ea",
+              "uniqueWorkers": 26,
+              "submissionCount": 39
+            },
+            {
+              "taskId": "0x8188a375e07b0e0edd93c986142c7796b5a3014d213347e6fd0bd839bfdec48e",
+              "uniqueWorkers": 24,
+              "submissionCount": 35
+            },
+            {
+              "taskId": "0xf695c3875725e78dc777388b0713a120827a236b5b9d80c55f39860eb32bbc45",
+              "uniqueWorkers": 26,
+              "submissionCount": 38
+            },
+            {
+              "taskId": "0x6a3d14873dd21735732242c15915ac94d1b88130a7b6746e47bbc38a25440cf8",
+              "uniqueWorkers": 23,
+              "submissionCount": 36
+            },
+            {
+              "taskId": "0x5fd91818c7cc0c76cc0823326416e427f757edfc924ffc73e9c73040f099cb21",
+              "uniqueWorkers": 26,
+              "submissionCount": 39
+            },
+            {
+              "taskId": "0x37b75bf9c4f12262834c020710a723c218d727a22218413b849ba3ce247396c9",
+              "uniqueWorkers": 28,
+              "submissionCount": 41
+            },
+            {
+              "taskId": "0xab6871942fb13f7cfdec23d73a32a230c8b6d2c3880b96bfb7c14844405502ca",
+              "uniqueWorkers": 26,
+              "submissionCount": 37
+            },
+            {
+              "taskId": "0x60ffa49c7108378756f9ad8b2af91dbb9786850a718dfe778eab824ccdad8006",
+              "uniqueWorkers": 25,
+              "submissionCount": 36
+            },
+            {
+              "taskId": "0xe46ddf411af3ce559bf5a6b584ccf1f90c0c494864f542452f3fef0639577a89",
+              "uniqueWorkers": 26,
+              "submissionCount": 38
+            },
+            {
+              "taskId": "0xc22618ed4727998231db9317d3a0e25565fd7b3e71b9bbd276911303b3c3874c",
+              "uniqueWorkers": 25,
+              "submissionCount": 36
+            },
+            {
+              "taskId": "0xfea655ecd3654de97c33c8b4bd7bc94f88392cb223bbe544dc6b9005e6f5f52c",
+              "uniqueWorkers": 24,
+              "submissionCount": 25
+            },
+            {
+              "taskId": "0xb572510c687f254cb763989553a74a9dff1c76687579f8507335c2461de1ab1a",
+              "uniqueWorkers": 12,
+              "submissionCount": 39
+            },
+            {
+              "taskId": "0xcb67b0a48505c60ddba84023942a93c433bb0c31722028e0b62807074e0ccf0e",
+              "uniqueWorkers": 67,
+              "submissionCount": 334
+            },
+            {
+              "taskId": "0x998986befc9f1f47ae1ac783402795f441ec6a9177b598fae58f62266b4b93c8",
+              "uniqueWorkers": 39,
+              "submissionCount": 63
+            },
+            {
+              "taskId": "0x50d1dea29821649b87c2cb08558bd9cd984c9678d9f8d30ce608eef877ca5448",
+              "uniqueWorkers": 89,
+              "submissionCount": 393
+            }
+          ]
+        },
+        {
+          "reason": "wrong_network_or_external_paid_service",
+          "tasks": [
+            {
+              "taskId": "0x998986befc9f1f47ae1ac783402795f441ec6a9177b598fae58f62266b4b93c8",
+              "detail": "external x402 payment 0.01 USDC; competition_gt_10"
+            },
+            {
+              "taskId": "0x50d1dea29821649b87c2cb08558bd9cd984c9678d9f8d30ce608eef877ca5448",
+              "detail": "Base Sepolia, not production Base; external x402 payment; competition_gt_10"
+            }
+          ]
+        },
+        {
+          "reason": "external_paid_service_and_unverifiable_external_payout",
+          "tasks": [
+            {
+              "taskId": "0xfea655ecd3654de97c33c8b4bd7bc94f88392cb223bbe544dc6b9005e6f5f52c",
+              "detail": "requires external sponsor outreach/funding and separate payout; competition_gt_10"
+            },
+            {
+              "taskId": "0xb572510c687f254cb763989553a74a9dff1c76687579f8507335c2461de1ab1a",
+              "detail": "requires external paid x402 note service; competition_gt_10"
+            }
+          ]
+        }
+      ]
     },
     "validation": {
       "approved": [],
@@ -91,33 +240,33 @@
     {
       "label": "Luna · Taskmarket scan",
       "kind": "scan",
-      "next": "2026-07-23T04:00:00+02:00",
-      "nextLabel": "04:00",
-      "last": "2026-07-23T03:05:16.089349+02:00",
+      "next": "2026-07-23T05:00:00+02:00",
+      "nextLabel": "05:00",
+      "last": "2026-07-23T04:08:25.654794+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · Taskmarket validatie",
       "kind": "validate",
-      "next": "2026-07-23T04:04:00+02:00",
-      "nextLabel": "04:04",
-      "last": "2026-07-23T03:05:54.163755+02:00",
+      "next": "2026-07-23T05:04:00+02:00",
+      "nextLabel": "05:04",
+      "last": "2026-07-23T04:05:59.635388+02:00",
       "enabled": "true"
     },
     {
       "label": "Terra · Taskmarket uitvoering",
       "kind": "execute",
-      "next": "2026-07-23T04:08:00+02:00",
-      "nextLabel": "04:08",
-      "last": "2026-07-23T03:08:52.007851+02:00",
+      "next": "2026-07-23T05:08:00+02:00",
+      "nextLabel": "05:08",
+      "last": "2026-07-23T04:08:52.701803+02:00",
       "enabled": "true"
     },
     {
       "label": "Sol · GitHub/Web3 scan",
       "kind": "scan",
-      "next": "2026-07-23T04:15:00+02:00",
-      "nextLabel": "04:15",
-      "last": "2026-07-23T03:18:57.873666+02:00",
+      "next": "2026-07-23T05:15:00+02:00",
+      "nextLabel": "05:15",
+      "last": "2026-07-23T04:18:52.309632+02:00",
       "enabled": "true"
     }
   ],
